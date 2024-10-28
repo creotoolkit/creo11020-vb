@@ -1,0 +1,96 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP Visual Basic.NET documentation for enum "	
+	EpfcDimensionSenseType"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      6,
+      37
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcDimension2D.html">Module</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcDimension2D-DimensionSenseType.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Enum&nbsp;EpfcDimensionSenseType</h2>
+<b>Description</b>
+<br>
+<br>This enumerated type contains the options used for dimensions to attach to entities in a drawing.
+<br>
+<br>The dimension sense gives more information about how the dimension attaches to the entity, 
+for example, to what part of the entity, and in what direction the dimension runs. 
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><b><tt><b><a class="enumtype" href="t-pfcDimension2D-EmptyDimensionSense.html">IpfcEmptyDimensionSense</a></b></tt></b></tt>, <tt><b><tt><b><a class="enumtype" href="t-pfcDimension2D-PointDimensionSense.html">IpfcPointDimensionSense</a></b></tt></b></tt>, <tt><b><tt><b><a class="enumtype" href="t-pfcDimension2D-SplinePointDimensionSense.html">IpfcSplinePointDimensionSense</a></b></tt></b></tt>, <tt><b><tt><b><a class="enumtype" href="t-pfcDimension2D-TangentIndexDimensionSense.html">IpfcTangentIndexDimensionSense</a></b></tt></b></tt>, <tt><b><tt><b><a class="enumtype" href="t-pfcDimension2D-LinAOCTangentDimensionSense.html">IpfcLinAOCTangentDimensionSense</a></b></tt></b></tt>, <tt><b><tt><b><a class="enumtype" href="t-pfcDimension2D-AngleDimensionSense.html">IpfcAngleDimensionSense</a></b></tt></b></tt>, <tt><b><tt><b><a class="enumtype" href="t-pfcDimension2D-PointToAngleDimensionSense.html">IpfcPointToAngleDimensionSense</a></b></tt></b></tt>, <tt><b><a class="method" href="t-pfcDimension2D-Dimension2D.html#GetDimensionSenses">IpfcDimension2D.GetDimensionSenses()</a></b></tt>, <tt><b><a class="method" href="t-pfcDimension2D-EmptyDimensionSense.html#Create">IpfcEmptyDimensionSense.Create()</a></b></tt>, <tt><b><a class="method" href="t-pfcDimension2D-PointDimensionSense.html#Create">IpfcPointDimensionSense.Create()</a></b></tt>, <tt><b><a class="method" href="t-pfcDimension2D-SplinePointDimensionSense.html#Create">IpfcSplinePointDimensionSense.Create()</a></b></tt>, <tt><b><a class="method" href="t-pfcDimension2D-TangentIndexDimensionSense.html#Create">IpfcTangentIndexDimensionSense.Create()</a></b></tt>, <tt><b><a class="method" href="t-pfcDimension2D-LinAOCTangentDimensionSense.html#Create">IpfcLinAOCTangentDimensionSense.Create()</a></b></tt>, <tt><b><a class="method" href="t-pfcDimension2D-AngleDimensionSense.html#Create">IpfcAngleDimensionSense.Create()</a></b></tt>, <tt><b><a class="method" href="t-pfcDimension2D-PointToAngleDimensionSense.html#Create">IpfcPointToAngleDimensionSense.Create()</a></b></tt>
+</dd>
+</dl>
+<br>
+<br>
+<hr>
+<br>
+<h4>Values</h4>
+<dl>
+<dt>
+<tt><b><a name="DIMSENSE_NONE">EpfcDIMSENSE_NONE</a></b></tt>
+</dt>
+<dd>No special dimension information is provided.</dd>
+<br>
+<dt>
+<tt><b><a name="DIMSENSE_POINT">EpfcDIMSENSE_POINT</a></b></tt>
+</dt>
+<dd>The dimension is attached to a point.</dd>
+<br>
+<dt>
+<tt><b><a name="DIMSENSE_SPLINE_PT">EpfcDIMSENSE_SPLINE_PT</a></b></tt>
+</dt>
+<dd>The dimension is attached to a spline point.</dd>
+<br>
+<dt>
+<tt><b><a name="DIMSENSE_TANGENT_INDEX">EpfcDIMSENSE_TANGENT_INDEX</a></b></tt>
+</dt>
+<dd>The dimension attaches to a tangent of the entity, which is an arc or circle. </dd>
+<br>
+<dt>
+<tt><b><a name="DIMSENSE_LINEAR_TO_ARC_OR_CIRCLE_TANGENT">EpfcDIMSENSE_LINEAR_TO_ARC_OR_CIRCLE_TANGENT</a></b></tt>
+</dt>
+<dd>The dimension is the perpendicular distance between a line and a tangent to an arc or a circle which is parallel to the line. </dd>
+<br>
+<dt>
+<tt><b><a name="DIMSENSE_ANGLE">EpfcDIMSENSE_ANGLE</a></b></tt>
+</dt>
+<dd>The dimension is the angle between two straight entities. </dd>
+<br>
+<dt>
+<tt><b><a name="DIMSENSE_POINT_TO_ANGLE">EpfcDIMSENSE_POINT_TO_ANGLE</a></b></tt>
+</dt>
+<dd>The dimension is the angle between a line entity and the tangent to a curved entity at one of its ends. </dd>
+<br>
+<dt>
+<tt><b>EpfcDimensionSenseType_nil</b></tt>
+</dt>
+<dd>
+           Use this enumerated value to represent <i>"null"</i> passed to optional properties or method arguments.
+	</dd>
+<br>
+</dl>
+</body>
+</html>

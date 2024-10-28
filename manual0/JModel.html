@@ -1,0 +1,1999 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-9">
+      <meta name="ch:resourceid" content="JModel" scheme="atiChunkerMeta">
+      
+      
+      
+      
+      
+      
+      <link href="css/styler.css" rel="stylesheet" type="text/css">
+      <title>Models</title>
+   
+<SCRIPT LANGUAGE="JAVASCRIPT">
+  function findProperNode() { top.frames[0].document.apiwizard.manual("MANJMODEL0", location.hash); }
+</SCRIPT>
+
+</head>
+   <body onLoad="findProperNode()">
+      
+         
+         <a name="0"> </a><div class=" x-title-65-0 x-title-65-1" combinedFontName="off" id="styler-id1.1.1.11.1" class="ChapterTitle">Models</div>
+         <div class=" x-body-2-0">
+            <div class=" x-p-7-0">This <span class=" x-ph-2-0"><span xmlns="" profilecode="100000000">section</span></span> describes how to program on the model level using <span class=" x-ph-2-0">the VB API</span>.
+            </div>
+         </div>
+         <div class=" x-topic-4-0 x-topic-4-1 x-topic-4-2" combinedFontName="off" id="JModel_OverviewOfModelObjects-B9122147_13_11">
+            
+            <a name="1"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.11.3.1" class="Heading1">Overview of Model Objects</div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">Models can be any <span class=" x-ph-2-0" id="JModel_OverviewOfModelObjects-B9122147_PTCCreoParametric_13_15"><span xmlns="" profilecode="1">Creo Parametric</span></span> file type, including parts, assemblies, drawings, sections, and notebook. The classes in the module<span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcModel</span></span> provide generic access to models, regardless of their type. The available methods enable you to do the following:
+               </div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0">Access information about a model.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0">Open, copy, rename, and save a model.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-8-0 x-topic-8-1 x-topic-8-2" id="JModel_GettingAModelObject-B9123F85_13_23">
+            
+            <a name="2"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.11.4.1" class="Heading1">Getting a Model Object</div>
+            <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="3"></a><span class=" x-indexterm-1-0"></span></div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">Methods and Properties Introduced:</div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="4"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcFamilyTableRow.CreateInstance()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="5"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcSelection.SelModel</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="6"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcBaseSession.GetModel()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="7"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/t-pfcSession-BaseSession.html#CurrentModel">IpfcBaseSession.CurrentModel</A></li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="8"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcBaseSession.GetActiveModel()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="9"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/t-pfcSession-BaseSession.html#ListModels">IpfcBaseSession.ListModels()</A></li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="10"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcBaseSession.GetByRelationId()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="11"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcWindow.Model</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-p-7-0">These methods get a model object that is already in session.</div>
+               <div class=" x-p-7-0">The property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcSelection.SelModel</span></span> returns the model that was interactively selected. 
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcBaseSession.GetModel()</span></span> returns a model based on its name and type, whereas <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcBaseSession.GetByRelationId()</span></span> returns a model in an assembly that has the specified integer identifier.
+               </div>
+               <div class=" x-p-7-0">The property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcBaseSession.CurrentModel</span></span> returns the current active model.
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcBaseSession.GetActiveModel()</span></span> returns the active <span class=" x-ph-2-0" id="JModel_GettingAModelObject-B9123F85_PTCCreoParametric-E9_13_65"><span xmlns="" profilecode="1">Creo Parametric</span></span> model.
+               </div>
+               <div class=" x-p-7-0">Use the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcBaseSession.ListModels()</span></span> to return a sequence of all the models in session.
+               </div>
+               <div class=" x-p-7-0">For more methods that return solid models, refer to the <span class=" x-ph-2-0"><span xmlns="" profilecode="100000000">section</span></span> <a href="JSolid.html" class=" x-xref-4-0 x-xref-4-5 x-xref-4-6 x-xref-4-9">Solid</a>.
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-8-0 x-topic-8-1 x-topic-8-2" id="JModel_ModelDescriptors-B912913B_13_73">
+            
+            <a name="12"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.11.5.1" class="Heading1">Model Descriptors</div>
+            <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="13"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="14"></a><span class=" x-indexterm-1-0"></span></div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">Methods and Properties Introduced:</div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="15"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">CCpfcModelDescriptor.Create()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="16"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModelDescriptor_CreateFromFileName()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="17"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModelDescriptor.SetGenericName</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="18"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModelDescriptor.SetInstanceName</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="19"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModelDescriptor.SetType</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="20"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModelDescriptor.SetDevice</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="21"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModelDescriptor.SetPath</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="22"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModelDescriptor.FileVersion</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="23"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModelDescriptor.GetFullName</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="24"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModel.GetFullName</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-p-7-0">Model descriptors are data objects used to describe a model file and its location in the system. The methods in the model
+                  descriptor enable you to set specific information that enables <span class=" x-ph-2-0" id="JModel_ModelDescriptors-B912913B_PTCCreoParametric-E9626_13_114"><span xmlns="" profilecode="1">Creo Parametric</span></span> to find the specific model you want.
+               </div>
+               <div class=" x-p-7-0">The static utility method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">CCpfcModelDescriptor.Create()</span></span> allows you to specify as data to be entered a model type, an instance name, and a generic name. The model descriptor constructs
+                  the full name of the model as a string, as follows:
+               </div><pre class=" x-codeblock-3-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">String FullName = InstanceName+"&lt;"+GenericName+"&gt;"; 
+                                    // As long as the
+                                    // generic name is
+                                    // not an empty 
+                                    // string ("")</span></pre><div class=" x-p-7-0">If you want to load a model that is not a family table instance, pass an empty string as the generic name argument so that
+                  the full name of the model is constructed correctly. If the model is a family table interface, you should specify both the
+                  instance and generic names.
+               </div>
+               <div class=" x-note-2-0 x-note-2-3">
+                  <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                  <div class=" x-p-7-0">You are allowed to set other fields in the model descriptor object, but they may be ignored by some methods.</div>
+               </div>
+               <div class=" x-p-7-0">The static utility method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModelDescriptor.CreateFromFileName()</span></span> allows you to create a new model descriptor from a given a file name. The file name is a string in the form <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">&lt;name&gt;.&lt;extension&gt;</span></span>.
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-8-0 x-topic-8-1 x-topic-8-2" id="JModel_RetrievingModels-B9133F38_13_125">
+            
+            <a name="25"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.11.6.1" class="Heading1">Retrieving Models</div>
+            <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="26"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="27"></a><span class=" x-indexterm-1-0"></span></div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">Methods Introduced:</div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="28"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcBaseSession.RetrieveModel()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="29"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcBaseSession.RetrieveModelWithOpts()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="30"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcBaseSession.OpenFile()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="31"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcSolid.HasRetrievalErrors()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-p-7-0">These methods cause <span class=" x-ph-2-0" id="JModel_RetrievingModels-B9133F38_PTCCreoParametric-E9626_13_148"><span xmlns="" profilecode="1">Creo Parametric</span></span> to retrieve the model that corresponds to the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModelDescriptor</span></span> argument.
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcBaseSession.RetrieveModel()</span></span> retrieves the specified model into the <span class=" x-ph-2-0" id="JModel_RetrievingModels-B9133F38_PTCCreoParametric-E9626_13_148"><span xmlns="" profilecode="1">Creo Parametric</span></span> session given its model descriptor from a standard directory. This method ignores the path argument specified in the model
+                  descriptor. But this method does not create a window for it, nor does it display the model anywhere.
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcBaseSession.RetrieveModelWithOpts()</span></span> retrieves the specified model into the <span class=" x-ph-2-0" id="JModel_RetrievingModels-B9133F38_PTCCreoParametric-E9626_13_148"><span xmlns="" profilecode="1">Creo Parametric</span></span> session based on the path specified by the model descriptor. The path can be a disk path, a workspace path, or a commonspace
+                  path. The <span class=" x-parmname-3-0">Opts</span> argument (given by the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcRetrieveModelOptions</span></span> object) provides the user with the option to specify simplified representations.
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcBaseSession.OpenFile()</span></span> brings the model into memory, opens a new window for it (or uses the base window, if it is empty), and displays the model.
+               </div>
+               <div class=" x-note-2-0 x-note-2-3">
+                  <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                  <div class=" x-p-7-0"><span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcBaseSession.OpenFile()</span></span> actually returns a handle to the window it has created. 
+                  </div>
+               </div>
+               <div class=" x-p-7-0">The file version set by the <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModelDescriptor.FileVersion</span></span> property is ignored by the <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcBaseSession.RetrieveModelWithOpts()</span></span> and <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcBaseSession.OpenFile()</span></span> methods. Instead, the latest file version of the model is used by these two methods.
+               </div>
+               <div class=" x-p-7-0">To get a handle to the model you need, use the property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcWindow.Model</span></span>.
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcSolid.HasRetrievalErrors()</span></span> returns a true value if the features in the solid model were suppressed during the RetrieveModel or OpenFile operations.
+                  This method must be called immediately after the <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcBaseSession.RetrieveModel()</span></span> method or an equivalent retrieval method.
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="JModel_ExampleCodeRetrievingAModel-B9133CA0_13_175">
+               
+               <a name="32"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.11.6.4.1" class="Heading2">Example Code: Retrieving a Model</div>
+               <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="33"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="34"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="35"></a><span class=" x-indexterm-1-0"></span></div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">The sample code in the file <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcModelsExamples.vb</span></span> located at <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">&lt;creo_vbapi_loadpoint&gt;/vbapi_examples</span></span> demonstrates how to retrieve a model.
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-8-0 x-topic-8-1 x-topic-8-2" id="JModel_ModelInformation-B913E78F_13_190">
+            
+            <a name="36"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.11.7.1" class="Heading1">Model Information</div>
+            <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="37"></a><span class=" x-indexterm-1-0"></span></div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">Methods and Properties Introduced:</div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="38"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModel.FileName</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="39"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModel.CommonName</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="40"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModel.IsCommonNameModifiable()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="41"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModel.FullName</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="42"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModel.GenericName</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="43"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModel.InstanceName</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="44"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModel.Origin</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="45"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModel.RelationId</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="46"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModel.Descr</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="47"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModel.Type</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="48"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModel.IsModified</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="49"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModel.Version</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="50"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModel.Revision</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="51"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModel.Branch</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="52"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModel.ReleaseLevel</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="53"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModel.VersionStamp</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="54"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModel.ListDependencies()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="55"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModel.CleanupDependencies()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="56"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModel.ListDeclaredModels()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="57"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModel.CheckIsModifiable()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="58"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModel.CheckIsSaveAllowed()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-p-7-0">The property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.FileName</span></span> retrieves the model file name in the "name"."type" format.
+               </div>
+               <div class=" x-p-7-0">The property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.CommonName</span></span> retrieves the common name for the model. This name is displayed for the model in <span class=" x-ph-2-0" id="JModel_ModelInformation-B913E78F_PTCWindchill-EC6F9846_13_265">Windchill</span> <span class=" x-ph-2-0">PDMLink</span>.
+               </div>
+               <div class=" x-p-7-0">Use the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.IsCommonNameModifiable()</span></span> to identify if the common name of the model can be modified. You can modify the name for models that are not yet owned by
+                  <span class=" x-ph-2-0" id="JModel_ModelInformation-B913E78F_PTCWindchill-EC6F9846_13_265">Windchill</span> <span class=" x-ph-2-0">PDMLink</span>, or in certain situations if the configuration option <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">let_proe_rename_pdm_objects</span></span> is set to <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">yes</span></span>.
+               </div>
+               <div class=" x-p-7-0">The property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.FullName</span></span> retrieves the full name of the model in the instance &lt;generic&gt; format.
+               </div>
+               <div class=" x-p-7-0">The property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.GenericName</span></span> retrieves the name of the generic model. If the model is not an instance, this name must be <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">NULL</span></span> or an empty string.
+               </div>
+               <div class=" x-p-7-0">The property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.InstanceName</span></span> retrieves the name of the model. If the model is an instance, this method retrieves the instance name.
+               </div>
+               <div class=" x-p-7-0">The property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.Origin</span></span> returns the complete path to the file from which the model was opened. This path can be a location on disk from a <span class=" x-ph-2-0" id="JModel_ModelInformation-B913E78F_PTCWindchill-EC6F9846_13_265">Windchill</span> workspace, or from a downloaded URL.
+               </div>
+               <div class=" x-p-7-0">The property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.RelationId</span></span> retrieves the relation identifier of the specified model. It can be <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">NULL</span></span>.
+               </div>
+               <div class=" x-p-7-0">The property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.Descr</span></span> returns the descriptor for the specified model. Model descriptors can be used to represent models not currently in session.
+               </div>
+               <div class=" x-note-2-0 x-note-2-3">
+                  <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                  <div class=" x-p-7-0">From <span class=" x-ph-2-0">Pro/ENGINEER Wildfire 4.0</span> onwards, the properties <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.FullName</span></span>, <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.GenericName</span></span>, and <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.Descr</span></span> throw an exception <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcXtoolkitCantOpen</span></span> if called on a model instance whose immediate generic is not in session. Handle this exception and typecast the model as
+                     <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcSolid</span></span>, which in turn can be typecast as <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcFamilyMember</span></span>, and use the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcFamilyMember.GetImmediateGenericInfo()</span></span> to get the model descriptor of the immediate generic model. The model descriptor can be used to derive the full name or generic
+                     name of the model. If you wish to switch off this behavior and continue to run legacy applications in the pre-<span class=" x-ph-2-0">Wildfire 4.0</span> mode, set the configuration option <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">retrieve_instance_dependencies</span></span> to <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">instance_and_generic_deps</span></span>.
+                  </div>
+               </div>
+               <div class=" x-p-7-0">The property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.Type</span></span> returns the type of model in the form of the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModelType</span></span> object. The types of models are as follows:
+               </div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">EpfcMDL_ASSEMBLY</span></span>&#8212;Specifies an assembly.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">EpfcMDL_PART</span></span>&#8212;Specifies a part.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">EpfcMDL_DRAWING</span></span>&#8212;Specifies a drawing.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">EpfcMDL_2D_SECTION</span></span>&#8212;Specifies a 2D section.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">EpfcMDL_LAYOUT</span></span>&#8212;Specifies a notebook.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">EpfcMDL_DWG_FORMAT</span></span>&#8212;Specifies a drawing format.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">EpfcMDL_MFG</span></span>&#8212;Specifies a manufacturing model.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">EpfcMDL_REPORT</span></span>&#8212;Specifies a report.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">EpfcMDL_MARKUP</span></span>&#8212;Specifies a drawing markup.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">EpfcMDL_DIAGRAM</span></span>&#8212;Specifies a diagram</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">EpfcMDL_CE_SOLID</span></span>&#8212;Specifies a Layout model.
+                                 <div class=" x-note-1-0 x-note-1-3">
+                                    <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                                    <div class=" x-p-7-0"><span class=" x-ph-2-0">the VB API</span> methods will only be able to read models of type Layout, but will not be able to pass Layout models as input to other methods.
+                                       PTC recommends that you review all <span class=" x-ph-2-0">the VB API</span> applications that use the object <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModelType</span></span> and modify the code as appropriate to ensure that the applications work correctly.
+                                    </div>
+                                 </div></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-p-7-0">The property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.IsModified</span></span> identifies whether the model has been modified since it was last saved.
+               </div>
+               <div class=" x-p-7-0">The property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.Version</span></span> returns the version of the specified model from the PDM system. It can be <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">NULL</span></span>, if not set.
+               </div>
+               <div class=" x-p-7-0">The property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.Revision</span></span> returns the revision number of the specified model from the PDM system. It can be <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">NULL</span></span>, if not set.
+               </div>
+               <div class=" x-p-7-0">The property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.Branch</span></span> returns the branch of the specified model from the PDM system. It can be <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">NULL</span></span>, if not set.
+               </div>
+               <div class=" x-p-7-0">The property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.ReleaseLevel</span></span> returns the release level of the specified model from the PDM system. It can be <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">NULL</span></span>, if not set.
+               </div>
+               <div class=" x-p-7-0">The property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.VersionStamp</span></span> returns the version stamp of the specified model. The version stamp is a <span class=" x-ph-2-0" id="JModel_ModelInformation-B913E78F_PTCCreoParametric-E9626_13_359"><span xmlns="" profilecode="1">Creo Parametric</span></span> specific identifier that changes with each change made to the model.
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.ListDependencies()</span></span> returns a list of the first-level dependencies for the specified model in the <span class=" x-ph-2-0" id="JModel_ModelInformation-B913E78F_PTCCreoParametric-E9626_13_359"><span xmlns="" profilecode="1">Creo Parametric</span></span> workspace in the form of the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcDependencies</span></span> object.
+               </div>
+               <div class=" x-p-7-0">Use the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.CleanupDependencies()</span></span> to clean the dependencies for an object in the <span class=" x-ph-2-0" id="JModel_ModelInformation-B913E78F_PTCCreoParametric-E9626_13_359"><span xmlns="" profilecode="1">Creo Parametric</span></span> workspace.
+                  <div class=" x-note-1-0 x-note-1-3">
+                     <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                     <div class=" x-p-7-0">Do not call the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.CleanupDependencies()</span></span> during operations that alter the dependencies, such as, restructuring components and creating or redefining features.
+                     </div>
+                  </div>
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.ListDeclaredModels()</span></span> returns a list of all the first-level objects declared for the specified model.
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.CheckIsModifiable()</span></span> identifies if a given model can be modified without checking for any subordinate models. This method takes a boolean argument
+                  <span class=" x-parmname-3-0">ShowUI</span> that determines whether the <span class=" x-ph-2-0" id="JModel_ModelInformation-B913E78F_PTCCreoParametric-E9626_13_359"><span xmlns="" profilecode="1">Creo Parametric</span></span> conflict resolution dialog box should be displayed to resolve conflicts, if detected. If this argument is false, then the
+                  conflict resolution dialog box is not displayed, and the model can be modified only if there are no conflicts that cannot
+                  be overridden, or are resolved by default resolution actions. For a generic model, if <span class=" x-parmname-3-0">ShowUI</span> is true, then all instances of the model are also checked.
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.CheckIsSaveAllowed()</span></span> identifies if a given model can be saved along with all of its subordinate models. The subordinate models can be saved based
+                  on their modification status and the value of the configuration option <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">save_objects</span></span>. This method also checks the current user interface context to identify if it is currently safe to save the model. Thus,
+                  calling this method at different times might return different results. This method takes a boolean argument <span class=" x-parmname-3-0">ShowUI</span>. Refer to the previous method for more information on this argument.
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-8-0 x-topic-8-1 x-topic-8-2" id="JModel_ModelOperations-B91426E4_13_385">
+            
+            <a name="59"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.11.8.1" class="Heading1">Model Operations</div>
+            <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="60"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="61"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="62"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="63"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="64"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="65"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="66"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="67"></a><span class=" x-indexterm-1-0"></span></div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">Methods and Property Introduced:</div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="68"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModel.Backup()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="69"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModel.Copy()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="70"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModel.CopyAndRetrieve()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="71"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModel.Rename()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="72"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModel.Save()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="73"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModel.Erase()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="74"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModel.EraseWithDependencies()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="75"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModel.Delete()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="76"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModel.Display()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="77"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModel.CommonName</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-p-7-0">These model operations duplicate most of the commands available in the <span class=" x-ph-2-0" id="JModel_ModelOperations-B91426E4_PTCCreoParametric-E96269_13_438"><span xmlns="" profilecode="1">Creo Parametric</span></span> <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">File</span></span> menu.
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.Backup()</span></span> makes a backup of an object in memory to a disk in a specified directory.
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.Copy()</span></span> copies the specified model to another file.
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.CopyAndRetrieve()</span></span> copies the model to another name, and retrieves that new model into session.
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.Rename()</span></span> renames a specified model.
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.Save()</span></span> stores the specified model to a disk.
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.Erase()</span></span> erases the specified model from the session. Models used by other models cannot be erased until the models dependent upon
+                  them are erased.
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.EraseWithDependencies()</span></span> erases the specified model from the session and all the models on which the specified model depends from disk, if the dependencies
+                  are not needed by other items in session.
+               </div>
+               <div class=" x-note-2-0 x-note-2-3">
+                  <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                  <div class=" x-p-7-0">However, while erasing an active model, <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.Erase()</span></span> and <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.EraseWithDependencies()</span></span> only clear the graphic display immediately, they do not clear the data in the memory until the control returns to <span class=" x-ph-2-0" id="JModel_ModelOperations-B91426E4_PTCCreoParametric-E96269_13_438"><span xmlns="" profilecode="1">Creo Parametric</span></span> from the <span class=" x-ph-2-0">the VB API</span> application. Therefore, after calling them the control must be returned to <span class=" x-ph-2-0" id="JModel_ModelOperations-B91426E4_PTCCreoParametric-E96269_13_438"><span xmlns="" profilecode="1">Creo Parametric</span></span> before calling any other function, otherwise the behavior of <span class=" x-ph-2-0" id="JModel_ModelOperations-B91426E4_PTCCreoParametric-E96269_13_438"><span xmlns="" profilecode="1">Creo Parametric</span></span> may be unpredictable.
+                  </div>
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.Delete()</span></span> removes the specified model from memory and disk.
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.Display()</span></span> displays the specified model. You must call this method if you create a new window for a model because the model will not
+                  be displayed in the window until you call <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcDisplay</span></span>.
+               </div>
+               <div class=" x-p-7-0">The property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.CommonName</span></span> modifies the common name of the specified model. You can modify this name for models that are not yet owned by <span class=" x-ph-2-0" id="JModel_ModelOperations-B91426E4_PTCWindchill-EC6F9846_13_473">Windchill</span> <span class=" x-ph-2-0">PDMLink</span>, or in certain situations if the configuration option <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">let_proe_rename_pdm_objects</span></span> is set to <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">yes</span></span>. 
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-8-0 x-topic-8-1 x-topic-8-2" id="JModel_RunningModelCHECK-B915F0A1_13_477">
+            
+            <a name="78"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.11.9.1" class="Heading1">Running Creo ModelCHECK</div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0"><span class=" x-ph-2-0" id="JModel_RunningModelCHECK-B915F0A1_PTCCreoModelcheck-E968_13_481">Creo ModelCHECK</span> is an integrated application that runs transparently within <span class=" x-ph-2-0" id="JModel_RunningModelCHECK-B915F0A1_PTCCreoParametric-E962_13_482"><span xmlns="" profilecode="1">Creo Parametric</span></span>. <span class=" x-ph-2-0" id="JModel_RunningModelCHECK-B915F0A1_PTCCreoModelcheck-E968_13_481">Creo ModelCHECK</span> uses a configurable list of company design standards and best modeling practices. You can configure <span class=" x-ph-2-0" id="JModel_RunningModelCHECK-B915F0A1_PTCCreoModelcheck-E968_13_481">Creo ModelCHECK</span> to run interactively or automatically when you regenerate or save a model.
+               </div>
+               <div class=" x-p-7-0">Methods and Properties Introduced:</div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="79"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcBaseSession.ExecuteModelCheck()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="80"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">CCpfcModelCheckInstructions.Create()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="81"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModelCheckInstructions.ConfigDir</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="82"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModelCheckInstructions.Mode</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="83"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModelCheckInstructions.OutputDir</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="84"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModelCheckInstructions.ShowInBrowser</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="85"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModelCheckResults.NumberOfErrors</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="86"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModelCheckResults.NumberOfWarnings</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="87"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModelCheckResults.WasModelSaved</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-p-7-0">You can run <span class=" x-ph-2-0" id="JModel_RunningModelCHECK-B915F0A1_PTCCreoModelcheck-E968_13_481">Creo ModelCHECK</span> from an external application using the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcBaseSession.ExecuteModelCheck()</span></span>. This method takes the model <span class=" x-parmname-3-0">Model</span> on which you want to run <span class=" x-ph-2-0" id="JModel_RunningModelCHECK-B915F0A1_PTCCreoModelcheck-E968_13_481">Creo ModelCHECK</span> and instructions in the form of the object <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModelCheckInstructions</span></span> as its input parameters. This object contains the following parameters:
+               </div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">ConfigDir</span></span>&#8212;Specifies the location of the configuration files. If this parameter is set to <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">NULL</span></span>, the default <span class=" x-ph-2-0" id="JModel_RunningModelCHECK-B915F0A1_PTCCreoModelcheck-E968_13_481">Creo ModelCHECK</span> configuration files are used. </span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">Mode</span></span>&#8212;Specifies the mode in which you want to run <span class=" x-ph-2-0" id="JModel_RunningModelCHECK-B915F0A1_PTCCreoModelcheck-E968_13_481">Creo ModelCHECK</span>. The modes are:</span><div class=" x-ul-2-0">
+                                 <table border="0" cellpadding="0" cellspacing="0" class=" x-li-10-0" style="table-layout: fixed; " width="100%">
+                                    <col style="width: 0em">
+                                    <col style="width: 18pt">
+                                    <col>
+                                    <tbody>
+                                       <tr valign="baseline">
+                                          <td align="right"></td>
+                                          <td align="left" style="word-break: keep-all; "><span style="font-family: 'Arial Unicode MS'; ">&#9675;</span>&nbsp;
+                                          </td>
+                                          <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">MODELCHECK_GRAPHICS</span></span>&#8212;Interactive mode</span></td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                                 <table border="0" cellpadding="0" cellspacing="0" class=" x-li-10-0" style="table-layout: fixed; " width="100%">
+                                    <col style="width: 0em">
+                                    <col style="width: 18pt">
+                                    <col>
+                                    <tbody>
+                                       <tr valign="baseline">
+                                          <td align="right"></td>
+                                          <td align="left" style="word-break: keep-all; "><span style="font-family: 'Arial Unicode MS'; ">&#9675;</span>&nbsp;
+                                          </td>
+                                          <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">MODELCHECK_NO_GRAPHICS</span></span>&#8212;Batch mode</span></td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">OutputDir</span></span>&#8212;Specifies the location for the reports. If you set this parameter to <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">NULL</span></span>, the default <span class=" x-ph-2-0" id="JModel_RunningModelCHECK-B915F0A1_PTCCreoModelcheck-E968_13_481">Creo ModelCHECK</span> directory, as per <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">config_init.mc</span></span>, will be used.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">ShowInBrowser</span></span>&#8212;Specifies if the results report should be displayed in the Web browser.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">CCpfcModelCheckInstructions.Create()</span></span> creates the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModelCheckInstructions</span></span> object containing the <span class=" x-ph-2-0" id="JModel_RunningModelCHECK-B915F0A1_PTCCreoModelcheck-E968_13_481">Creo ModelCHECK</span> instructions described above.
+               </div>
+               <div class=" x-p-7-0">Use the methods and properties <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModelCheckInstructions.ConfigDir</span></span>, <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModelCheckInstructions.Mode</span></span>, <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModelCheckInstructions.OutputDir</span></span>, and <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModelCheckInstructions.ShowInBrowser</span></span> to modify the <span class=" x-ph-2-0" id="JModel_RunningModelCHECK-B915F0A1_PTCCreoModelcheck-E968_13_481">Creo ModelCHECK</span> instructions. 
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcBaseSession.ExecuteModelCheck()</span></span> returns the results of the <span class=" x-ph-2-0" id="JModel_RunningModelCHECK-B915F0A1_PTCCreoModelcheck-E968_13_481">Creo ModelCHECK</span> run in the form of the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModelCheckResults</span></span> object. This object contains the following parameters:
+               </div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">NumberOfErrors</span></span>&#8212;Specifies the number of errors detected.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">NumberOfWarnings</span></span>&#8212;Specifies the number of warnings found.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">WasModelSaved</span></span>&#8212;Specifies whether the model is saved with updates.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-p-7-0">Use the properties <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModelCheckResults.NumberOfErrors</span></span>, <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModelCheckResults.NumberOfWarning</span></span>, and <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModelCheckResults.WasModelSaved</span></span> to access the results obtained.
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="JModel_CustomChecks-B9195D8D_13_575">
+               
+               <a name="88"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.11.9.3.1" class="Heading2">Custom Checks</div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">This section describes how to define custom checks in <span class=" x-ph-2-0" id="JModel_CustomChecks-B9195D8D_PTCCreoModelcheck-E96854BD_13_579">Creo ModelCHECK</span> that users can run using the standard <span class=" x-ph-2-0" id="JModel_CustomChecks-B9195D8D_PTCCreoModelcheck-E96854BD_13_579">Creo ModelCHECK</span> interface in <span class=" x-ph-2-0" id="JModel_CustomChecks-B9195D8D_PTCCreoParametric-E96269BB_13_581"><span xmlns="" profilecode="1">Creo Parametric</span></span>.
+                  </div>
+                  <div class=" x-p-7-0">To define and register a custom check:</div>
+                  <div class=" x-ol-6-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-11-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0.00em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">1.</td>
+                              <td><span class=" x-p-4-0">Set the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">CUSTMTK_CHECKS_FILE</span></span> configuration option in the start configuration file to a text file that stores the check definition. For example: <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">CUSTMTK_CHECKS_FILE text/custmtk_checks.txt</span></span>.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-15-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0.00em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">2.</td>
+                              <td><span class=" x-p-4-0">Set the contents of the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">CUSTMTK_CHECKS_FILE</span></span> file to define the checks. Each check should list the following items:</span><div class=" x-ul-2-0">
+                                    <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                                       <col style="width: 0em">
+                                       <col style="width: 18pt">
+                                       <col>
+                                       <tbody>
+                                          <tr valign="baseline">
+                                             <td align="right"></td>
+                                             <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                             <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">DEF_&lt;checkname&gt;</span></span>&#8212;Specifies the name of the check. The format must be <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">CHKTK_&lt;checkname&gt;_&lt;mode&gt;</span></span>, where mode is <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">PRT</span></span>, <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">ASM</span></span>, or <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">DRW</span></span>.</span></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                                       <col style="width: 0em">
+                                       <col style="width: 18pt">
+                                       <col>
+                                       <tbody>
+                                          <tr valign="baseline">
+                                             <td align="right"></td>
+                                             <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                             <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">TAB_&lt;checkname&gt;</span></span>&#8212;Specifies the tab category in the <span class=" x-ph-2-0" id="JModel_CustomChecks-B9195D8D_PTCCreoModelcheck-E96854BD_13_579">Creo ModelCHECK</span> report under which the check is classified. Valid tab values are:</span><div class=" x-ul-2-0">
+                                                   <table border="0" cellpadding="0" cellspacing="0" class=" x-li-10-0" style="table-layout: fixed; " width="100%">
+                                                      <col style="width: 0em">
+                                                      <col style="width: 18pt">
+                                                      <col>
+                                                      <tbody>
+                                                         <tr valign="baseline">
+                                                            <td align="right"></td>
+                                                            <td align="left" style="word-break: keep-all; "><span style="font-family: 'Arial Unicode MS'; ">&#9675;</span>&nbsp;
+                                                            </td>
+                                                            <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">INFO</span></span></span></td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                   <table border="0" cellpadding="0" cellspacing="0" class=" x-li-10-0" style="table-layout: fixed; " width="100%">
+                                                      <col style="width: 0em">
+                                                      <col style="width: 18pt">
+                                                      <col>
+                                                      <tbody>
+                                                         <tr valign="baseline">
+                                                            <td align="right"></td>
+                                                            <td align="left" style="word-break: keep-all; "><span style="font-family: 'Arial Unicode MS'; ">&#9675;</span>&nbsp;
+                                                            </td>
+                                                            <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">PARAMETER</span></span></span></td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                   <table border="0" cellpadding="0" cellspacing="0" class=" x-li-10-0" style="table-layout: fixed; " width="100%">
+                                                      <col style="width: 0em">
+                                                      <col style="width: 18pt">
+                                                      <col>
+                                                      <tbody>
+                                                         <tr valign="baseline">
+                                                            <td align="right"></td>
+                                                            <td align="left" style="word-break: keep-all; "><span style="font-family: 'Arial Unicode MS'; ">&#9675;</span>&nbsp;
+                                                            </td>
+                                                            <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">LAYER</span></span></span></td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                   <table border="0" cellpadding="0" cellspacing="0" class=" x-li-10-0" style="table-layout: fixed; " width="100%">
+                                                      <col style="width: 0em">
+                                                      <col style="width: 18pt">
+                                                      <col>
+                                                      <tbody>
+                                                         <tr valign="baseline">
+                                                            <td align="right"></td>
+                                                            <td align="left" style="word-break: keep-all; "><span style="font-family: 'Arial Unicode MS'; ">&#9675;</span>&nbsp;
+                                                            </td>
+                                                            <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">FEATURE</span></span></span></td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                   <table border="0" cellpadding="0" cellspacing="0" class=" x-li-10-0" style="table-layout: fixed; " width="100%">
+                                                      <col style="width: 0em">
+                                                      <col style="width: 18pt">
+                                                      <col>
+                                                      <tbody>
+                                                         <tr valign="baseline">
+                                                            <td align="right"></td>
+                                                            <td align="left" style="word-break: keep-all; "><span style="font-family: 'Arial Unicode MS'; ">&#9675;</span>&nbsp;
+                                                            </td>
+                                                            <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">RELATION</span></span></span></td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                   <table border="0" cellpadding="0" cellspacing="0" class=" x-li-10-0" style="table-layout: fixed; " width="100%">
+                                                      <col style="width: 0em">
+                                                      <col style="width: 18pt">
+                                                      <col>
+                                                      <tbody>
+                                                         <tr valign="baseline">
+                                                            <td align="right"></td>
+                                                            <td align="left" style="word-break: keep-all; "><span style="font-family: 'Arial Unicode MS'; ">&#9675;</span>&nbsp;
+                                                            </td>
+                                                            <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">DATUM</span></span></span></td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                   <table border="0" cellpadding="0" cellspacing="0" class=" x-li-10-0" style="table-layout: fixed; " width="100%">
+                                                      <col style="width: 0em">
+                                                      <col style="width: 18pt">
+                                                      <col>
+                                                      <tbody>
+                                                         <tr valign="baseline">
+                                                            <td align="right"></td>
+                                                            <td align="left" style="word-break: keep-all; "><span style="font-family: 'Arial Unicode MS'; ">&#9675;</span>&nbsp;
+                                                            </td>
+                                                            <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">MISC</span></span></span></td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                   <table border="0" cellpadding="0" cellspacing="0" class=" x-li-10-0" style="table-layout: fixed; " width="100%">
+                                                      <col style="width: 0em">
+                                                      <col style="width: 18pt">
+                                                      <col>
+                                                      <tbody>
+                                                         <tr valign="baseline">
+                                                            <td align="right"></td>
+                                                            <td align="left" style="word-break: keep-all; "><span style="font-family: 'Arial Unicode MS'; ">&#9675;</span>&nbsp;
+                                                            </td>
+                                                            <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">VDA</span></span></span></td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                   <table border="0" cellpadding="0" cellspacing="0" class=" x-li-10-0" style="table-layout: fixed; " width="100%">
+                                                      <col style="width: 0em">
+                                                      <col style="width: 18pt">
+                                                      <col>
+                                                      <tbody>
+                                                         <tr valign="baseline">
+                                                            <td align="right"></td>
+                                                            <td align="left" style="word-break: keep-all; "><span style="font-family: 'Arial Unicode MS'; ">&#9675;</span>&nbsp;
+                                                            </td>
+                                                            <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">VIEWS</span></span></span></td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                </div>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                                       <col style="width: 0em">
+                                       <col style="width: 18pt">
+                                       <col>
+                                       <tbody>
+                                          <tr valign="baseline">
+                                             <td align="right"></td>
+                                             <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                             <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">MSG_&lt;checkname&gt;</span></span>&#8212;Specifies the description of the check that appears in the lower part of the <span class=" x-ph-2-0" id="JModel_CustomChecks-B9195D8D_PTCCreoModelcheck-E96854BD_13_579">Creo ModelCHECK</span> report when you select the name.</span></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                                       <col style="width: 0em">
+                                       <col style="width: 18pt">
+                                       <col>
+                                       <tbody>
+                                          <tr valign="baseline">
+                                             <td align="right"></td>
+                                             <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                             <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">DSC_&lt;checkname&gt;</span></span>&#8212;Specifies the name of the check as it appears in the <span class=" x-ph-2-0" id="JModel_CustomChecks-B9195D8D_PTCCreoModelcheck-E96854BD_13_579">Creo ModelCHECK</span> report table.</span></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                                       <col style="width: 0em">
+                                       <col style="width: 18pt">
+                                       <col>
+                                       <tbody>
+                                          <tr valign="baseline">
+                                             <td align="right"></td>
+                                             <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                             <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">ERM_&lt;checkname&gt;</span></span>&#8212;If set to <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">INFO</span></span>, the check is considered an <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">INFO</span></span> check and the report table displays the text from the first item returned by the check, instead of a count of the items.
+                                                   Otherwise, this value must be included, but is ignored by <span class=" x-ph-2-0" id="JModel_CustomChecks-B9195D8D_PTCCreoParametric-E96269BB_13_581"><span xmlns="" profilecode="1">Creo Parametric</span></span>.</span><div class=" x-p-5-0">See <a href="#JModel_Example1TextFileForCustomChecks-B91641B513_657" class=" x-xref-4-0 x-xref-4-5 x-xref-4-6 x-xref-4-9"> Example 1: Text File for Custom Checks</a> for a sample custom checks text file.
+                                                </div>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-15-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0.00em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">3.</td>
+                              <td><span class=" x-p-4-0">Add the check and its values to the <span class=" x-ph-2-0" id="JModel_CustomChecks-B9195D8D_PTCCreoModelcheck-E96854BD_13_579">Creo ModelCHECK</span> configuration file.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-12-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0.00em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">4.</td>
+                              <td><span class=" x-p-4-0">Register the <span class=" x-ph-2-0" id="JModel_CustomChecks-B9195D8D_PTCCreoModelcheck-E96854BD_13_579">Creo ModelCHECK</span> check from the <span class=" x-ph-2-0">VB API</span> application.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-note-2-0 x-note-2-3">
+                     <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                     <div class=" x-p-7-0">Other than the requirements listed above, <span class=" x-ph-2-0">the VB API</span> custom checks do not have access to the rest of the values in the <span class=" x-ph-2-0" id="JModel_CustomChecks-B9195D8D_PTCCreoModelcheck-E96854BD_13_579">Creo ModelCHECK</span> configuration files. All the custom settings specific to the check, such as start parameters, constants, and so on, must
+                        be supported by the user application and not <span class=" x-ph-2-0" id="JModel_CustomChecks-B9195D8D_PTCCreoModelcheck-E96854BD_13_579">Creo ModelCHECK</span>.
+                     </div>
+                  </div>
+               </div>
+               <div class=" x-topic-11-0 x-topic-11-1" id="JModel_RegisteringCustomChecks-B9156E3C_13_661">
+                  
+                  <div class=" x-title-22-0 x-title-22-1" combinedFontName="off" id="styler-id1.1.1.11.9.3.3.1">Registering Custom Checks</div>
+                  <div class=" x-body-3-0">
+                     <div class=" x-p-7-0">Methods and Properties Introduced:</div>
+                     <div class=" x-ul-2-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="89"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcBaseSession.RegisterCustomModelCheck</li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="90"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">CCpfcCustomCheckInstructions_Create</li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="91"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcCustomCheckInstructions.CheckName</li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="92"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcCustomCheckInstructions.CheckLabel</li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="93"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcCustomCheckInstructions.Listener</li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="94"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcCustomCheckInstructions.ActionButtonLabel</li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="95"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcCustomCheckInstructions.UpdateButtonLabel</li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcBaseSession.RegisterCustomModelCheck</span></span> registers a custom check that can be included in any ModelCHECK run. This method takes the instructions in the form of the
+                        <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcCustomCheckInstructions</span></span> object as its input argument. This object contains the following parameters: 
+                     </div>
+                     <div class=" x-ul-2-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">CheckName</span>&#8212;Specifies the name of the custom check.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">CheckLabel</span>&#8212;Specifies the label of the custom check.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">Listener</span>&#8212;Specifies the listener object containing the custom check methods. Refer to the section <a href="#JModel_CustomCheckListeners-B915E2BE13_710" class=" x-xref-4-0 x-xref-4-5 x-xref-4-6 x-xref-4-9">Custom Check Listeners</a> for more information.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">ActionButtonLabel</span>&#8212;Specifies the label for the action button. If you specify <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">NULL</span></span> for this parameter, this button is not shown.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">UpdateButtonLabel</span>&#8212;Specifies the label for the update button. If you specify <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">NULL</span></span> for this parameter, this button is not shown.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">CCpfcCustomCheckInstructions_Create</span></span> creates the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" profilecode="10000000000000000"><span class="cf-Monospace-combined-European_Alphabets">Ipfc</span></span></span><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">CustomCheckInstructions</span></span> object containing the custom check instructions described above.
+                     </div>
+                     <div class=" x-p-7-0">Use the properties <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcCustomCheckInstructions.SetCheckName</span></span>, <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcCustomCheckInstructions.SetCheckLabel</span></span>, <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcCustomCheckInstructions.SetListener</span></span>, <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcCustomCheckInstructions.SetActionButtonLabel</span></span>, and <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcCustomCheckInstructions.SetUpdateButtonLabel</span></span> to modify the instructions.
+                     </div>
+                     <div class=" x-p-7-0">The following figure illustrates how the results of some custom checks might be displayed in the ModelCHECK report.</div>
+                     <div class=" x-fig-2-0 x-fig-2-2" id="styler-id1.1.1.11.9.3.3.2.8">
+                        <div class=" x-image-1-0 x-image-1-1"><img alt="Image" src="graphics/custom_checks_vb.gif"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class=" x-topic-11-0 x-topic-11-1" id="JModel_CustomCheckListeners-B915E2BE13_710">
+                  
+                  <div class=" x-title-22-0 x-title-22-1" combinedFontName="off" id="styler-id1.1.1.11.9.3.4.1">Custom Check Listeners</div>
+                  <div class=" x-body-3-0">
+                     <div class=" x-p-7-0">Methods and Properties Introduced:</div>
+                     <div class=" x-ul-2-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="96"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModelCheckCustomCheckListener.OnCustomCheck</li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="97"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">CCpfcCustomCheckResults_Create</li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="98"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcCustomCheckResults.ResultsCount</li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="99"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcCustomCheckResults.ResultsTable</li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="100"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcCustomCheckResults.ResultsUrl</li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="101"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModelCheckCustomCheckListener.OnCustomCheckAction</li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="102"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModelCheckCustomCheckListener.OnCustomCheckUpdate</li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class=" x-p-7-0">The interface <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModelCheckCustomCheckListener</span></span> provides the method signatures to implement a custom <span class=" x-ph-2-0" id="JModel_CustomCheckListeners-B915E2BE_PTCCreoModelcheck-E_13_750">Creo ModelCHECK</span> check.
+                     </div>
+                     <div class=" x-p-7-0">Each listener method takes the following input arguments:</div>
+                     <div class=" x-ul-2-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">CheckName</span>&#8212;The name of the custom check as defined in the original call to the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcBaseSession.RegisterCustomModelCheck</span></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">Mdl</span>&#8212;The model being checked.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class=" x-p-7-0">The application method that overrides <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModelCheckCustomCheckListener.OnCustomCheck</span></span> is used to evaluate a custom defined check. The user application runs the check on the specified model and returns the results
+                        in the form of the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcCustomCheckResults</span></span> object
+                     </div>
+                     <div class=" x-ul-2-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">ResultsCount</span>&#8212;Specifies an integer indicating the number of errors found by the check. This value is displayed in the <span class=" x-ph-2-0" id="JModel_CustomCheckListeners-B915E2BE_PTCCreoModelcheck-E_13_750">Creo ModelCHECK</span> report generated.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">ResultsTable</span>&#8212;Specifies a list of text descriptions of the problem encountered for each error or warning.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">ResultsUrl</span>&#8212;Specifies the link to an application-owned page that provides information on the results of the custom check.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcIpfcCustomCheckResults_Create</span></span> creates the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" profilecode="10000000000000000"><span class="cf-Monospace-combined-European_Alphabets">Ipfc</span></span></span><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">CustomCheckResults</span></span> object containing the custom check results described above.
+                     </div>
+                     <div class=" x-p-7-0">Use the properties <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcCustomCheckResults.SetResultsCount</span></span>, <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcCustomCheckResults.SetResultsTable</span></span>, and <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcCustomCheckResults.SetResultsUrl</span></span> listed above to modify the custom checks results obtained.
+                     </div>
+                     <div class=" x-p-7-0">The method that overrides <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModelCheckCustomCheckListener.OnCustomCheckAction</span></span> is called when the custom check&#8217;s <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">Action</span></span> button is pressed. The input supplied includes the text selected by the user from the custom check results.
+                     </div>
+                     <div class=" x-p-7-0">The method that overrides <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModelCheckCustomCheckListener.OnCustomCheckUpdate</span></span> is called when the custom check&#8217;s <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">Update</span></span> button is pressed. The input supplied includes the text selected by the user from the custom check results.
+                     </div>
+                     <div class=" x-p-7-0">Custom <span class=" x-ph-2-0" id="JModel_CustomCheckListeners-B915E2BE_PTCCreoModelcheck-E_13_750">Creo ModelCHECK</span> checks can have an <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">Action</span></span> button to highlight the problem, and possibly an <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">Update</span></span> button to fix it automatically.
+                     </div>
+                     <div class=" x-p-7-0">The following figure displays the <span class=" x-ph-2-0" id="JModel_CustomCheckListeners-B915E2BE_PTCCreoModelcheck-E_13_750">Creo ModelCHECK</span> report with an <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">Action</span></span> button that invokes the <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModelCheckCustomCheckListener.OnCustomCheckAction</span></span></div>
+                     <div class=" x-fig-2-0 x-fig-2-2" id="styler-id1.1.1.11.9.3.4.2.14">
+                        <div class=" x-image-1-0 x-image-1-1"><img alt="Image" src="graphics/generic_drwg_vb.gif"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class=" x-topic-11-0 x-topic-11-1" id="JModel_Example1TextFileForCustomChecks-B91641B513_657">
+                  
+                  <div class=" x-title-22-0 x-title-22-1" combinedFontName="off" id="styler-id1.1.1.11.9.3.5.1">Example 1: Text File for Custom Checks</div>
+                  <div class=" x-body-3-0">
+                     <div class=" x-p-7-0">The following is the text file <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">custmtk_checks.txt</span></span> located at <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">&lt;creo_vbapi_loadpoint&gt;/vbapi_examples/models</span></span> for custom checks examples.
+                     </div><pre class=" x-codeblock-3-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets"># Custom TK Check File
+# def-name of check as registered
+
+# MDLPARAM_NAME
+DEF_MDLPARAM_NAME CHKTK_MDLPARAM_NAME_PRT
+TAB_MDLPARAM_NAME DATUM
+MSG_MDLPARAM_NAME CUSTOM : Datum - Model Param Name
+ERM_MDLPARAM_NAME CUSTOM : Datum - Invalid Parameter value.
+DSC_MDLPARAM_NAME CUSTOM : Datum - Check Model Parameter Name.
+
+# MODEL_ACCURACY
+DEF_MODEL_ACCURACY CHKTK_MODEL_ACCURACY_PRT
+TAB_MODEL_ACCURACY DATUM
+MSG_MODEL_ACCURACY CUSTOM : Datum - Report Model accuracy type
+ERM_MODEL_ACCURACY CUSTOM : Datum - Report Model accuracy type
+DSC_MODEL_ACCURACY CUSTOM : Datum - Report Model accuracy type
+
+# DWGVIEW_GENERIC
+DEF_DWGVIEW_GENERIC CHKTK_DWGVIEW_GENERIC_DRW
+TAB_DWGVIEW_GENERIC VIEWS
+MSG_DWGVIEW_GENERIC CUSTOM : Drawing views containing generic models:
+ERM_DWGVIEW_GENERIC N/A
+DSC_DWGVIEW_GENERIC CUSTOM : Drawing Views using Generics</span></pre></div>
+               </div>
+               <div class=" x-topic-11-0 x-topic-11-1" id="JModel_Example2RegisteringCustomModelCHECK-B91746D0_13_805">
+                  
+                  <div class=" x-title-22-0 x-title-22-1" combinedFontName="off" id="styler-id1.1.1.11.9.3.6.1">Example 2: Registering Custom Creo ModelCHECK Checks</div>
+                  <div class=" x-body-3-0">
+                     <div class=" x-p-7-0">The sample code in the file <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcModelCheckExamples.vb</span></span> located at <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">&lt;creo_vbapi_loadpoint&gt;/vbapi_examples</span></span> demonstrates how to register custom <span class=" x-ph-2-0" id="JModel_Example2RegisteringCustomModelCHECK-B91746D0_PTCC_13_811">Creo ModelCHECK</span> checks using <span class=" x-ph-2-0">the VB API</span>. The following custom checks are registered:
+                     </div>
+                     <div class=" x-ul-2-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">CHKTK_MDLPARAM_NAME</span></span>&#8212;Determines if the model has a parameter whose name is equal to the model name.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">CHKTK_MODEL_ACCURACY</span></span>&#8212;Checks the type of accuracy defined for the model.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">CHKTK_DWGVIEW_GENERIC</span></span>&#8212;Drawing mode check that identifies the drawing views that use generic models.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+               <div class=" x-topic-11-0 x-topic-11-1" id="JModel_Example3ImplementingAModelNameParam-B917C58B_13_823">
+                  
+                  <div class=" x-title-22-0 x-title-22-1" combinedFontName="off" id="styler-id1.1.1.11.9.3.7.1">Example 3: Implementing a Model Name Parameter Check</div>
+                  <div class=" x-body-3-0">
+                     <div class=" x-p-7-0">The sample code in the file <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcModelCheckExamples.vb</span></span> located at <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">&lt;creo_vbapi_loadpoint&gt;/vbapi_examples</span></span> defines the custom <span class=" x-ph-2-0" id="JModel_Example3ImplementingAModelNameParam-B917C58B_PTCC_13_829">Creo ModelCHECK</span> check for the parameter name in a model. This check updates the parameter name to be equal to the model name, if the parameter
+                        exists with a different name, or creates the parameter with the model name if it does not exist.
+                     </div>
+                  </div>
+               </div>
+               <div class=" x-topic-11-0 x-topic-11-1" id="JModel_Example4ImplementingAModelAccuracyT-B9184520_13_830">
+                  
+                  <div class=" x-title-22-0 x-title-22-1" combinedFontName="off" id="styler-id1.1.1.11.9.3.8.1">Example 4: Implementing a Model Accuracy Type Check</div>
+                  <div class=" x-body-3-0">
+                     <div class=" x-p-7-0">The sample code in the file <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcModelCheckExamples.vb</span></span> located at <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">&lt;creo_vbapi_loadpoint&gt;/vbapi_examples</span></span> defines the custom <span class=" x-ph-2-0" id="JModel_Example4ImplementingAModelAccuracyT-B9184520_PTCC_13_836">Creo ModelCHECK</span> check for the type of accuracy whether relative or absolute that has been set for a model. This check has a check listener
+                        method, but no action or update listener method since it is an info-only check.
+                     </div>
+                  </div>
+               </div>
+               <div class=" x-topic-11-0 x-topic-11-1" id="JModel_Example5ImplementingACheckForDrawin-B918FAEE_13_837">
+                  
+                  <div class=" x-title-22-0 x-title-22-1" combinedFontName="off" id="styler-id1.1.1.11.9.3.9.1">Example 5: Implementing a Check for Drawing Views Using Generic Models</div>
+                  <div class=" x-body-3-0">
+                     <div class=" x-p-7-0">The sample code in the file <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcModelCheckExamples.vb</span></span> located at <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">&lt;creo_vbapi_loadpoint&gt;/vbapi_examples</span></span> defines the custom <span class=" x-ph-2-0" id="JModel_Example5ImplementingACheckForDrawin-B918FAEE_PTCC_13_843">Creo ModelCHECK</span> check for identifying drawing views using generic models. This check has a check listener method and an action listener method
+                        to highlight the views that use generic models.
+                     </div>
+                  </div>
+               </div>
+               <div class=" x-topic-11-0 x-topic-11-1" id="JModel_Example6ChangesToTheModelCHECKConfi-B9192959_13_844">
+                  
+                  <div class=" x-title-22-0 x-title-22-1" combinedFontName="off" id="styler-id1.1.1.11.9.3.10.1">Example 6: Changes to the Creo ModelCHECK Configuration Files to enable Custom Checks</div>
+                  <div class=" x-body-3-0"><pre class=" x-codeblock-3-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">Lines added to the ModelCheck configuration file (default_checks.mch)
+ E     Check the item.  If not succeed, report as an error
+ W     Check the item.  If not succeed, report as a warning
+ N     Do not check the item.
+ Y     Check the item.  If not succeed, do not report err or warn
+
+CHKTK_MDLPARAM_NAME_PRT         YNEW     E       E       E       E       Y
+CHKTK_MODEL_ACCURACY_PRT        YNEW     Y       Y       Y       Y       Y
+CHKTK_DWGVIEW_GENERIC_DRW       YNEW     E       E       E       E       Y
+
+Lines added to the ModelCheck start file (sample_start.mcs)
+CUSTMTK_CHECKS_FILE     custmtk_checks.txt</span></pre></div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

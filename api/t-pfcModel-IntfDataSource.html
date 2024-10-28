@@ -1,0 +1,160 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP Visual Basic.NET documentation for interface "IpfcIntfDataSource"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      250
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcModel.html">Module</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcModel-IntfDataSource.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;IpfcIntfDataSource</h2>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Base class to several classes that represent the source of data from which to create an import feature.
+<br>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><b><a class="enumtype" href="t-pfcModel-IntfNeutral.html">IpfcIntfNeutral</a></b></tt>, 
+        <tt><b><a class="enumtype" href="t-pfcModel-IntfNeutralFile.html">IpfcIntfNeutralFile</a></b></tt>, 
+        <tt><b><a class="enumtype" href="t-pfcModel-IntfIges.html">IpfcIntfIges</a></b></tt>, 
+        <tt><b><a class="enumtype" href="t-pfcModel-IntfStep.html">IpfcIntfStep</a></b></tt>, 
+        <tt><b><a class="enumtype" href="t-pfcModel-IntfVDA.html">IpfcIntfVDA</a></b></tt>, 
+        <tt><b><a class="enumtype" href="t-pfcModel-IntfICEM.html">IpfcIntfICEM</a></b></tt>, 
+        <tt><b><a class="enumtype" href="t-pfcModel-IntfACIS.html">IpfcIntfACIS</a></b></tt>, 
+        <tt><b><a class="enumtype" href="t-pfcModel-IntfDXF.html">IpfcIntfDXF</a></b></tt>, 
+        <tt><b><a class="enumtype" href="t-pfcModel-IntfCDRS.html">IpfcIntfCDRS</a></b></tt>, 
+        <tt><b><a class="enumtype" href="t-pfcModel-IntfSTL.html">IpfcIntfSTL</a></b></tt>, 
+        <tt><b><a class="enumtype" href="t-pfcModel-IntfVRML.html">IpfcIntfVRML</a></b></tt>, 
+        <tt><b><a class="enumtype" href="t-pfcModel-IntfParaSolid.html">IpfcIntfParaSolid</a></b></tt>, 
+        <tt><b><a class="enumtype" href="t-pfcModel-IntfAI.html">IpfcIntfAI</a></b></tt>, 
+        <tt><b><a class="enumtype" href="t-pfcModel-IntfCatiaPart.html">IpfcIntfCatiaPart</a></b></tt>, 
+        <tt><b><a class="enumtype" href="t-pfcModel-IntfUG.html">IpfcIntfUG</a></b></tt>, 
+        <tt><b><a class="enumtype" href="t-pfcModel-IntfProductView.html">IpfcIntfProductView</a></b></tt>, 
+        <tt><b><a class="enumtype" href="t-pfcModel-IntfCatiaProduct.html">IpfcIntfCatiaProduct</a></b></tt>, 
+        <tt><b><a class="enumtype" href="t-pfcModel-IntfCatiaCGR.html">IpfcIntfCatiaCGR</a></b></tt>, 
+        <tt><b><a class="enumtype" href="t-pfcModel-IntfJT.html">IpfcIntfJT</a></b></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Property Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-signature"><tt><a class="method" href="#FileName">FileName</a></tt></td><td class="return-type"><tt>as String</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The name of the imported feature file.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-signature"><tt><a class="method" href="#GetType">GetType</a>
+ ()
+ as <a class="type" href="t-pfcModel-IntfType.html">IpfcIntfType</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Returns a <tt><b><tt><b><a class="enumtype" href="t-pfcModel-IntfType.html">IpfcIntfType</a></b></tt></b></tt> instance that indicates the type of the source of data from which the import feature will be created.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Property Detail</b>
+<br>
+<hr>
+<br>
+<a name="FileName">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-name"><tt>FileName</tt></td><td class="return-type"><tt>as String</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The name of the imported feature file.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<hr>
+<br>
+<a name="GetType">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-name"><tt>GetType</tt></td><td class="func-params"><tt>
+ ()
+ as <a class="type" href="t-pfcModel-IntfType.html">IpfcIntfType</a></tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Returns a <tt><b><tt><b><a class="enumtype" href="t-pfcModel-IntfType.html">IpfcIntfType</a></b></tt></b></tt> instance that indicates the type of the source of data from which the import feature will be created.
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>One of the static instances of <tt><b><tt><b><a class="enumtype" href="t-pfcModel-IntfType.html">IpfcIntfType</a></b></tt></b></tt> (for example, INTF_NEUTRAL)</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

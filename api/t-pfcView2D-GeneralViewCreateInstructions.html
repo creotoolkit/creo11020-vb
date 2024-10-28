@@ -1,0 +1,351 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP Visual Basic.NET documentation for interface "IpfcGeneralViewCreateInstructions"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      223
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcView2D.html">Module</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcView2D-GeneralViewCreateInstructions.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;IpfcGeneralViewCreateInstructions</h2>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This is the interface used for creating general drawing views.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><b><a class="method" href="t-pfcModel2D-Model2D.html#CreateView">IpfcModel2D.CreateView()</a></b></tt>, <tt><b><a class="method" href="t-pfcBase-Transform3D.html#Create">IpfcTransform3D.Create()</a></b></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Direct Parent Classes:</b>
+</dt>
+<dd>
+<a class="class" href="t-pfcView2D-View2DCreateInstructions.html">IpfcView2DCreateInstructions</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Property Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-signature"><tt><a class="method" href="#Exploded">Exploded</a></tt></td><td class="return-type"><tt>as Boolean [optional]</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><tt>true</tt> if the view should be an exploded view, <tt>null</tt> or <tt>false</tt> otherwise.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-signature"><tt><a class="method" href="#Location">Location</a></tt></td><td class="return-type"><tt>as <a class="type" href="t-pfcBase-Point3D.html">IpfcPoint3D</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The location on the sheet where the view should be placed.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-signature"><tt><a class="method" href="#Orientation">Orientation</a></tt></td><td class="return-type"><tt>as <a class="type" href="t-pfcBase-Transform3D.html">IpfcTransform3D</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The orientation of the model in the view.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-signature"><tt><a class="method" href="#Scale">Scale</a></tt></td><td class="return-type"><tt>as Double [optional]</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The scale of the view (<tt>null</tt> to use the default scale).</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-signature"><tt><a class="method" href="#SheetNumber">SheetNumber</a></tt></td><td class="return-type"><tt>as Long</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The sheet number in which to create the view.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-signature"><tt><a class="method" href="#ViewModel">ViewModel</a></tt></td><td class="return-type"><tt>as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The solid model to display in the view.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-signature"><tt><a class="method" href="#ViewScale">ViewScale</a></tt></td><td class="return-type"><tt>as Double [optional]</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The scale of the view (<tt>null</tt> to use the default scale).</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-signature"><tt><a class="method" href="#Create">CCpfcGeneralViewCreateInstructions.Create</a>
+ (ViewModel as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a>, SheetNumber as Long, Location as <a class="type" href="t-pfcBase-Point3D.html">IpfcPoint3D</a>, Orientation as <a class="type" href="t-pfcBase-Transform3D.html">IpfcTransform3D</a>)
+ as <a class="type" href="t-pfcView2D-GeneralViewCreateInstructions.html">IpfcGeneralViewCreateInstructions</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates an instructions data object used for creating general drawing views.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Property Detail</b>
+<br>
+<hr>
+<br>
+<a name="Exploded">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-name"><tt>Exploded</tt></td><td class="return-type"><tt>as Boolean [optional]</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<tt>true</tt> if the view should be an exploded view, <tt>null</tt> or <tt>false</tt> otherwise.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Location">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-name"><tt>Location</tt></td><td class="return-type"><tt>as <a class="type" href="t-pfcBase-Point3D.html">IpfcPoint3D</a></tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The location on the sheet where the view should be placed.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Orientation">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-name"><tt>Orientation</tt></td><td class="return-type"><tt>as <a class="type" href="t-pfcBase-Transform3D.html">IpfcTransform3D</a></tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The orientation of the model in the view.<br>
+<br>The transformation matrix must only consist of the rotation to be 
+   applied to the model. It must not consist of any displacement or scale
+   components. If necessary, set the displacement to {0, 0, 0} using 
+   <tt><b><a class="method" href="t-pfcBase-Transform3D.html#SetOrigin">IpfcTransform3D.SetOrigin()</a></b></tt> and remove any scaling 
+   factor by normalizing the matrix.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Scale">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-name"><tt>Scale</tt></td><td class="return-type"><tt>as Double [optional]</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The scale of the view (<tt>null</tt> to use the default scale).<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SheetNumber">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-name"><tt>SheetNumber</tt></td><td class="return-type"><tt>as Long</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The sheet number in which to create the view.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ViewModel">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-name"><tt>ViewModel</tt></td><td class="return-type"><tt>as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a></tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The solid model to display in the view.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ViewScale">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-name"><tt>ViewScale</tt></td><td class="return-type"><tt>as Double [optional]</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The scale of the view (<tt>null</tt> to use the default scale).<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<hr>
+<br>
+<a name="Create">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-name"><tt>CCpfcGeneralViewCreateInstructions.Create</tt></td><td class="func-params"><tt>
+ (ViewModel as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a>, SheetNumber as Long, Location as <a class="type" href="t-pfcBase-Point3D.html">IpfcPoint3D</a>, Orientation as <a class="type" href="t-pfcBase-Transform3D.html">IpfcTransform3D</a>)
+ as <a class="type" href="t-pfcView2D-GeneralViewCreateInstructions.html">IpfcGeneralViewCreateInstructions</a></tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Creates an instructions data object used for creating general drawing views.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><b><a class="method" href="t-pfcModel2D-Model2D.html#CreateView">IpfcModel2D.CreateView()</a></b></tt>, <tt><b><a class="method" href="t-pfcBase-Transform3D.html#Create">IpfcTransform3D.Create()</a></b></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ViewModel</b></tt>
+</dt>
+<dd>The solid model to display in the view.</dd>
+<dt>
+<tt><b>SheetNumber</b></tt>
+</dt>
+<dd>The sheet number in which to create the view.</dd>
+<dt>
+<tt><b>Location</b></tt>
+</dt>
+<dd>The location on the sheet where the view should be placed.</dd>
+<dt>
+<tt><b>Orientation</b></tt>
+</dt>
+<dd>The orientation of the model in the view.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

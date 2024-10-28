@@ -1,0 +1,904 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP Visual Basic.NET documentation for interface "IpfcModelActionListener"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      291
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcModel.html">Module</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcModel-ModelActionListener.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;IpfcModelActionListener</h2>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class defines an action listener for models that notifies you
+when operations on a model occur.
+<br>
+<dl>
+<dt>
+<b>Direct Parent Classes:</b>
+</dt>
+<dd>
+<a class="class" href="t-pfcBase-ActionListener.html">IpfcActionListener</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnAfterModelCopy">OnAfterModelCopy</a>
+ (FromMdl as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a>, ToMdl as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a> [optional])
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The listener method called after successful
+execution of a copy command.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnAfterModelCopyAll">OnAfterModelCopyAll</a>
+ (FromMdl as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a>, ToMdl as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a> [optional])
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">This is the listener method called after successful
+copying of any model (not just an explicit copy of a single model). 
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnAfterModelCreate">OnAfterModelCreate</a>
+ (Mdl as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a>)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">This is the listener method called after successful
+creation of a model.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnAfterModelDelete">OnAfterModelDelete</a>
+ (Mdl as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a>)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">This is the listener method called after successful
+deletion of a model.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnAfterModelDeleteAll">OnAfterModelDeleteAll</a>
+ (Descr as <a class="type" href="t-pfcModel-ModelDescriptor.html">IpfcModelDescriptor</a>)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The listener method called after successful
+deletion of any model, (not just an explicit deletion of a single model).
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnAfterModelErase">OnAfterModelErase</a>
+ (Mdl as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a>)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">This is the listener method called after successful
+erasing of a model.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnAfterModelEraseAll">OnAfterModelEraseAll</a>
+ (Descr as <a class="type" href="t-pfcModel-ModelDescriptor.html">IpfcModelDescriptor</a>)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">This is the listener method called after successful
+erasure of any model, (not just an explicit erasure of a single model). 
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnAfterModelRename">OnAfterModelRename</a>
+ (FromMdl as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a>, ToMdl as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a> [optional])
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">This is the listener method called after successful renaming of a model.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnAfterModelRetrieve">OnAfterModelRetrieve</a>
+ (Mdl as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a>)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">This is the listener method called after successful retrieval of 
+a model.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnAfterModelRetrieveAll">OnAfterModelRetrieveAll</a>
+ (Descr as <a class="type" href="t-pfcModel-ModelDescriptor.html">IpfcModelDescriptor</a>)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">This is the listener method called after successful retrieval of
+any model, (not just an explicit retrieval of a single model).
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnAfterModelSave">OnAfterModelSave</a>
+ (Descr as <a class="type" href="t-pfcModel-ModelDescriptor.html">IpfcModelDescriptor</a>)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">This is the listener mothod called after successful
+saving of a model.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnAfterModelSaveAll">OnAfterModelSaveAll</a>
+ (Descr as <a class="type" href="t-pfcModel-ModelDescriptor.html">IpfcModelDescriptor</a>)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">This is the listener method called after successful
+saving of any model, (not just an explicit save of a single model).
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnBeforeModelDisplay">OnBeforeModelDisplay</a>
+ (Mdl as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a>)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The listener method called before a model is displayed.
+   </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnBeforeParameterCreate">OnBeforeParameterCreate</a>
+ (Owner as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a>, Name as String, Value as <a class="type" href="t-pfcModelItem-ParamValue.html">IpfcParamValue</a>)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+       This is the listener method called before creating a parameter.
+       To abort parameter creation throw exception <tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XCancelProEAction.html">IpfcXCancelProEAction</a></b></tt></b></tt>.<br>
+     
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnBeforeParameterDelete">OnBeforeParameterDelete</a>
+ (Param as <a class="type" href="t-pfcModelItem-Parameter.html">IpfcParameter</a>)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+       This is the listener method called before deleting a parameter.
+       To abort parameter delete operation throw exception <tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XCancelProEAction.html">IpfcXCancelProEAction</a></b></tt></b></tt>.<br>
+     
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnBeforeParameterModify">OnBeforeParameterModify</a>
+ (Param as <a class="type" href="t-pfcModelItem-Parameter.html">IpfcParameter</a>, Value as <a class="type" href="t-pfcModelItem-ParamValue.html">IpfcParamValue</a>)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+       This is the listener method called before modifying a parameter.
+       To abort parameter modification throw exception <tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XCancelProEAction.html">IpfcXCancelProEAction</a></b></tt></b></tt>.<br>
+     
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<hr>
+<br>
+<a name="OnAfterModelCopy">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnAfterModelCopy</tt></td><td class="func-params"><tt>
+ (FromMdl as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a>, ToMdl as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a> [optional])
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The listener method called after successful
+execution of a copy command.
+<br>
+<br>This method is <b>deprecated</b>.  Use <tt><b><a class="method" href="t-pfcModel-ModelEventActionListener.html#OnAfterModelCopy">IpfcModelEventActionListener.OnAfterModelCopy()</a></b></tt> for better performance.
+This listener method is called only for models which are explicity copied, not for dependent models.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FromMdl</b></tt>
+</dt>
+<dd>Source model that was copied.</dd>
+<dt>
+<tt><b>ToMdl</b></tt>
+</dt>
+<dd>Target model created by copying.</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnAfterModelCopyAll">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnAfterModelCopyAll</tt></td><td class="func-params"><tt>
+ (FromMdl as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a>, ToMdl as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a> [optional])
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>This is the listener method called after successful
+copying of any model (not just an explicit copy of a single model). 
+<br>
+<br>This method is <b>deprecated</b>.  Use <tt><b><a class="method" href="t-pfcModel-ModelEventActionListener.html#OnAfterModelCopyAll">IpfcModelEventActionListener.OnAfterModelCopyAll()</a></b></tt> for better performance.
+For example, when copying an assembly and all the component
+parts in it, this method will be called once for each model copied.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FromMdl</b></tt>
+</dt>
+<dd>Source model that was copied.</dd>
+<dt>
+<tt><b>ToMdl</b></tt>
+</dt>
+<dd>Target model created by copying.</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnAfterModelCreate">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnAfterModelCreate</tt></td><td class="func-params"><tt>
+ (Mdl as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a>)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>This is the listener method called after successful
+creation of a model.
+<br>
+<br>This listener method will only be invoked if the ModelActionListener is
+assigned to the Creo Parametric session.  It may not be assigned to an individual
+model.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Mdl</b></tt>
+</dt>
+<dd>Model just created</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnAfterModelDelete">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnAfterModelDelete</tt></td><td class="func-params"><tt>
+ (Mdl as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a>)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>This is the listener method called after successful
+deletion of a model.
+<br>
+<br>This method is <b>deprecated</b>.  Use <tt><b><a class="method" href="t-pfcModel-ModelEventActionListener.html#OnAfterModelDelete">IpfcModelEventActionListener.OnAfterModelDelete()</a></b></tt> for better performance.
+This listener method is caled only for models which are explicitly deleted, not for dependent models.
+This listener method will only be invoked if the ModelActionListener is
+assigned to the Creo Parametric session.  It may not be assigned to an individual
+model.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Mdl</b></tt>
+</dt>
+<dd>Model that was deleted.</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnAfterModelDeleteAll">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnAfterModelDeleteAll</tt></td><td class="func-params"><tt>
+ (Descr as <a class="type" href="t-pfcModel-ModelDescriptor.html">IpfcModelDescriptor</a>)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The listener method called after successful
+deletion of any model, (not just an explicit deletion of a single model).
+<br>
+<br>For example, when deleting an assembly and all the
+component parts in it, called once for each model deleted.
+This listener method will only be invoked if the ModelActionListener is
+assigned to the Creo Parametric session.  It may not be assigned to an individual
+model.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Descr</b></tt>
+</dt>
+<dd>The model descriptor of the deleted part</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnAfterModelErase">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnAfterModelErase</tt></td><td class="func-params"><tt>
+ (Mdl as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a>)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>This is the listener method called after successful
+erasing of a model.
+<br>
+<br>This method is <b>deprecated</b>.  Use <tt><b><a class="method" href="t-pfcModel-ModelEventActionListener.html#OnAfterModelErase">IpfcModelEventActionListener.OnAfterModelErase()</a></b></tt> for better performance.
+This listener method is called only for models which are explicitly 
+erased, not for dependent models.
+This listener method will only be invoked if the ModelActionListener is
+assigned to the Creo Parametric session.  It may not be assigned to an individual
+model.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Mdl</b></tt>
+</dt>
+<dd>Model that was erased.</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnAfterModelEraseAll">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnAfterModelEraseAll</tt></td><td class="func-params"><tt>
+ (Descr as <a class="type" href="t-pfcModel-ModelDescriptor.html">IpfcModelDescriptor</a>)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>This is the listener method called after successful
+erasure of any model, (not just an explicit erasure of a single model). 
+<br>
+<br>For example, when erasing an assembly and all the
+component parts in it, this method is called once for each model erased.
+This listener method will only be invoked if the ModelActionListener is
+assigned to the Creo Parametric session.  It may not be assigned to an individual
+model.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Descr</b></tt>
+</dt>
+<dd>The model descriptor of the erased model</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnAfterModelRename">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnAfterModelRename</tt></td><td class="func-params"><tt>
+ (FromMdl as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a>, ToMdl as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a> [optional])
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>This is the listener method called after successful renaming of a model.
+<br>
+<br>This method is <b>deprecated</b>.  Use <tt><b><a class="method" href="t-pfcModel-ModelEventActionListener.html#OnAfterModelRename">IpfcModelEventActionListener.OnAfterModelRename()</a></b></tt> for better performance.
+This listener method is called only for models which are explicitly renamed, not for dependent models.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FromMdl</b></tt>
+</dt>
+<dd>Model that was renamed.</dd>
+<dt>
+<tt><b>ToMdl</b></tt>
+</dt>
+<dd>The newly renamed model.</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnAfterModelRetrieve">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnAfterModelRetrieve</tt></td><td class="func-params"><tt>
+ (Mdl as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a>)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>This is the listener method called after successful retrieval of 
+a model.
+<br>
+<br>This listener method is called only for models which are explicitly
+retrieved, not for dependent models. This listener method will only be invoked
+if the ModelActionListener is assigned to the Creo Parametric session. It may not
+be assigned to an individual model.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Mdl</b></tt>
+</dt>
+<dd>Name of the retrieved model</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnAfterModelRetrieveAll">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnAfterModelRetrieveAll</tt></td><td class="func-params"><tt>
+ (Descr as <a class="type" href="t-pfcModel-ModelDescriptor.html">IpfcModelDescriptor</a>)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>This is the listener method called after successful retrieval of
+any model, (not just an explicit retrieval of a single model).
+<br>
+<br>For example, when retrieving an assembly and all the
+component parts in it, this method is called once for each model retrieved.
+This listener method will only be invoked if the ModelActionListener is
+assigned to the Creo Parametric session. It may not be assigned to an individual
+model.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Descr</b></tt>
+</dt>
+<dd>The model descriptor of the retrieved part</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnAfterModelSave">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnAfterModelSave</tt></td><td class="func-params"><tt>
+ (Descr as <a class="type" href="t-pfcModel-ModelDescriptor.html">IpfcModelDescriptor</a>)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>This is the listener mothod called after successful
+saving of a model.
+<br>
+<br>This listener method is called only for models which are explicitly
+saved, not for dependent models.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Descr</b></tt>
+</dt>
+<dd>The descriptor of the saved model</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnAfterModelSaveAll">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnAfterModelSaveAll</tt></td><td class="func-params"><tt>
+ (Descr as <a class="type" href="t-pfcModel-ModelDescriptor.html">IpfcModelDescriptor</a>)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>This is the listener method called after successful
+saving of any model, (not just an explicit save of a single model).
+<br>
+<br>For example, when saving an assembly and all the
+component parts in it, this method is called once for each model saved.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Descr</b></tt>
+</dt>
+<dd>The model descriptor of the saved part</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnBeforeModelDisplay">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnBeforeModelDisplay</tt></td><td class="func-params"><tt>
+ (Mdl as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a>)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The listener method called before a model is displayed.
+   <br>
+<br>This method is blocked for asynchronous mode, because it causes a significant slowdown 
+when changing the display of a model (rotating or moving).<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Mdl</b></tt>
+</dt>
+<dd>Name of the model to be displayed</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnBeforeParameterCreate">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnBeforeParameterCreate</tt></td><td class="func-params"><tt>
+ (Owner as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a>, Name as String, Value as <a class="type" href="t-pfcModelItem-ParamValue.html">IpfcParamValue</a>)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+       This is the listener method called before creating a parameter.
+       To abort parameter creation throw exception <tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XCancelProEAction.html">IpfcXCancelProEAction</a></b></tt></b></tt>.<br>
+     
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Owner</b></tt>
+</dt>
+<dd>Owner model of parameter </dd>
+<dt>
+<tt><b>Name</b></tt>
+</dt>
+<dd>Name of parameter </dd>
+<dt>
+<tt><b>Value</b></tt>
+</dt>
+<dd>Value of parameter </dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnBeforeParameterDelete">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnBeforeParameterDelete</tt></td><td class="func-params"><tt>
+ (Param as <a class="type" href="t-pfcModelItem-Parameter.html">IpfcParameter</a>)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+       This is the listener method called before deleting a parameter.
+       To abort parameter delete operation throw exception <tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XCancelProEAction.html">IpfcXCancelProEAction</a></b></tt></b></tt>.<br>
+     
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Param</b></tt>
+</dt>
+<dd>Name of parameter to be deleted</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnBeforeParameterModify">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnBeforeParameterModify</tt></td><td class="func-params"><tt>
+ (Param as <a class="type" href="t-pfcModelItem-Parameter.html">IpfcParameter</a>, Value as <a class="type" href="t-pfcModelItem-ParamValue.html">IpfcParamValue</a>)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+       This is the listener method called before modifying a parameter.
+       To abort parameter modification throw exception <tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XCancelProEAction.html">IpfcXCancelProEAction</a></b></tt></b></tt>.<br>
+     
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Param</b></tt>
+</dt>
+<dd>Parameter to be modified </dd>
+<dt>
+<tt><b>Value</b></tt>
+</dt>
+<dd>Value of the parameter </dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

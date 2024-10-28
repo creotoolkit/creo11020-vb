@@ -1,0 +1,769 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP Visual Basic.NET documentation for interface "IpfcAsyncConnection"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      18
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcAsyncConnection.html">Module</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcAsyncConnection-AsyncConnection.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;IpfcAsyncConnection</h2>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class represents an asynchronous connection to Creo Parametric. <br>
+<dl>
+<dt>
+<b>Direct Parent Classes:</b>
+</dt>
+<dd>
+<a class="class" href="t-pfcBase-ActionSource.html">IpfcActionSource</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Property Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-signature"><tt><a class="method" href="#Session">Session</a></tt></td><td class="return-type"><tt>as <a class="type" href="t-pfcSession-Session.html">IpfcSession</a></tt></td>
+</tr>
+<tr>
+<td></td>
+<tr>
+<td><tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt></td>
+</tr>
+<tr>
+<td><tt><b>SUCCESSOR(S): </b>
+         &lt;reference 1 to unknown entity pfcSession::GetCurrentSession&gt;
+    </tt></td>
+</tr>
+<td colspan="2" class="entities-text">The handle to the session of Creo Parametric for the current active connection.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-signature"><tt><a class="method" href="#Connect">CCpfcAsyncConnection.Connect</a>
+ (Display as String [optional], UserID as String [optional], TextPath as String [optional], TimeoutSec as Long [optional])
+ as <a class="type" href="t-pfcAsyncConnection-AsyncConnection.html">IpfcAsyncConnection</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Causes the application to connect to an existing Creo Parametric process running on a host using a specified display. It is intended for use in simple and full asynchronous modes.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-signature"><tt><a class="method" href="#ConnectById">CCpfcAsyncConnection.ConnectById</a>
+ (Id as <a class="type" href="t-pfcAsyncConnection-ConnectionId.html">IpfcConnectionId</a>, TextPath as String [optional], TimeoutSec as Long [optional])
+ as <a class="type" href="t-pfcAsyncConnection-AsyncConnection.html">IpfcAsyncConnection</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Connects to a specific Creo Parametric session by passing the identification string. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-signature"><tt><a class="method" href="#ConnectWS">CCpfcAsyncConnection.ConnectWS</a>
+ (Display as String [optional], UserID as String [optional], WSName as String [optional], TextPath as String [optional], TimeoutSec as Long [optional])
+ as <a class="type" href="t-pfcAsyncConnection-AsyncConnection.html">IpfcAsyncConnection</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Causes the application to connect to an existing Creo Parametric process and to an existing Pro/INTRALINK worksapce running on a host using a specified display. For use in simple and full asynchronous modes.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#Disconnect">Disconnect</a>
+ (TimeoutSec as Long [optional])
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Disconnects the application from the current Creo Parametric process.  Creo Parametric will still be running after this call.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#End">End</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Terminates and disconnects from the current Creo Parametric process.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#EventProcess">EventProcess</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Enables your process to respond to listener calls from Creo Parametric. You must call this function within your control loop in order that your application will be able to respond to listener calls. Creo Parametric will be blocked until the application responds to a registered listener.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-signature"><tt><a class="method" href="#ExecuteAsyncJavaMethod">ExecuteAsyncJavaMethod</a>
+ (Class as String, Method as String, InputArguments as <a class="type" href="t-pfcArgument-Arguments.html">IpfcArguments</a>, ClassForUnlock as String)
+ as Boolean</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">This is the "JOTK sandbox" to execute methods with full OTK Asynchronous Java access. <b>Can be used only in Java language binding.</b></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-signature"><tt><a class="method" href="#GetActiveConnection">CCpfcAsyncConnection.GetActiveConnection</a>
+ ()
+ as <a class="type" href="t-pfcAsyncConnection-AsyncConnection.html">IpfcAsyncConnection</a> [optional]</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Connection established between your application and Creo Parametric. If your application is connected with Creo Parametric, call this function to get the connection object.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-signature"><tt><a class="method" href="#GetConnectionId">GetConnectionId</a>
+ ()
+ as <a class="type" href="t-pfcAsyncConnection-ConnectionId.html">IpfcConnectionId</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Extracts the identification handle of the current Creo Parametric process. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#InterruptEventProcessing">InterruptEventProcessing</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Call this function from within a Creo Parametric callback function to halt a loop currently running in <tt><b><a class="method" href="t-pfcAsyncConnection-AsyncConnection.html#WaitForEvents">IpfcAsyncConnection.WaitForEvents()</a></b></tt>.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-signature"><tt><a class="method" href="#IsRunning">IsRunning</a>
+ ()
+ as Boolean</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Determines whether you are currently connected to an actively responding Creo Parametric session.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-signature"><tt><a class="method" href="#Start">CCpfcAsyncConnection.Start</a>
+ (CmdLine as String, TextPath as String [optional])
+ as <a class="type" href="t-pfcAsyncConnection-AsyncConnection.html">IpfcAsyncConnection</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Causes the application to spawn and connect to a new Creo Parametric session. For use in simple and full asynchronous modes.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#WaitForEvents">WaitForEvents</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Initiates an event loop which will call event processing periodically to handle events returned from Creo Parametric. Applicable only for full asynchronous applications which are not supposed to carry out any tasks while waiting for Creo Parametric events. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Property Detail</b>
+<br>
+<hr>
+<br>
+<a name="Session">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-name"><tt>Session</tt></td><td class="return-type"><tt>as <a class="type" href="t-pfcSession-Session.html">IpfcSession</a></tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td>
+<tr>
+<td><tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt></td>
+</tr>
+<tr>
+<td><tt><b>SUCCESSOR(S): </b>
+         &lt;reference 1 to unknown entity pfcSession::GetCurrentSession&gt;
+    </tt></td>
+</tr>
+<td>
+<br>The handle to the session of Creo Parametric for the current active connection.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<hr>
+<br>
+<a name="Connect">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-name"><tt>CCpfcAsyncConnection.Connect</tt></td><td class="func-params"><tt>
+ (Display as String [optional], UserID as String [optional], TextPath as String [optional], TimeoutSec as Long [optional])
+ as <a class="type" href="t-pfcAsyncConnection-AsyncConnection.html">IpfcAsyncConnection</a></tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Causes the application to connect to an existing Creo Parametric process running on a host using a specified display. It is intended for use in simple and full asynchronous modes.<br>
+<br>If the method locates more than one Creo Parametric session with the appropriate characteristics, it will throw an <tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitAmbiguous.html">IpfcXToolkitAmbiguous</a></b></tt></b></tt> exception.
+    <P>If you want to connect or reconnect to a specific Creo Parametric session, use the method <tt><b><a class="method" href="t-pfcAsyncConnection-AsyncConnection.html#ConnectById">IpfcAsyncConnection.ConnectById()</a></b></tt>
+</P>
+    
+<P>The application may only connect to one Creo Parametric session at any time.</P>
+   
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Display</b></tt>
+</dt>
+<dd>The name of the display Creo Parametric is using. If this is <tt>null</tt>, match any display. If this is an empty string, assume the local host.</dd>
+<dt>
+<tt><b>UserID</b></tt>
+</dt>
+<dd>The name of the user running the Creo Parametric to connect to. If this is <tt>null</tt>, match any user. If this is an empty string, assume the current user.</dd>
+<dt>
+<tt><b>TextPath</b></tt>
+</dt>
+<dd>The path under which the message and menu files are held. If no external messaging or menus are needed pass <tt>null</tt>.</dd>
+<dt>
+<tt><b>TimeoutSec</b></tt>
+</dt>
+<dd>The time, in seconds, to wait for Creo Parametric to respond to the connection request.  Pass <tt>null</tt> to use the default connection timeout. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Object representing the asynchronous connection.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ConnectById">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-name"><tt>CCpfcAsyncConnection.ConnectById</tt></td><td class="func-params"><tt>
+ (Id as <a class="type" href="t-pfcAsyncConnection-ConnectionId.html">IpfcConnectionId</a>, TextPath as String [optional], TimeoutSec as Long [optional])
+ as <a class="type" href="t-pfcAsyncConnection-AsyncConnection.html">IpfcAsyncConnection</a></tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Connects to a specific Creo Parametric session by passing the identification string. <br>
+<br>The ID string for a given session can be obtained from <tt><b><a class="method" href="t-pfcAsyncConnection-AsyncConnection.html#GetConnectionId">IpfcAsyncConnection.GetConnectionId()</a></b></tt>.
+    <P>The application may only connect to one Creo Parametric session at any time.</P>
+   
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Id</b></tt>
+</dt>
+<dd>The connection id string previously obtained for the Creo Parametric session you wish to connect to. </dd>
+<dt>
+<tt><b>TextPath</b></tt>
+</dt>
+<dd>The path under which the message and menu files are held. If no external messaging or menus are needed pass <tt>null</tt>.</dd>
+<dt>
+<tt><b>TimeoutSec</b></tt>
+</dt>
+<dd>The time, in seconds, to wait for Creo Parametric to respond to the connection request.  Pass <tt>null</tt> to use the default timeout.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Object representing the asynchronous connection.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ConnectWS">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-name"><tt>CCpfcAsyncConnection.ConnectWS</tt></td><td class="func-params"><tt>
+ (Display as String [optional], UserID as String [optional], WSName as String [optional], TextPath as String [optional], TimeoutSec as Long [optional])
+ as <a class="type" href="t-pfcAsyncConnection-AsyncConnection.html">IpfcAsyncConnection</a></tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Causes the application to connect to an existing Creo Parametric process and to an existing Pro/INTRALINK worksapce running on a host using a specified display. For use in simple and full asynchronous modes.<br>
+<br>
+<b>NOTE: </b>This method is deprecated. Pro/INTRALINK 3.4 is not supported. Please use <tt><b><a class="method" href="t-pfcAsyncConnection-AsyncConnection.html#Connect">IpfcAsyncConnection.Connect()</a></b></tt>
+   to connect to an existing Creo Parametric process that has a Pro/INTRALINK 10.0 server registered.
+   <P>If the method locates more than one Creo Parametric session with the appropriate characteristics, it will throw an <tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitAmbiguous.html">IpfcXToolkitAmbiguous</a></b></tt></b></tt> exception.</P>
+    
+<P>If you want to connect or reconnect to a specific Creo Parametric session, use the method <tt><b><a class="method" href="t-pfcAsyncConnection-AsyncConnection.html#ConnectById">IpfcAsyncConnection.ConnectById()</a></b></tt>
+</P>
+    
+<P>The application may only connect to one Creo Parametric session at any time.</P>
+   
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Display</b></tt>
+</dt>
+<dd>The name of the display Creo Parametric is using. If this is <tt>null</tt>, match any display. If this is an empty string, assume the local host.</dd>
+<dt>
+<tt><b>UserID</b></tt>
+</dt>
+<dd>The name of the user running the Creo Parametric to connect to. If this is NULL, match any user. If this is an empty string, assume the current user.</dd>
+<dt>
+<tt><b>WSName</b></tt>
+</dt>
+<dd>The name of the workspace Creo Parametric should use. If this is NULL, match any available workspace.</dd>
+<dt>
+<tt><b>TextPath</b></tt>
+</dt>
+<dd>The path under which the message and menu files are held. If no external messaging or menus are needed pass <tt>null</tt>.</dd>
+<dt>
+<tt><b>TimeoutSec</b></tt>
+</dt>
+<dd>The time, in seconds, to wait for Creo Parametric to respond to the connection request.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Object representing the asynchronous connection.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Disconnect">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>Disconnect</tt></td><td class="func-params"><tt>
+ (TimeoutSec as Long [optional])
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Disconnects the application from the current Creo Parametric process.  Creo Parametric will still be running after this call.<br>
+<br> 
+<b>For J-Link only:</b> In order to clear allocated Creo Parametric memory owned by the application, PTC recommends forcing garbage collection (using Java's <tt>System.gc()</tt>) before disconnecting from Creo Parametric.
+    <p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitUnsupported.html">IpfcXToolkitUnsupported</a></b></tt></b></tt> - Connection is not Obtained</p>
+      
+<p>
+<tt><b><tt><b>
+   &lt;reference to unknown entity pfcExceptions::XProeWasNotConnected&gt;
+  </b></tt></b></tt> - Handle not initialized</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>TimeoutSec</b></tt>
+</dt>
+<dd>The time, in seconds, to wait for Creo Parametric to respond to the disconnect request.</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="End">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>End</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Terminates and disconnects from the current Creo Parametric process.<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="EventProcess">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>EventProcess</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Enables your process to respond to listener calls from Creo Parametric. You must call this function within your control loop in order that your application will be able to respond to listener calls. Creo Parametric will be blocked until the application responds to a registered listener.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitGeneralError.html">IpfcXToolkitGeneralError</a></b></tt></b></tt> - Creo Session has already terminated.</p>
+</p>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ExecuteAsyncJavaMethod">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-name"><tt>ExecuteAsyncJavaMethod</tt></td><td class="func-params"><tt>
+ (Class as String, Method as String, InputArguments as <a class="type" href="t-pfcArgument-Arguments.html">IpfcArguments</a>, ClassForUnlock as String)
+ as Boolean</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>This is the "JOTK sandbox" to execute methods with full OTK Asynchronous Java access. <b>Can be used only in Java language binding.</b>
+<br>
+<br>
+   
+
+    
+<p></p>Before executing the supplied Java method, the sandbox checks that the application is unlocked.
+     It performs no execution and returns false if this check fails,
+     which may happen because either the application is not unlocked
+     (and overriding developer licenses are not present), or
+     the application jar was not found
+     (for instance, due to a wrong ClassForUnlock argument).
+   <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Class</b></tt>
+</dt>
+<dd>Method's class. Full class name including the package, in Java syntax.</dd>
+<dt>
+<tt><b>Method</b></tt>
+</dt>
+<dd>Method's name.</dd>
+<dt>
+<tt><b>InputArguments</b></tt>
+</dt>
+<dd>Method's input arguments.</dd>
+<dt>
+<tt><b>ClassForUnlock</b></tt>
+</dt>
+<dd>The class used for unlocking this Java application. Full class name including the package, in Java syntax.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>False if the check for unlocking failed.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetActiveConnection">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-name"><tt>CCpfcAsyncConnection.GetActiveConnection</tt></td><td class="func-params"><tt>
+ ()
+ as <a class="type" href="t-pfcAsyncConnection-AsyncConnection.html">IpfcAsyncConnection</a> [optional]</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Connection established between your application and Creo Parametric. If your application is connected with Creo Parametric, call this function to get the connection object.<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Object representing the asynchronous connection.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetConnectionId">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-name"><tt>GetConnectionId</tt></td><td class="func-params"><tt>
+ ()
+ as <a class="type" href="t-pfcAsyncConnection-ConnectionId.html">IpfcConnectionId</a></tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Extracts the identification handle of the current Creo Parametric process. <br>
+<br>Format of identification string is the following.
+<pre>"host:H:address_version:A:address_type:T:rpcnum:R:rpcversion:V:netaddr:N"</pre>
+where H - host name where Creo Parametric runs A - address version T - address type R - RPC number V - RPC version N - net address. The identification string can be used in subsequent attmepts to connect to this Creo Parametric session by this application or any other Creo Parametric TOOLKIT or PFC-based application.
+    <p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitUnsupported.html">IpfcXToolkitUnsupported</a></b></tt></b></tt> - Connection is not Obtained</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The connection identifier handle.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="InterruptEventProcessing">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>InterruptEventProcessing</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Call this function from within a Creo Parametric callback function to halt a loop currently running in <tt><b><a class="method" href="t-pfcAsyncConnection-AsyncConnection.html#WaitForEvents">IpfcAsyncConnection.WaitForEvents()</a></b></tt>.
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsRunning">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-name"><tt>IsRunning</tt></td><td class="func-params"><tt>
+ ()
+ as Boolean</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Determines whether you are currently connected to an actively responding Creo Parametric session.
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+<tt>true</tt> if communications with Creo Parametric are possible <tt>false</tt> otherwise.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Start">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-name"><tt>CCpfcAsyncConnection.Start</tt></td><td class="func-params"><tt>
+ (CmdLine as String, TextPath as String [optional])
+ as <a class="type" href="t-pfcAsyncConnection-AsyncConnection.html">IpfcAsyncConnection</a></tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Causes the application to spawn and connect to a new Creo Parametric session. For use in simple and full asynchronous modes.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>CmdLine</b></tt>
+</dt>
+<dd>The full path to the startup command, batch file or script file used to start Creo Parametric.</dd>
+<dt>
+<tt><b>TextPath</b></tt>
+</dt>
+<dd>The path under which the message and menu files are held. If no external messaging or menus are needed pass <tt>null</tt>.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Object representing the asynchronous connection.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="WaitForEvents">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>WaitForEvents</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Initiates an event loop which will call event processing periodically to handle events returned from Creo Parametric. Applicable only for full asynchronous applications which are not supposed to carry out any tasks while waiting for Creo Parametric events. <br>
+<br>
+This function will not return until interrupted by <tt><b><a class="method" href="t-pfcAsyncConnection-AsyncConnection.html#InterruptEventProcessing">IpfcAsyncConnection.InterruptEventProcessing()</a></b></tt> or an error. No separate application processing is possible until that time, except within Creo Parametric event callbacks.
+<br>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP Visual Basic.NET documentation for interface "IpfcPopupmenu"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      340
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcUI.html">Module</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcUI-Popupmenu.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;IpfcPopupmenu</h2>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class specifies a popup menu.
+  <br>
+<dl>
+<dt>
+<b>Direct Parent Classes:</b>
+</dt>
+<dd>
+<a class="class" href="t-pfcObject-Child.html">IpfcChild</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Property Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-signature"><tt><a class="method" href="#Name">Name</a></tt></td><td class="return-type"><tt>as String</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Name of the popup menu.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#AddButton">AddButton</a>
+ (Command as <a class="type" href="t-pfcCommand-UICommand.html">IpfcUICommand</a>, Options as <a class="type" href="t-pfcUI-PopupmenuOptions.html">IpfcPopupmenuOptions</a>)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Add a new item to a Creo Parametric popup menu.
+   </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-signature"><tt><a class="method" href="#AddMenu">AddMenu</a>
+ (Options as <a class="type" href="t-pfcUI-PopupmenuOptions.html">IpfcPopupmenuOptions</a>)
+ as <a class="type" href="t-pfcUI-Popupmenu.html">IpfcPopupmenu</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Adds a cascade button to the popup menu.
+   </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Property Detail</b>
+<br>
+<hr>
+<br>
+<a name="Name">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-name"><tt>Name</tt></td><td class="return-type"><tt>as String</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Name of the popup menu.
+<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<hr>
+<br>
+<a name="AddButton">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>AddButton</tt></td><td class="func-params"><tt>
+ (Command as <a class="type" href="t-pfcCommand-UICommand.html">IpfcUICommand</a>, Options as <a class="type" href="t-pfcUI-PopupmenuOptions.html">IpfcPopupmenuOptions</a>)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Add a new item to a Creo Parametric popup menu.
+   <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Command</b></tt>
+</dt>
+<dd>Command associated to the popup menu button. 
+   </dd>
+<dt>
+<tt><b>Options</b></tt>
+</dt>
+<dd>Various attributes use to define this popup menu button. 
+   </dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="AddMenu">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-name"><tt>AddMenu</tt></td><td class="func-params"><tt>
+ (Options as <a class="type" href="t-pfcUI-PopupmenuOptions.html">IpfcPopupmenuOptions</a>)
+ as <a class="type" href="t-pfcUI-Popupmenu.html">IpfcPopupmenu</a></tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Adds a cascade button to the popup menu.
+   <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Options</b></tt>
+</dt>
+<dd>Various attributes used to define the popup menu. 
+   </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The popup menu.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

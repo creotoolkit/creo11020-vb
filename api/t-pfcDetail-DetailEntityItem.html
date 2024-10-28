@@ -1,0 +1,259 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP Visual Basic.NET documentation for interface "IpfcDetailEntityItem"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      117
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcDetail.html">Module</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcDetail-DetailEntityItem.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;IpfcDetailEntityItem</h2>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This interface represents a detail entity item in a Creo Parametric model.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><b><a class="method" href="t-pfcDetail-DetailItemOwner.html#GetDetailItem">IpfcDetailItemOwner.GetDetailItem()</a></b></tt>, <tt><b><a class="method" href="t-pfcDetail-DetailItemOwner.html#ListDetailItems">IpfcDetailItemOwner.ListDetailItems()</a></b></tt>, <tt><b><a class="method" href="t-pfcDetail-DetailItemOwner.html#CreateDetailItem">IpfcDetailItemOwner.CreateDetailItem()</a></b></tt>, <tt><b><a class="method" href="t-pfcDetail-DetailSymbolDefItem.html#GetDetailItem">IpfcDetailSymbolDefItem.GetDetailItem()</a></b></tt>, <tt><b><a class="method" href="t-pfcDetail-DetailSymbolDefItem.html#ListDetailItems">IpfcDetailSymbolDefItem.ListDetailItems()</a></b></tt>, <tt><b><a class="method" href="t-pfcDetail-DetailSymbolDefItem.html#CreateDetailItem">IpfcDetailSymbolDefItem.CreateDetailItem()</a></b></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Direct Parent Classes:</b>
+</dt>
+<dd>
+<a class="class" href="t-pfcDetail-DetailItem.html">IpfcDetailItem</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Property Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-signature"><tt><a class="method" href="#SymbolDef">SymbolDef</a></tt></td><td class="return-type"><tt>as <a class="type" href="t-pfcDetail-DetailSymbolDefItem.html">IpfcDetailSymbolDefItem</a> [readonly,&nbsp;optional]</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The symbol definition the entity belongs to, or <tt>null</tt>, if the entity is not a part of a symbol definition.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#Draw">Draw</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Draws a detail entity item.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#Erase">Erase</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Erases a detail entity item.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-signature"><tt><a class="method" href="#GetInstructions">GetInstructions</a>
+ ()
+ as <a class="type" href="t-pfcDetail-DetailEntityInstructions.html">IpfcDetailEntityInstructions</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Returns the data used to construct the detail entity item.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#Modify">Modify</a>
+ (Instructions as <a class="type" href="t-pfcDetail-DetailEntityInstructions.html">IpfcDetailEntityInstructions</a>)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Modifies the definition of a an entity item.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Property Detail</b>
+<br>
+<hr>
+<br>
+<a name="SymbolDef">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-name"><tt>SymbolDef</tt></td><td class="return-type"><tt>as <a class="type" href="t-pfcDetail-DetailSymbolDefItem.html">IpfcDetailSymbolDefItem</a> [readonly,&nbsp;optional]</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The symbol definition the entity belongs to, or <tt>null</tt>, if the entity is not a part of a symbol definition.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<hr>
+<br>
+<a name="Draw">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>Draw</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Draws a detail entity item.
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Erase">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>Erase</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Erases a detail entity item.
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetInstructions">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-name"><tt>GetInstructions</tt></td><td class="func-params"><tt>
+ ()
+ as <a class="type" href="t-pfcDetail-DetailEntityInstructions.html">IpfcDetailEntityInstructions</a></tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Returns the data used to construct the detail entity item.
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The instructions data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Modify">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>Modify</tt></td><td class="func-params"><tt>
+ (Instructions as <a class="type" href="t-pfcDetail-DetailEntityInstructions.html">IpfcDetailEntityInstructions</a>)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Modifies the definition of a an entity item.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Instructions</b></tt>
+</dt>
+<dd>The instructions data object to use for the modification.</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

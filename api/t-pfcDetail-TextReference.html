@@ -1,0 +1,225 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP Visual Basic.NET documentation for interface "IpfcTextReference"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      470
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcDetail.html">Module</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcDetail-TextReference.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;IpfcTextReference</h2>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This interface identifies the text item used for a symbol definition which as a height type of SYMDEF_TEXT_RELATED.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><b><tt><b><a class="enumtype" href="t-pfcDetail-SymbolDefHeight.html">IpfcSymbolDefHeight</a></b></tt></b></tt>, <tt><b><tt><b><a class="enumtype" href="t-pfcDetail-DetailSymbolDefInstructions.html">IpfcDetailSymbolDefInstructions</a></b></tt></b></tt>, <tt><b><a class="method" href="t-pfcDetail-DetailSymbolDefItem.html#ListDetailItems">IpfcDetailSymbolDefItem.ListDetailItems()</a></b></tt>, <tt><b><a class="method" href="t-pfcDetail-DetailSymbolDefItem.html#GetDetailItem">IpfcDetailSymbolDefItem.GetDetailItem()</a></b></tt>, <tt><b><a class="method" href="t-pfcDetail-DetailSymbolDefItem.html#CreateDetailItem">IpfcDetailSymbolDefItem.CreateDetailItem()</a></b></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Property Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-signature"><tt><a class="method" href="#TextIndexNumber">TextIndexNumber</a></tt></td><td class="return-type"><tt>as Long</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The index of the text, on this line.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-signature"><tt><a class="method" href="#TextLineNumber">TextLineNumber</a></tt></td><td class="return-type"><tt>as Long</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The line number of the note.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-signature"><tt><a class="method" href="#TextRefNote">TextRefNote</a></tt></td><td class="return-type"><tt>as <a class="type" href="t-pfcDetail-DetailNoteItem.html">IpfcDetailNoteItem</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The note item containing the text.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-signature"><tt><a class="method" href="#Create">CCpfcTextReference.Create</a>
+ (inTextRefNote as <a class="type" href="t-pfcDetail-DetailNoteItem.html">IpfcDetailNoteItem</a>, inTextLineNumber as Long, inTextIndexNumber as Long)
+ as <a class="type" href="t-pfcDetail-TextReference.html">IpfcTextReference</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates a data object that identifies the text item used for a symbol definition which as a height type of SYMDEF_TEXT_RELATED.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Property Detail</b>
+<br>
+<hr>
+<br>
+<a name="TextIndexNumber">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-name"><tt>TextIndexNumber</tt></td><td class="return-type"><tt>as Long</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The index of the text, on this line.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="TextLineNumber">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-name"><tt>TextLineNumber</tt></td><td class="return-type"><tt>as Long</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The line number of the note.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="TextRefNote">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-name"><tt>TextRefNote</tt></td><td class="return-type"><tt>as <a class="type" href="t-pfcDetail-DetailNoteItem.html">IpfcDetailNoteItem</a></tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The note item containing the text.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<hr>
+<br>
+<a name="Create">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-name"><tt>CCpfcTextReference.Create</tt></td><td class="func-params"><tt>
+ (inTextRefNote as <a class="type" href="t-pfcDetail-DetailNoteItem.html">IpfcDetailNoteItem</a>, inTextLineNumber as Long, inTextIndexNumber as Long)
+ as <a class="type" href="t-pfcDetail-TextReference.html">IpfcTextReference</a></tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Creates a data object that identifies the text item used for a symbol definition which as a height type of SYMDEF_TEXT_RELATED.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><b><tt><b><a class="enumtype" href="t-pfcDetail-SymbolDefHeight.html">IpfcSymbolDefHeight</a></b></tt></b></tt>, <tt><b><tt><b><a class="enumtype" href="t-pfcDetail-DetailSymbolDefInstructions.html">IpfcDetailSymbolDefInstructions</a></b></tt></b></tt>, <tt><b><a class="method" href="t-pfcDetail-DetailSymbolDefItem.html#ListDetailItems">IpfcDetailSymbolDefItem.ListDetailItems()</a></b></tt>, <tt><b><a class="method" href="t-pfcDetail-DetailSymbolDefItem.html#GetDetailItem">IpfcDetailSymbolDefItem.GetDetailItem()</a></b></tt>, <tt><b><a class="method" href="t-pfcDetail-DetailSymbolDefItem.html#CreateDetailItem">IpfcDetailSymbolDefItem.CreateDetailItem()</a></b></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inTextRefNote</b></tt>
+</dt>
+<dd>The note item containing the text.</dd>
+<dt>
+<tt><b>inTextLineNumber</b></tt>
+</dt>
+<dd>The line number of the note.</dd>
+<dt>
+<tt><b>inTextIndexNumber</b></tt>
+</dt>
+<dd>The index of the text, on this line.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

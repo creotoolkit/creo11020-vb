@@ -1,0 +1,231 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP Visual Basic.NET documentation for interface "IpfcModelCheckCustomCheckListener"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      292
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcModelCheck.html">Module</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcModelCheck-ModelCheckCustomCheckListener.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;IpfcModelCheckCustomCheckListener</h2>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This interface should be extended to provide the
+   implementation for a ModelCheck custom check.<br>
+<dl>
+<dt>
+<b>Direct Parent Classes:</b>
+</dt>
+<dd>
+<a class="class" href="t-pfcBase-ActionListener.html">IpfcActionListener</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-signature"><tt><a class="method" href="#OnCustomCheck">OnCustomCheck</a>
+ (CheckName as String, Mdl as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a>)
+ as <a class="type" href="t-pfcModelCheck-CustomCheckResults.html">IpfcCustomCheckResults</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Override this method to evaluate a ModelCheck externally
+   defined check.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnCustomCheckAction">OnCustomCheckAction</a>
+ (CheckName as String, Mdl as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a>, SelectedItem as String [optional])
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Override this method to execute a repair action on an item
+   found by a custom check.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnCustomCheckUpdate">OnCustomCheckUpdate</a>
+ (CheckName as String, Mdl as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a>, SelectedItem as String [optional])
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Override this method to update an item found by a custom check.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<hr>
+<br>
+<a name="OnCustomCheck">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-name"><tt>OnCustomCheck</tt></td><td class="func-params"><tt>
+ (CheckName as String, Mdl as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a>)
+ as <a class="type" href="t-pfcModelCheck-CustomCheckResults.html">IpfcCustomCheckResults</a></tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Override this method to evaluate a ModelCheck externally
+   defined check.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>CheckName</b></tt>
+</dt>
+<dd>The name of the check. </dd>
+<dt>
+<tt><b>Mdl</b></tt>
+</dt>
+<dd>The model. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd> The  <tt><b><tt><b><a class="enumtype" href="t-pfcModelCheck-CustomCheckResults.html">IpfcCustomCheckResults</a></b></tt></b></tt>
+   object containing the results of the check for this model. 
+  </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnCustomCheckAction">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnCustomCheckAction</tt></td><td class="func-params"><tt>
+ (CheckName as String, Mdl as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a>, SelectedItem as String [optional])
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Override this method to execute a repair action on an item
+   found by a custom check.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>CheckName</b></tt>
+</dt>
+<dd> Name of the check. </dd>
+<dt>
+<tt><b>Mdl</b></tt>
+</dt>
+<dd>The model. </dd>
+<dt>
+<tt><b>SelectedItem</b></tt>
+</dt>
+<dd>Label of the item that was selected from
+   the table, if applicable.  This will match the value of string 
+   returned in the <tt><b><tt><b><a class="enumtype" href="t-pfcModelCheck-CustomCheckResults.html">IpfcCustomCheckResults</a></b></tt></b></tt> object
+   returned by <tt><b><a class="method" href="t-pfcModelCheck-ModelCheckCustomCheckListener.html#OnCustomCheck">IpfcModelCheckCustomCheckListener.OnCustomCheck()</a></b></tt>.
+   Can be <tt>null</tt> if no item was selected.
+  </dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnCustomCheckUpdate">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnCustomCheckUpdate</tt></td><td class="func-params"><tt>
+ (CheckName as String, Mdl as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a>, SelectedItem as String [optional])
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Override this method to update an item found by a custom check.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>CheckName</b></tt>
+</dt>
+<dd> Name of the check. </dd>
+<dt>
+<tt><b>Mdl</b></tt>
+</dt>
+<dd>The model. </dd>
+<dt>
+<tt><b>SelectedItem</b></tt>
+</dt>
+<dd>Label of the item that was selected from
+   the table,if applicable. This will match the value of string returned in the 
+   <tt><b><tt><b><a class="enumtype" href="t-pfcModelCheck-CustomCheckResults.html">IpfcCustomCheckResults</a></b></tt></b></tt> object
+   returned by <tt><b><a class="method" href="t-pfcModelCheck-ModelCheckCustomCheckListener.html#OnCustomCheck">IpfcModelCheckCustomCheckListener.OnCustomCheck()</a></b></tt>.
+  </dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

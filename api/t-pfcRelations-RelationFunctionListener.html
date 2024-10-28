@@ -1,0 +1,280 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP Visual Basic.NET documentation for interface "IpfcRelationFunctionListener"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      360
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcRelations.html">Module</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcRelations-RelationFunctionListener.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;IpfcRelationFunctionListener</h2>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Listener providing the implementation for external functions 
+  registered by this application and capable of being used in relations. <br>
+<dl>
+<dt>
+<b>Direct Parent Classes:</b>
+</dt>
+<dd>
+<a class="class" href="t-pfcBase-ActionListener.html">IpfcActionListener</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#AssignValue">AssignValue</a>
+ (Owner as <a class="type" href="t-pfcModelItem-RelationOwner.html">IpfcRelationOwner</a>, FunctionName as String, Arguments as <a class="type" href="t-pfcModelItem-ParamValues.html">IpfcParamValues</a>, Assignment as <a class="type" href="t-pfcModelItem-ParamValue.html">IpfcParamValue</a>)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Function called to evaluate a custom relation function invoked 
+   on the left hand side of a relation.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-signature"><tt><a class="method" href="#CheckArguments">CheckArguments</a>
+ (Owner as <a class="type" href="t-pfcModelItem-RelationOwner.html">IpfcRelationOwner</a>, FunctionName as String, Arguments as <a class="type" href="t-pfcModelItem-ParamValues.html">IpfcParamValues</a>)
+ as Boolean</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">To check the validity of arguments of external function.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-signature"><tt><a class="method" href="#EvaluateFunction">EvaluateFunction</a>
+ (Owner as <a class="type" href="t-pfcModelItem-RelationOwner.html">IpfcRelationOwner</a>, FunctionName as String, Arguments as <a class="type" href="t-pfcModelItem-ParamValues.html">IpfcParamValues</a>)
+ as <a class="type" href="t-pfcModelItem-ParamValue.html">IpfcParamValue</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Function called to evaluate a custom relation function invoked 
+   on the right hand side of a relation.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<hr>
+<br>
+<a name="AssignValue">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>AssignValue</tt></td><td class="func-params"><tt>
+ (Owner as <a class="type" href="t-pfcModelItem-RelationOwner.html">IpfcRelationOwner</a>, FunctionName as String, Arguments as <a class="type" href="t-pfcModelItem-ParamValues.html">IpfcParamValues</a>, Assignment as <a class="type" href="t-pfcModelItem-ParamValue.html">IpfcParamValue</a>)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Function called to evaluate a custom relation function invoked 
+   on the left hand side of a relation.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Owner</b></tt>
+</dt>
+<dd>
+   
+<purpose>Owner item of the relations</purpose>
+   
+</dd>
+<dt>
+<tt><b>FunctionName</b></tt>
+</dt>
+<dd>
+   
+<purpose>Name of the external function.</purpose>
+   
+</dd>
+<dt>
+<tt><b>Arguments</b></tt>
+</dt>
+<dd>
+   
+<purpose>Arguments passed by the relation to the external function.</purpose>
+   
+</dd>
+<dt>
+<tt><b>Assignment</b></tt>
+</dt>
+<dd>
+   
+<purpose>The right hand side of the relation to be used in the assignment.
+   </purpose>
+   
+</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="CheckArguments">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-name"><tt>CheckArguments</tt></td><td class="func-params"><tt>
+ (Owner as <a class="type" href="t-pfcModelItem-RelationOwner.html">IpfcRelationOwner</a>, FunctionName as String, Arguments as <a class="type" href="t-pfcModelItem-ParamValues.html">IpfcParamValues</a>)
+ as Boolean</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>To check the validity of arguments of external function.<br>
+<br>This method can be used to check the contents of the arguments.  
+   If you want to restrict the arguments to be a certain number and a certain type, 
+   use the optional argument <tt><b><a class="method" href="t-pfcRelations-RelationFunctionOptions.html#ArgumentTypes">IpfcRelationFunctionOptions.ArgumentTypes</a></b></tt> 
+   instead.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Owner</b></tt>
+</dt>
+<dd>
+   
+<purpose>Owner item of the relations</purpose>
+   
+</dd>
+<dt>
+<tt><b>FunctionName</b></tt>
+</dt>
+<dd>
+   
+<purpose>Name of the external function.</purpose>
+   
+</dd>
+<dt>
+<tt><b>Arguments</b></tt>
+</dt>
+<dd>
+   
+<purpose>Arguments passed by the relation to the external function.</purpose>
+   
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+<tt>true</tt> or <tt>false</tt> depending on the check. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="EvaluateFunction">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-name"><tt>EvaluateFunction</tt></td><td class="func-params"><tt>
+ (Owner as <a class="type" href="t-pfcModelItem-RelationOwner.html">IpfcRelationOwner</a>, FunctionName as String, Arguments as <a class="type" href="t-pfcModelItem-ParamValues.html">IpfcParamValues</a>)
+ as <a class="type" href="t-pfcModelItem-ParamValue.html">IpfcParamValue</a></tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Function called to evaluate a custom relation function invoked 
+   on the right hand side of a relation.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Owner</b></tt>
+</dt>
+<dd>
+   
+<purpose>Owner item of the relations</purpose>
+   
+</dd>
+<dt>
+<tt><b>FunctionName</b></tt>
+</dt>
+<dd>
+   
+<purpose>Name of the external function.</purpose>
+   
+</dd>
+<dt>
+<tt><b>Arguments</b></tt>
+</dt>
+<dd>
+   
+<purpose>Arguments passed by the relation to the external function.</purpose>
+   
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The result of the relation function calculation. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

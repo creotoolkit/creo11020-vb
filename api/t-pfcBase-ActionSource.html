@@ -1,0 +1,219 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP Visual Basic.NET documentation for interface "IpfcActionSource"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      3
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcBase.html">Module</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcBase-ActionSource.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;IpfcActionSource</h2>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class specifies an action source.
+<br>
+<br>Relevant Action Sources:
+    <tt><b><tt><b><a class="enumtype" href="t-pfcSession-BaseSession.html">IpfcBaseSession</a></b></tt></b></tt>
+    <tt><b><tt><b><a class="enumtype" href="t-pfcModel-Model.html">IpfcModel</a></b></tt></b></tt>
+    <tt><b><tt><b><a class="enumtype" href="t-pfcSolid-Solid.html">IpfcSolid</a></b></tt></b></tt>
+    <tt><b><tt><b><a class="enumtype" href="t-pfcFeature-Feature.html">IpfcFeature</a></b></tt></b></tt>
+    <tt><b><tt><b><a class="enumtype" href="t-pfcModelItem-Parameter.html">IpfcParameter</a></b></tt></b></tt>
+    
+<br>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><b><a class="enumtype" href="t-pfcModelItem-ParameterOwner.html">IpfcParameterOwner</a></b></tt>, 
+        <tt><b><a class="enumtype" href="t-pfcModelItem-ModelItem.html">IpfcModelItem</a></b></tt>, 
+        <tt><b><a class="enumtype" href="t-pfcModel-Model.html">IpfcModel</a></b></tt>, 
+        <tt><b><a class="enumtype" href="t-pfcDisplay-DisplayList2D.html">IpfcDisplayList2D</a></b></tt>, 
+        <tt><b><a class="enumtype" href="t-pfcDisplay-DisplayList3D.html">IpfcDisplayList3D</a></b></tt>, 
+        <tt><b><a class="enumtype" href="t-pfcCommand-UICommand.html">IpfcUICommand</a></b></tt>, 
+        <tt><b><a class="enumtype" href="t-pfcSession-BaseSession.html">IpfcBaseSession</a></b></tt>, 
+        <tt><b><a class="enumtype" href="t-pfcAsyncConnection-AsyncConnection.html">IpfcAsyncConnection</a></b></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#AddActionListener">AddActionListener</a>
+ (Listener as <a class="type" href="t-pfcBase-ActionListener.html">IpfcActionListener</a>)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Adds an action listener to notify you of certain events.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#AddActionListenerWithType">AddActionListenerWithType</a>
+ (Listener as <a class="type" href="t-pfcBase-ActionListener.html">IpfcActionListener</a>, ATypes as <a class="type" href="t-pfcBase-ActionTypes.html">IpfcActionTypes</a>)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Adds an action listener to notify chosen events.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#RemoveActionListener">RemoveActionListener</a>
+ (Listener as <a class="type" href="t-pfcBase-ActionListener.html">IpfcActionListener</a>)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Deletes the specified action listener so you are no longer notified of
+those events.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<hr>
+<br>
+<a name="AddActionListener">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>AddActionListener</tt></td><td class="func-params"><tt>
+ (Listener as <a class="type" href="t-pfcBase-ActionListener.html">IpfcActionListener</a>)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Adds an action listener to notify you of certain events.
+<br>
+<br>The type of event depends upon the type of Action Listener you provide.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Listener</b></tt>
+</dt>
+<dd>The new listener</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="AddActionListenerWithType">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>AddActionListenerWithType</tt></td><td class="func-params"><tt>
+ (Listener as <a class="type" href="t-pfcBase-ActionListener.html">IpfcActionListener</a>, ATypes as <a class="type" href="t-pfcBase-ActionTypes.html">IpfcActionTypes</a>)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Adds an action listener to notify chosen events.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Listener</b></tt>
+</dt>
+<dd>The new listener</dd>
+<dt>
+<tt><b>ATypes</b></tt>
+</dt>
+<dd>The chosen events for which notification is needed.</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="RemoveActionListener">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>RemoveActionListener</tt></td><td class="func-params"><tt>
+ (Listener as <a class="type" href="t-pfcBase-ActionListener.html">IpfcActionListener</a>)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Deletes the specified action listener so you are no longer notified of
+those events.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Listener</b></tt>
+</dt>
+<dd>The action listener to delete</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

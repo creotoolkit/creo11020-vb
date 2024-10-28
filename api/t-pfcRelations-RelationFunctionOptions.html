@@ -1,0 +1,270 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP Visual Basic.NET documentation for interface "IpfcRelationFunctionOptions"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      361
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcRelations.html">Module</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcRelations-RelationFunctionOptions.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;IpfcRelationFunctionOptions</h2>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Options to enable/disable various relation function related 
+ features.<br>
+<br>
+<hr>
+<br>
+<b>Property Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-signature"><tt><a class="method" href="#ArgumentTypes">ArgumentTypes</a></tt></td><td class="return-type"><tt>as <a class="type" href="t-pfcRelations-RelationFunctionArguments.html">IpfcRelationFunctionArguments</a> [optional]</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The types of arguments permitted 
+ by the relation function. Default is <tt>null</tt>, indicating that no 
+ arguments are permitted.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-signature"><tt><a class="method" href="#EnableArgumentCheckMethod">EnableArgumentCheckMethod</a></tt></td><td class="return-type"><tt>as Boolean [optional]</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+ Turn the method (using 
+ <tt><b><a class="method" href="t-pfcRelations-RelationFunctionListener.html#CheckArguments">IpfcRelationFunctionListener.CheckArguments()</a></b></tt>) 
+ on/off. Default is <tt>false</tt>.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-signature"><tt><a class="method" href="#EnableExpressionEvaluationMethod">EnableExpressionEvaluationMethod</a></tt></td><td class="return-type"><tt>as Boolean [optional]</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+ Turn the method (using 
+ <tt><b><a class="method" href="t-pfcRelations-RelationFunctionListener.html#EvaluateFunction">IpfcRelationFunctionListener.EvaluateFunction()</a></b></tt>)
+ on/off. Default is <tt>true</tt>.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-signature"><tt><a class="method" href="#EnableTypeChecking">EnableTypeChecking</a></tt></td><td class="return-type"><tt>as Boolean [optional]</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Turn argument type 
+ checking (using 
+ <tt><b><a class="method" href="t-pfcRelations-RelationFunctionOptions.html#ArgumentTypes">IpfcRelationFunctionOptions.ArgumentTypes</a></b></tt>) 
+ on/off.  Default is <tt>false</tt>.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-signature"><tt><a class="method" href="#EnableValueAssignmentMethod">EnableValueAssignmentMethod</a></tt></td><td class="return-type"><tt>as Boolean [optional]</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+ Turn <tt><b><a class="method" href="t-pfcRelations-RelationFunctionListener.html#AssignValue">IpfcRelationFunctionListener.AssignValue()</a></b></tt>
+ on/off. Default is <tt>false</tt>.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-signature"><tt><a class="method" href="#Create">CCpfcRelationFunctionOptions.Create</a>
+ ()
+ as <a class="type" href="t-pfcRelations-RelationFunctionOptions.html">IpfcRelationFunctionOptions</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Create a 
+ <tt><b><tt><b><a class="enumtype" href="t-pfcRelations-RelationFunctionOptions.html">IpfcRelationFunctionOptions</a></b></tt></b></tt> object.
+ </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Property Detail</b>
+<br>
+<hr>
+<br>
+<a name="ArgumentTypes">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-name"><tt>ArgumentTypes</tt></td><td class="return-type"><tt>as <a class="type" href="t-pfcRelations-RelationFunctionArguments.html">IpfcRelationFunctionArguments</a> [optional]</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The types of arguments permitted 
+ by the relation function. Default is <tt>null</tt>, indicating that no 
+ arguments are permitted.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="EnableArgumentCheckMethod">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-name"><tt>EnableArgumentCheckMethod</tt></td><td class="return-type"><tt>as Boolean [optional]</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+ Turn the method (using 
+ <tt><b><a class="method" href="t-pfcRelations-RelationFunctionListener.html#CheckArguments">IpfcRelationFunctionListener.CheckArguments()</a></b></tt>) 
+ on/off. Default is <tt>false</tt>.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="EnableExpressionEvaluationMethod">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-name"><tt>EnableExpressionEvaluationMethod</tt></td><td class="return-type"><tt>as Boolean [optional]</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+ Turn the method (using 
+ <tt><b><a class="method" href="t-pfcRelations-RelationFunctionListener.html#EvaluateFunction">IpfcRelationFunctionListener.EvaluateFunction()</a></b></tt>)
+ on/off. Default is <tt>true</tt>.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="EnableTypeChecking">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-name"><tt>EnableTypeChecking</tt></td><td class="return-type"><tt>as Boolean [optional]</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Turn argument type 
+ checking (using 
+ <tt><b><a class="method" href="t-pfcRelations-RelationFunctionOptions.html#ArgumentTypes">IpfcRelationFunctionOptions.ArgumentTypes</a></b></tt>) 
+ on/off.  Default is <tt>false</tt>.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="EnableValueAssignmentMethod">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-name"><tt>EnableValueAssignmentMethod</tt></td><td class="return-type"><tt>as Boolean [optional]</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+ Turn <tt><b><a class="method" href="t-pfcRelations-RelationFunctionListener.html#AssignValue">IpfcRelationFunctionListener.AssignValue()</a></b></tt>
+ on/off. Default is <tt>false</tt>.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<hr>
+<br>
+<a name="Create">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-name"><tt>CCpfcRelationFunctionOptions.Create</tt></td><td class="func-params"><tt>
+ ()
+ as <a class="type" href="t-pfcRelations-RelationFunctionOptions.html">IpfcRelationFunctionOptions</a></tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Create a 
+ <tt><b><tt><b><a class="enumtype" href="t-pfcRelations-RelationFunctionOptions.html">IpfcRelationFunctionOptions</a></b></tt></b></tt> object.
+ <br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

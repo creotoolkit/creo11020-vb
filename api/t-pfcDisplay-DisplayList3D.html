@@ -1,0 +1,172 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP Visual Basic.NET documentation for interface "IpfcDisplayList3D"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      152
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcDisplay.html">Module</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcDisplay-DisplayList3D.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;IpfcDisplayList3D</h2>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>The three-dimensional Display List
+<br>
+<br>To make your 3D graphics permanent create this object and place your graphics calls in its listener.
+<br>
+<dl>
+<dt>
+<b>Direct Parent Classes:</b>
+</dt>
+<dd>
+<a class="class" href="t-pfcBase-ActionSource.html">IpfcActionSource</a>, 
+        <a class="class" href="t-pfcObject-Child.html">IpfcChild</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#Delete">Delete</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Deletes the DisplayList3D from the session, so it will no longer update during repaints.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#Display">Display</a>
+ (Transform as <a class="type" href="t-pfcBase-Transform3D.html">IpfcTransform3D</a>)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Displays the DisplayList3D using the specified transformation matrix
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<hr>
+<br>
+<a name="Delete">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>Delete</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Deletes the DisplayList3D from the session, so it will no longer update during repaints.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotFound.html">IpfcXToolkitNotFound</a></b></tt></b></tt> - The function could not find a display list with the specified identifier. </p>
+</p>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Display">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>Display</tt></td><td class="func-params"><tt>
+ (Transform as <a class="type" href="t-pfcBase-Transform3D.html">IpfcTransform3D</a>)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Displays the DisplayList3D using the specified transformation matrix
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotExist.html">IpfcXToolkitNotExist</a></b></tt></b></tt> - The display list is empty.</p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotFound.html">IpfcXToolkitNotFound</a></b></tt></b></tt> - The function could not find a display list with the specified identifier. </p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitCantOpen.html">IpfcXToolkitCantOpen</a></b></tt></b></tt> - The use of display lists is disabled.</p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitAbort.html">IpfcXToolkitAbort</a></b></tt></b></tt> - The display was aborted.</p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotValid.html">IpfcXToolkitNotValid</a></b></tt></b></tt> - The specified display list is invalid.</p>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitInvalidItem.html">IpfcXToolkitInvalidItem</a></b></tt></b></tt> - There is an invalid item in the display list.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Transform</b></tt>
+</dt>
+<dd>The transformation matrix to be used with the display list</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

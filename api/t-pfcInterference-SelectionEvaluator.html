@@ -1,0 +1,255 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP Visual Basic.NET documentation for interface "IpfcSelectionEvaluator"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      389
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcInterference.html">Module</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcInterference-SelectionEvaluator.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;IpfcSelectionEvaluator</h2>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class allows the computation of clearances and inteferences between two selected objects.
+<br>
+<dl>
+<dt>
+<b>Direct Parent Classes:</b>
+</dt>
+<dd>
+<a class="class" href="t-pfcObject-Object.html">IpfcObject</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Property Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-signature"><tt><a class="method" href="#Selections">Selections</a></tt></td><td class="return-type"><tt>as <a class="type" href="t-pfcSelect-SelectionPair.html">IpfcSelectionPair</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The SelectionPair: the pair of selected objects.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-signature"><tt><a class="method" href="#ComputeClearance">ComputeClearance</a>
+ ()
+ as <a class="type" href="t-pfcInterference-ClearanceData.html">IpfcClearanceData</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Enables the user to compute the clearance between two selected parts or surfaces.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-signature"><tt><a class="method" href="#ComputeInterference">ComputeInterference</a>
+ (SolidOnly as Boolean)
+ as <a class="type" href="t-pfcInterference-InterferenceVolume.html">IpfcInterferenceVolume</a> [optional]</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Enables the user to measure the interference between the two specified parts.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-signature"><tt><a class="method" href="#ComputeNearestCriticalDistance">ComputeNearestCriticalDistance</a>
+ ()
+ as <a class="type" href="t-pfcInterference-CriticalDistanceData.html">IpfcCriticalDistanceData</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Enables the user to find the nearest local minimum (not the absolute minimum) of the distance function between two selected objects.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Property Detail</b>
+<br>
+<hr>
+<br>
+<a name="Selections">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-name"><tt>Selections</tt></td><td class="return-type"><tt>as <a class="type" href="t-pfcSelect-SelectionPair.html">IpfcSelectionPair</a></tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The SelectionPair: the pair of selected objects.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<hr>
+<br>
+<a name="ComputeClearance">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-name"><tt>ComputeClearance</tt></td><td class="func-params"><tt>
+ ()
+ as <a class="type" href="t-pfcInterference-ClearanceData.html">IpfcClearanceData</a></tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Enables the user to compute the clearance between two selected parts or surfaces.
+<br>
+<br> 
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XInvalidSelection.html">IpfcXInvalidSelection</a></b></tt></b></tt> - Selections are not valid</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The ClearanceData object that represents the value of the computed clearance, indicates if interference is detected and the closest points (in the respective part's coordinate systems).</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ComputeInterference">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-name"><tt>ComputeInterference</tt></td><td class="func-params"><tt>
+ (SolidOnly as Boolean)
+ as <a class="type" href="t-pfcInterference-InterferenceVolume.html">IpfcInterferenceVolume</a> [optional]</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Enables the user to measure the interference between the two specified parts.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XInvalidSelection.html">IpfcXInvalidSelection</a></b></tt></b></tt> - Selections are not valid</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>SolidOnly</b></tt>
+</dt>
+<dd>Specifies whether to compute only solid interfaces or to also compute surface interfaces.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The InterferenceVolume object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ComputeNearestCriticalDistance">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-name"><tt>ComputeNearestCriticalDistance</tt></td><td class="func-params"><tt>
+ ()
+ as <a class="type" href="t-pfcInterference-CriticalDistanceData.html">IpfcCriticalDistanceData</a></tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Enables the user to find the nearest local minimum (not the absolute minimum) of the distance function between two selected objects.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitBadContext.html">IpfcXToolkitBadContext</a></b></tt></b></tt> - Not applicable to the input selections.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The CriticalDistanceData object that represents the local minimum distance between two selected objects, two 3d points two surface UV-parameters where the distance is calculated.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

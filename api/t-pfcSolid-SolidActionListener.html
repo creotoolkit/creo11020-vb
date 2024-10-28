@@ -1,0 +1,439 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP Visual Basic.NET documentation for interface "IpfcSolidActionListener"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      429
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcSolid.html">Module</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcSolid-SolidActionListener.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;IpfcSolidActionListener</h2>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class defines an action listener that notifies you 
+when operations on solids occur. 
+<br>
+<br>You can receive notification before and after the following events:
+<ul type="disc">
+
+
+<li>
+Regeneration 
+</li>
+
+<li>
+Unit conversion
+</li>
+
+<li>
+Feature creation
+</li>
+
+<li>
+Feature deletion
+</li>
+
+</ul>
+  
+
+<br>
+<dl>
+<dt>
+<b>Direct Parent Classes:</b>
+</dt>
+<dd>
+<a class="class" href="t-pfcBase-ActionListener.html">IpfcActionListener</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnAfterFeatureCreate">OnAfterFeatureCreate</a>
+ (Sld as <a class="type" href="t-pfcSolid-Solid.html">IpfcSolid</a>, Feat as <a class="type" href="t-pfcFeature-Feature.html">IpfcFeature</a>)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Provides an action listener called after a feature is created.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnAfterFeatureDelete">OnAfterFeatureDelete</a>
+ (Sld as <a class="type" href="t-pfcSolid-Solid.html">IpfcSolid</a>, FeatId as Long)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Provides an action listener called after a feature is deleted.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnAfterRegen">OnAfterRegen</a>
+ (Sld as <a class="type" href="t-pfcSolid-Solid.html">IpfcSolid</a>, StartFeature as <a class="type" href="t-pfcFeature-Feature.html">IpfcFeature</a> [optional], WasSuccessful as Boolean)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Provides a notification function called after regenerating a solid.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnAfterUnitConvert">OnAfterUnitConvert</a>
+ (Sld as <a class="type" href="t-pfcSolid-Solid.html">IpfcSolid</a>, ConvertNumbers as Boolean)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Provides an action listener called after the unit conversion of 
+a solid.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnBeforeFeatureCreate">OnBeforeFeatureCreate</a>
+ (Sld as <a class="type" href="t-pfcSolid-Solid.html">IpfcSolid</a>, FeatId as Long)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Provides a callback function called before creating a feature.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnBeforeRegen">OnBeforeRegen</a>
+ (Sld as <a class="type" href="t-pfcSolid-Solid.html">IpfcSolid</a>, StartFeature as <a class="type" href="t-pfcFeature-Feature.html">IpfcFeature</a> [optional])
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Provides a notification function called before the solid is 
+regenerated.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnBeforeUnitConvert">OnBeforeUnitConvert</a>
+ (Sld as <a class="type" href="t-pfcSolid-Solid.html">IpfcSolid</a>, ConvertNumbers as Boolean)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Provides an action listener called before the unit conversion of 
+a solid.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<hr>
+<br>
+<a name="OnAfterFeatureCreate">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnAfterFeatureCreate</tt></td><td class="func-params"><tt>
+ (Sld as <a class="type" href="t-pfcSolid-Solid.html">IpfcSolid</a>, Feat as <a class="type" href="t-pfcFeature-Feature.html">IpfcFeature</a>)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Provides an action listener called after a feature is created.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Sld</b></tt>
+</dt>
+<dd>The model that owned the feature that was created</dd>
+<dt>
+<tt><b>Feat</b></tt>
+</dt>
+<dd>The feature that was just created</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnAfterFeatureDelete">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnAfterFeatureDelete</tt></td><td class="func-params"><tt>
+ (Sld as <a class="type" href="t-pfcSolid-Solid.html">IpfcSolid</a>, FeatId as Long)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Provides an action listener called after a feature is deleted.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Sld</b></tt>
+</dt>
+<dd>The model that owned the feature that was deleted</dd>
+<dt>
+<tt><b>FeatId</b></tt>
+</dt>
+<dd>The feature identifier</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnAfterRegen">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnAfterRegen</tt></td><td class="func-params"><tt>
+ (Sld as <a class="type" href="t-pfcSolid-Solid.html">IpfcSolid</a>, StartFeature as <a class="type" href="t-pfcFeature-Feature.html">IpfcFeature</a> [optional], WasSuccessful as Boolean)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Provides a notification function called after regenerating a solid.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Sld</b></tt>
+</dt>
+<dd>The solid that was regenerated.</dd>
+<dt>
+<tt><b>StartFeature</b></tt>
+</dt>
+<dd>The starting feature of the regeneration. </dd>
+<dt>
+<tt><b>WasSuccessful</b></tt>
+</dt>
+<dd>This is <tt>true</tt> if the solid regenerated successfully.Otherwise, this is <tt>false</tt>.</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnAfterUnitConvert">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnAfterUnitConvert</tt></td><td class="func-params"><tt>
+ (Sld as <a class="type" href="t-pfcSolid-Solid.html">IpfcSolid</a>, ConvertNumbers as Boolean)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Provides an action listener called after the unit conversion of 
+a solid.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Sld</b></tt>
+</dt>
+<dd>The solid that was converted.</dd>
+<dt>
+<tt><b>ConvertNumbers</b></tt>
+</dt>
+<dd>This is <tt>true</tt> if the dimensions are converted. This is <tt>false</tt> if the dimensions are reinterpreted.</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnBeforeFeatureCreate">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnBeforeFeatureCreate</tt></td><td class="func-params"><tt>
+ (Sld as <a class="type" href="t-pfcSolid-Solid.html">IpfcSolid</a>, FeatId as Long)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Provides a callback function called before creating a feature.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Sld</b></tt>
+</dt>
+<dd>The solid where the feature is about to be created.</dd>
+<dt>
+<tt><b>FeatId</b></tt>
+</dt>
+<dd>The identifier assigned to the new feature.</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnBeforeRegen">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnBeforeRegen</tt></td><td class="func-params"><tt>
+ (Sld as <a class="type" href="t-pfcSolid-Solid.html">IpfcSolid</a>, StartFeature as <a class="type" href="t-pfcFeature-Feature.html">IpfcFeature</a> [optional])
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Provides a notification function called before the solid is 
+regenerated.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Sld</b></tt>
+</dt>
+<dd>The solid to be regenerated.</dd>
+<dt>
+<tt><b>StartFeature</b></tt>
+</dt>
+<dd>The starting feature of the regeneration.</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnBeforeUnitConvert">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnBeforeUnitConvert</tt></td><td class="func-params"><tt>
+ (Sld as <a class="type" href="t-pfcSolid-Solid.html">IpfcSolid</a>, ConvertNumbers as Boolean)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Provides an action listener called before the unit conversion of 
+a solid.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Sld</b></tt>
+</dt>
+<dd>The solid to be converted.</dd>
+<dt>
+<tt><b>ConvertNumbers</b></tt>
+</dt>
+<dd>This is <tt>true</tt> if the dimensions are converted. This is <tt>false</tt> if the dimensions are reinterpreted.</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

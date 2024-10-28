@@ -1,0 +1,263 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP Visual Basic.NET documentation for interface "IpfcDetailAttachment"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      114
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcDetail.html">Module</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcDetail-DetailAttachment.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;IpfcDetailAttachment</h2>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This interface represents attachment data of detail item. Currently supports only notes. <br>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-signature"><tt><a class="method" href="#Create">CCpfcDetailAttachment.Create</a>
+ (NoteAttach as <a class="type" href="t-pfcDetail-Attachment.html">IpfcAttachment</a>, LeaderAttach as <a class="type" href="t-pfcDetail-DetailLeaderAttachments.html">IpfcDetailLeaderAttachments</a> [optional])
+ as <a class="type" href="t-pfcDetail-DetailAttachment.html">IpfcDetailAttachment</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates attachment data for detail item. Currently supports only notes. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-signature"><tt><a class="method" href="#GetLeaderAttachments">GetLeaderAttachments</a>
+ ()
+ as <a class="type" href="t-pfcDetail-DetailLeaderAttachments.html">IpfcDetailLeaderAttachments</a> [optional]</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Get attachment of note leader. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-signature"><tt><a class="method" href="#GetNoteAttachment">GetNoteAttachment</a>
+ ()
+ as <a class="type" href="t-pfcDetail-Attachment.html">IpfcAttachment</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Get attachment of note text. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#SetLeaderAttachments">SetLeaderAttachments</a>
+ (LeaderAttach as <a class="type" href="t-pfcDetail-DetailLeaderAttachments.html">IpfcDetailLeaderAttachments</a> [optional])
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Set attachment of note leader. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#SetNoteAttachment">SetNoteAttachment</a>
+ (NoteAttach as <a class="type" href="t-pfcDetail-Attachment.html">IpfcAttachment</a>)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Set attachment of note text. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<hr>
+<br>
+<a name="Create">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-name"><tt>CCpfcDetailAttachment.Create</tt></td><td class="func-params"><tt>
+ (NoteAttach as <a class="type" href="t-pfcDetail-Attachment.html">IpfcAttachment</a>, LeaderAttach as <a class="type" href="t-pfcDetail-DetailLeaderAttachments.html">IpfcDetailLeaderAttachments</a> [optional])
+ as <a class="type" href="t-pfcDetail-DetailAttachment.html">IpfcDetailAttachment</a></tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Creates attachment data for detail item. Currently supports only notes. <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>NoteAttach</b></tt>
+</dt>
+<dd>Attachment of note text.  </dd>
+<dt>
+<tt><b>LeaderAttach</b></tt>
+</dt>
+<dd>Attachment of note leader. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetLeaderAttachments">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-name"><tt>GetLeaderAttachments</tt></td><td class="func-params"><tt>
+ ()
+ as <a class="type" href="t-pfcDetail-DetailLeaderAttachments.html">IpfcDetailLeaderAttachments</a> [optional]</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Get attachment of note leader. <br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Attachment of note leader. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetNoteAttachment">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-name"><tt>GetNoteAttachment</tt></td><td class="func-params"><tt>
+ ()
+ as <a class="type" href="t-pfcDetail-Attachment.html">IpfcAttachment</a></tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Get attachment of note text. <br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Attachment of note text. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetLeaderAttachments">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>SetLeaderAttachments</tt></td><td class="func-params"><tt>
+ (LeaderAttach as <a class="type" href="t-pfcDetail-DetailLeaderAttachments.html">IpfcDetailLeaderAttachments</a> [optional])
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Set attachment of note leader. <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>LeaderAttach</b></tt>
+</dt>
+<dd> Attachment of note leader.</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetNoteAttachment">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>SetNoteAttachment</tt></td><td class="func-params"><tt>
+ (NoteAttach as <a class="type" href="t-pfcDetail-Attachment.html">IpfcAttachment</a>)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Set attachment of note text. <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>NoteAttach</b></tt>
+</dt>
+<dd>Attachment of note text.</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

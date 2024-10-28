@@ -1,0 +1,477 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+	 CIP Visual Basic.NET documentation for module "pfcExport"
+	</title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      1,
+      18
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;Module
+     </td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="m-pfcExport.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Module "pfcExport"</h2>
+<b>Description</b>
+<br>
+<br>Contains Data Export related interfaces.<br>
+<hr>
+<table border="0" class="entities">
+<tr>
+<th colspan="2" class="entities">Enumerated Types</th>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-pfcExport-AssemblyConfiguration.html">EpfcAssemblyConfiguration</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This enumerated type contains possible configurations of an exported model.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-pfcExport-PDFSaveMode.html">EpfcPDFSaveMode</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This enumerated type contains possible save types.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-pfcExport-PDFFontStrokeMode.html">EpfcPDFFontStrokeMode</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This enumerated type contains possible font types.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-pfcExport-PDFColorDepth.html">EpfcPDFColorDepth</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This enumerated type contains possible color options.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-pfcExport-PDFHiddenLineMode.html">EpfcPDFHiddenLineMode</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This enumerated type contains possible hidden line modes.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-pfcExport-PDFLayerMode.html">EpfcPDFLayerMode</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This enumerated type contains possible layer modes.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-pfcExport-PDFParameterMode.html">EpfcPDFParameterMode</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This enumerated type contains possible parameter modes.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-pfcExport-PDFPrintingMode.html">EpfcPDFPrintingMode</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This enumerated type contains possible printing modes.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-pfcExport-PDFRestrictOperationsMode.html">EpfcPDFRestrictOperationsMode</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This enumerated type contains possible restrict operations.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-pfcExport-PDFLinecap.html">EpfcPDFLinecap</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This enumerated type contains possible linecap options.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-pfcExport-PDFLinejoin.html">EpfcPDFLinejoin</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This enumerated type contains possible line join options.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-pfcExport-PDFU3DLightingMode.html">EpfcPDFU3DLightingMode</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This enumerated type contains possible lighting modes.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-pfcExport-PDFU3DRenderMode.html">EpfcPDFU3DRenderMode</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This enumerated type contains possible U3D render modes.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-pfcExport-PDFSelectedViewMode.html">EpfcPDFSelectedViewMode</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This enumerated type contains select view modes.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-pfcExport-PDFExportMode.html">EpfcPDFExportMode</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This enumerated type contains possible export modes .
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-pfcExport-PrintSheets.html">EpfcPrintSheets</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This enumerated type contains possible sheet options to print.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-pfcExport-PDFAnnotMode.html">EpfcPDFAnnotMode</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> This enumerated type contains options to export Annotations.</td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-pfcExport-PDFOptionType.html">EpfcPDFOptionType</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This enumerated type contains possible PDF option types.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-pfcExport-PrintSaveMethod.html">EpfcPrintSaveMethod</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This enumerated type contains possible print options.
+  </td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-pfcExport-ProductViewFormat.html">EpfcProductViewFormat</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp; </td>
+</tr>
+</table>
+<br>
+<hr>
+<table border="0" class="entities">
+<tr>
+<th colspan="2" class="entities">Classes</th>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExport-ACIS3DExportInstructions.html">IpfcACIS3DExportInstructions</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This interface is used to export a model to ACIS format.
+    <notes>This interface is deprecated in Creo5.</notes>
+
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExport-CADDSExportInstructions.html">IpfcCADDSExportInstructions</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This interface is used to export a solid model to CADDS format.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExport-CatiaCGR3DExportInstructions.html">IpfcCatiaCGR3DExportInstructions</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This instructions interface object used to export a solid model to a Catia CGR file.
+    <notes>This interface is deprecated in Creo5.</notes>
+
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExport-CATIAModel3DExportInstructions.html">IpfcCATIAModel3DExportInstructions</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This interface is used to export a solid model to CATIA model format.
+    <notes>This interface is deprecated in Creo5.</notes>
+
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExport-CatiaPart3DExportInstructions.html">IpfcCatiaPart3DExportInstructions</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This instructions interface object used to export a solid model to a Catia part file.
+    <notes>This interface is deprecated in Creo5.</notes>
+
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExport-CatiaProduct3DExportInstructions.html">IpfcCatiaProduct3DExportInstructions</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This instructions interface object used to export a solid model to a Catia product file.
+    <notes>This interface is deprecated in Creo5.</notes>
+
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExport-CATIASession3DExportInstructions.html">IpfcCATIASession3DExportInstructions</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This instructions interface object used to export a solid model to a CATIA sesion.
+    <notes>This interface is deprecated in Creo5.</notes>
+
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExport-DWG3DExportInstructions.html">IpfcDWG3DExportInstructions</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      This interface is used to export a model to DWG format.
+      <notes>This interface is deprecated in Creo5.</notes>
+    
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExport-DXF3DExportInstructions.html">IpfcDXF3DExportInstructions</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      This interface is used to export a model to DXF format.
+    <notes>This interface is deprecated in Creo5.</notes>
+    
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExport-Export3DInstructions.html">IpfcExport3DInstructions</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This interface is used to export a solid model to a specified format.
+    <notes>This interface is deprecated in Creo5.</notes>
+
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExport-GeometryFlags.html">IpfcGeometryFlags</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This interface contains flags indicating the format of an export file.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExport-IGES3DNewExportInstructions.html">IpfcIGES3DNewExportInstructions</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This interface is used to export a solid model to IGES format.
+    <notes>This interface is deprecated in Creo5.</notes> 
+
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExport-InclusionFlags.html">IpfcInclusionFlags</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This interface contains flags used to indicate if certain geometry should be exported.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExport-JT3DExportInstructions.html">IpfcJT3DExportInstructions</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This instructions interface object used to export a solid model to a JT file.
+    <notes>This interface is deprecated in Creo5.</notes>
+
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExport-LayerExportOptions.html">IpfcLayerExportOptions</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This interface contains options used to control the export of layers.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExport-NEUTRALFileExportInstructions.html">IpfcNEUTRALFileExportInstructions</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp; </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExport-ParaSolid3DExportInstructions.html">IpfcParaSolid3DExportInstructions</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This instructions interface object used to export a solid model to a parasolid file.
+    <notes>This interface is deprecated in Creo5.</notes>
+
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExport-PDFExportInstructions.html">IpfcPDFExportInstructions</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This interface is used to export a model to a PDF file. The model must be displayed in window
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExport-PDFOption.html">IpfcPDFOption</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This interface is used to define the options for the PDF file.
+  </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExport-PrinterInstructions.html">IpfcPrinterInstructions</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This interface is used to define the printer instructions for printing a file.
+  </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExport-PrinterPCFOptions.html">IpfcPrinterPCFOptions</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This interface is used to define the printing options for a PFC file.
+  </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExport-PrintMdlOption.html">IpfcPrintMdlOption</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This interface is used to define the model for printing purpose.
+  </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExport-PrintPlacementOption.html">IpfcPrintPlacementOption</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This interface is used to define the placement options for printing purpose.
+  </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExport-PrintPrinterOption.html">IpfcPrintPrinterOption</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This interface is used to define the printer settings for printing a file.
+  </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExport-PrintSize.html">IpfcPrintSize</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This interface is used to define the paper parameters for print option.
+  </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExport-ProductViewExportInstructions.html">IpfcProductViewExportInstructions</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">The instructions interface object to export a part, assembly or 
+   drawing into ProductView format.</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExport-ProductViewExportOptions.html">IpfcProductViewExportOptions</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp; </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExport-STEP3DExportInstructions.html">IpfcSTEP3DExportInstructions</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This interface is used to export a solid model to STEP format.
+    <notes>This interface is deprecated in Creo5.</notes> 
+
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExport-SWAsm3DExportInstructions.html">IpfcSWAsm3DExportInstructions</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      This instructions interface object used to export a solid model to a SolidWorks assembly file.
+      <notes>This interface is deprecated in Creo5.</notes>
+    
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExport-SWPart3DExportInstructions.html">IpfcSWPart3DExportInstructions</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      This instructions interface object used to export a solid model to a SolidWorks part file.
+      <notes>This interface is deprecated in Creo5.</notes>  
+    
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExport-TriangulationInstructions.html">IpfcTriangulationInstructions</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      This interface contains options used while exporting to a faceted format like EXPORT_CATIA_CGR.
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExport-UG3DExportInstructions.html">IpfcUG3DExportInstructions</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This instructions interface object used to export a solid model to a UG file.
+    <notes>This interface is deprecated in Creo5.</notes>
+
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExport-VDA3DExportInstructions.html">IpfcVDA3DExportInstructions</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This interface is used to export a solid model to VDA format.
+    <notes>This interface is deprecated in Creo5.</notes>  
+
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<table border="0" class="entities">
+<tr>
+<th colspan="2" class="entities">Collections</th>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExport-PDFOptions.html">CMpfcPDFOptions</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp;</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

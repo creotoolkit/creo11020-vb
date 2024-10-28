@@ -1,0 +1,240 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP Visual Basic.NET documentation for interface "IpfcUICommand"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      489
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcCommand.html">Module</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcCommand-UICommand.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;IpfcUICommand</h2>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>An action-listener object for menu commands.
+<br>
+<br>The method <b>UICreateCommand</b> creates a <i>UICommand</i> object that contains a <i>UICommandActionListener</i>. You should override the <b>OnCommand</b> method in the ActionListener with the code you want to have execute when the user clicks on that button.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><b><a class="method" href="t-pfcSession-Session.html#UICreateCommand">IpfcSession.UICreateCommand()</a></b></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Direct Parent Classes:</b>
+</dt>
+<dd>
+<a class="class" href="t-pfcObject-Object.html">IpfcObject</a>, 
+        <a class="class" href="t-pfcBase-ActionSource.html">IpfcActionSource</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#Designate">Designate</a>
+ (MessageFile as String, Label as String, Help as String [optional], Description as String [optional])
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Designates the command to appear as placeable in the Screen Customization dialog. This may not be used for existing Creo Parametric commands.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#SetIcon">SetIcon</a>
+ (IconFile as String)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Designates the icon to be used with a user-created command. Adds the icon to the command of Creo Parametric.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<hr>
+<br>
+<a name="Designate">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>Designate</tt></td><td class="func-params"><tt>
+ (MessageFile as String, Label as String, Help as String [optional], Description as String [optional])
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Designates the command to appear as placeable in the Screen Customization dialog. This may not be used for existing Creo Parametric commands.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+   
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotFound.html">IpfcXToolkitNotFound</a></b></tt></b></tt> - The message file was not found.</p>
+   
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitMsgNotFound.html">IpfcXToolkitMsgNotFound</a></b></tt></b></tt> - One or more messages was not found in the message file. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>MessageFile</b></tt>
+</dt>
+<dd>
+
+<purpose>Message file name for the two keystrings.
+</purpose>
+
+</dd>
+<dt>
+<tt><b>Label</b></tt>
+</dt>
+<dd>
+
+<purpose>Message keystring referring to the button label . 
+<notes>If the command was not assigned an icon, the button name will appear on the toolbar button by default.</notes>
+
+</purpose>
+
+</dd>
+<dt>
+<tt><b>Help</b></tt>
+</dt>
+<dd>
+
+<purpose>Message keystring referring to the button help. This could be <i>null</i>.
+</purpose>
+
+</dd>
+<dt>
+<tt><b>Description</b></tt>
+</dt>
+<dd>
+
+<purpose>The message shown in the customization dialog when you click on Description. This could be <i> null </i>.
+</purpose>
+
+</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetIcon">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>SetIcon</tt></td><td class="func-params"><tt>
+ (IconFile as String)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Designates the icon to be used with a user-created command. Adds the icon to the command of Creo Parametric.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotFound.html">IpfcXToolkitNotFound</a></b></tt></b></tt> - The icon file was not found.</p>
+   
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitInvalidFile.html">IpfcXToolkitInvalidFile</a></b></tt></b></tt> - The file specified was not a Creo Parametric .BIF file or a custom .GIF file. </p>
+   
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitInvalidFile.html">IpfcXToolkitInvalidFile</a></b></tt></b></tt> - The file specified was not of required format.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>IconFile</b></tt>
+</dt>
+<dd>
+
+<purpose>The name of the icon file including the extension. 
+<notes>It can be either a Creo Parametric .BIF file, or a custom .GIF file. In order to fit with standard Creo Parametric button sizes, the size of the icon should be at most 20 x 20 pixels.
+The default search paths for finding the icons are:
+<ul type="disc">
+
+<li>Creo Parametric loadpoint/text/resource</li>
+
+<li>Application text dir/resource</li>
+
+<li>Application text dir/(language)/resource</li>
+
+</ul>
+The location of the application text dir is specifed in the registry file.
+</notes> 
+
+</purpose>
+
+</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

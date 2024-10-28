@@ -1,0 +1,643 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-9">
+      <meta name="ch:resourceid" content="JRelations" scheme="atiChunkerMeta">
+      
+      
+      
+      
+      
+      
+      <link href="css/styler.css" rel="stylesheet" type="text/css">
+      <title>Relations</title>
+   
+<SCRIPT LANGUAGE="JAVASCRIPT">
+  function findProperNode() { top.frames[0].document.apiwizard.manual("MANJRELATIONS0", location.hash); }
+</SCRIPT>
+
+</head>
+   <body onLoad="findProperNode()">
+      
+         
+         <a name="0"> </a><div class=" x-title-65-0 x-title-65-1" combinedFontName="off" id="styler-id1.1.1.21.1" class="ChapterTitle">Relations</div>
+         <div class=" x-body-2-0">
+            <div class=" x-p-7-0">This <span class=" x-ph-2-0"><span xmlns="" profilecode="100000000">section</span></span> describes how to access relations on all models and model items in <span class=" x-ph-2-0"><span class=" x-ph-2-0" id="JRelations_Relations-B9266A2D_PTCCreoParametric-E96269BB_23_12"><span xmlns="" profilecode="1">Creo Parametric</span></span></span> using the methods provided in <span class=" x-ph-2-0">the VB API</span>.
+            </div>
+         </div>
+         <div class=" x-topic-4-0 x-topic-4-1 x-topic-4-2" combinedFontName="off" id="JRelations_AccessingRelations-B9266571_23_15">
+            
+            <a name="1"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.21.3.1" class="Heading1">Accessing Relations</div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">In <span class=" x-ph-2-0">the VB API</span>, the set of relations on any model or model item is represented by the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcRelationOwner</span></span> interface. Models, features, surfaces, and edges inherit from this interface, because each object can be assigned relations
+                  in <span class=" x-ph-2-0"><span class=" x-ph-2-0" id="JRelations_AccessingRelations-B9266571_PTCCreoParametric_23_22"><span xmlns="" profilecode="1">Creo Parametric</span></span></span>.
+               </div>
+               <div class=" x-p-7-0">Methods and Properties Introduced:</div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="2"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcRelationOwner.RegenerateRelations()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="3"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcRelationOwner.DeleteRelations()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="4"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcRelationOwner.Relations</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="5"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcRelationOwner.EvaluateExpression()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcRelationOwner.RegenerateRelations()</span></span> regenerates the relations assigned to the owner item. It also determines whether the specified relation set is valid.
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcRelationOwner.DeleteRelations()</span></span> deletes all the relations assigned to the owner item.
+               </div>
+               <div class=" x-p-7-0">The property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcRelationOwner.Relations</span></span> returns the list of initial relations assigned to the owner item as a sequence of strings.
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcRelationOwner.EvaluateExpression()</span></span> evaluates the given relations-based expression, and returns the resulting value in the form of the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcParamValue</span></span> object. Refer to the section <a href="JDims.html" class=" x-xref-4-0 x-xref-4-5 x-xref-4-6 x-xref-4-9">The ParamValue Object</a> in the <span class=" x-ph-2-0"><span xmlns="" profilecode="100000000">section</span></span> <a href="JDims.html" class=" x-xref-4-0 x-xref-4-5 x-xref-4-6 x-xref-4-9">Dimensions and Parameters</a> for more information on this object.
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="JRelations_Example1AddingRelationsBetweenParam-B925BE7E_23_51">
+               
+               <a name="6"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.21.3.3.1" class="Heading2">Example 1: Adding Relations between Parameters in a Solid Model</div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">The sample code in the file <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcRelationsExamples.vb</span></span> located at <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">&lt;creo_vbapi_loadpoint&gt;/vbapi_examples</span></span> demonstrates how to add relations between parameters in a solid model.
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-8-0 x-topic-8-1 x-topic-8-2" id="JRelations_AccessingPostRegenerationRelations-4310D87C_23_57">
+            
+            <a name="7"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.21.4.1" class="Heading1">Accessing Post Regeneration Relations</div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">Method and Property Introduced:</div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="8"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModel.PostRegenerationRelations</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="9"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModel.RegeneratePostRegenerationRelations()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="10"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcModel.DeletePostRegenerationRelations()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-p-7-0">The property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.PostRegenerationRelations</span></span> lists the post-regeneration relations assigned to the model. It can be <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">NULL</span></span>, if not set.
+               </div>
+               <div class=" x-note-2-0 x-note-2-3">
+                  <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                  <div class=" x-p-7-0">To work with post-regeneration relations, use the post-regeneration relations attribute in the methods <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcRelationOwner.RegenerateRelations()</span></span> and <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcRelationOwner.DeleteRelations()</span></span>.
+                  </div>
+               </div>
+               <div class=" x-p-7-0">You can regenerate the relation sets post-regeneration in a model using the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.RegeneratePostRegenerationRelations()</span></span>.
+               </div>
+               <div class=" x-p-7-0">To delete all the post-regeneration relations in the specified model, call the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcModel.DeletePostRegenerationRelations()</span></span>.
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-8-0 x-topic-8-1 x-topic-8-2" id="JRelations_AddingACustomizedFunctionToTheRelat-B9268350_23_82">
+            
+            <div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.21.5.1" mcad="Heading1">Adding a Customized Function to the Relations Dialog Box in <span class=" x-ph-2-0"><span xmlns="" profilecode="1">Creo Parametric</span></span> 
+            </div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">Methods Introduced:</div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="11"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcBaseSession.RegisterRelationFunction</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcBaseSession.RegisterRelationFunction</span></span> registers a custom function that is included in the function list of the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Relations</span></span> dialog box in <span class=" x-ph-2-0"><span class=" x-ph-2-0" id="JRelations_AddingACustomizedFunctionToTheRelat-B9268350__23_96"><span xmlns="" profilecode="1">Creo Parametric</span></span></span>. You can add the custom function to relations that are added to models, features, or other relation owners. The registration
+                  method takes the following input arguments:
+               </div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">Name</span>&#8212;The name of the custom function.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcRelationFunctionOptions</span></span>&#8212;This object contains the options that determine the behavior of the custom relation function. Refer to the section <a href="#JRelations_RelationFunctionOptions-B9282B1F23_109" class=" x-xref-4-0 x-xref-4-5 x-xref-4-6 x-xref-4-9">Relation Function Options</a> for more information.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcRelationFunctionListener</span></span>&#8212;This object contains the action listener methods for the implementation of the custom function. Refer to the section <a href="#JRelations_RelationFunctionListeners-B92961A323_113" class=" x-xref-4-0 x-xref-4-5 x-xref-4-6 x-xref-4-9">Relation Function Listeners</a> for more information.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-note-2-0 x-note-2-3">
+                  <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                  <div class=" x-p-7-0"><span class=" x-ph-2-0">The VB API</span> relation functions are valid only when the custom function has been registered by the application. If the application is
+                     not running or not present, models that contain user-defined relations cannot evaluate these relations. In this situation,
+                     the relations are marked as errors. However, these errors can be commented until needed at a later time when the relations
+                     functions are reactivated in a <span class=" x-ph-2-0"><span class=" x-ph-2-0" id="JRelations_AddingACustomizedFunctionToTheRelat-B9268350__23_96"><span xmlns="" profilecode="1">Creo Parametric</span></span></span> session.
+                  </div>
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="JRelations_RelationFunctionOptions-B9282B1F23_109">
+               
+               <a name="12"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.21.5.3.1" class="Heading2">Relation Function Options</div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">Methods and Properties Introduced:</div>
+                  <div class=" x-ul-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="13"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">CCpfcRelationFunctionOptions.Create()</li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="14"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcRelationFunctionOptions.ArgumentTypes</li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="15"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">CCpfcRelationFunctionArgument.Create()</li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="16"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcRelationFunctionArgument.Type</li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="17"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">.IpfcRelationFunctionArgument.IsOptional</li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="18"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcRelationFunctionOptions.EnableTypeChecking</li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="19"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcRelationFunctionOptions.EnableArgumentCheckMethod</li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="20"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcRelationFunctionOptions.EnableExpressionEvaluationMethod</li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="21"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcRelationFunctionOptions.EnableValueAssignmentMethod</li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-p-7-0">Use the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">CCpfcRelationFunctionOptions.Create()</span></span> to create the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcRelationFunctionOptions</span></span> object containing the options to enable or disable various relation function related features. Use the methods listed above
+                     to access and modify the options. These options are as follows:
+                  </div>
+                  <div class=" x-ul-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">ArgumentTypes</span>&#8212;The types of arguments in the form of the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcRelationFunctionArgument</span></span> object. By default, this parameter is null, indicating that no arguments are permitted.</span><div class=" x-p-5-0">Use the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">CCpfcRelationFunctionArgument.Create()</span></span> to create the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcRelationFunctionArgument</span></span> object containing the attributes of the arguments passed to the custom relation function.
+                                 </div>
+                                 <div class=" x-p-5-0">These attributes are as follows:</div>
+                                 <div class=" x-ul-2-0">
+                                    <table border="0" cellpadding="0" cellspacing="0" class=" x-li-10-0" style="table-layout: fixed; " width="100%">
+                                       <col style="width: 0em">
+                                       <col style="width: 18pt">
+                                       <col>
+                                       <tbody>
+                                          <tr valign="baseline">
+                                             <td align="right"></td>
+                                             <td align="left" style="word-break: keep-all; "><span style="font-family: 'Arial Unicode MS'; ">&#9675;</span>&nbsp;
+                                             </td>
+                                             <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">Type</span>&#8212;The type of argument value such as double, integer, and so on in the form of the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcParamValueType</span></span> object.</span></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    <table border="0" cellpadding="0" cellspacing="0" class=" x-li-10-0" style="table-layout: fixed; " width="100%">
+                                       <col style="width: 0em">
+                                       <col style="width: 18pt">
+                                       <col>
+                                       <tbody>
+                                          <tr valign="baseline">
+                                             <td align="right"></td>
+                                             <td align="left" style="word-break: keep-all; "><span style="font-family: 'Arial Unicode MS'; ">&#9675;</span>&nbsp;
+                                             </td>
+                                             <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">IsOptional</span>&#8212;This boolean attribute specifies whether the argument is optional, indicating that it can be skipped when a call to the custom
+                                                   relation function is made. The optional arguments must fall at the end of the argument list. By default, this attribute is
+                                                   false.</span></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">EnableTypeChecking</span>&#8212;This boolean attribute determines whether or not to check the argument types internally. By default, it is false. If this
+                                    attribute is set to false, <span class=" x-ph-2-0" id="JRelations_RelationFunctionOptions-B9282B1F_PTCCreoParam_23_171"><span xmlns="" profilecode="1">Creo Parametric</span></span> does not need to know the contents of the arguments array. The custom function must handle all user errors in such a situation.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">EnableArgumentCheckMethod</span>&#8212;This boolean attribute determines whether or not to enable the arguments check listener function. By default, it is false.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">EnableExpressionEvaluationMethod</span>&#8212;This boolean attribute determines whether or not to enable the evaluate listener function. By default, it is true. </span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">EnableValueAssignmentMethod</span>&#8212;This boolean attribute determines whether or not to enable the value assignment listener function. By default, it is false.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="JRelations_RelationFunctionListeners-B92961A323_113">
+               
+               <a name="22"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.21.5.4.1" class="Heading2">Relation Function Listeners</div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">The interface <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcRelationFunctionListener</span></span> provides the method signatures to implement a custom relation function.
+                  </div>
+                  <div class=" x-p-7-0">Methods Introduced:</div>
+                  <div class=" x-ul-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="23"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcRelationFunctionListener.CheckArguments</li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="24"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcRelationFunctionListener.AssignValue</li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="25"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcRelationFunctionListener.EvaluateFunction</li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-p-7-0"> The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcRelationFunctionListener.CheckArguments</span></span> checks the validity of the arguments passed to the custom function. This listener method takes the following input arguments:
+                  </div>
+                  <div class=" x-ul-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0">The owner of the relation being evaluated</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0">The custom function name</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0">A sequence of arguments passed to the custom function</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-p-7-0">If the implementation of this method determines that the arguments are not valid for the custom function, then the listener
+                     method returns false. Otherwise, it returns true.
+                  </div>
+                  <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcRelationFunctionListener.EvaluateFunction</span></span> evaluates a custom relation function invoked on the right hand side of a relation. This listener method takes the following
+                     input arguments:
+                  </div>
+                  <div class=" x-ul-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0">The owner of the relation being evaluated</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0">The custom function name</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0">A sequence of arguments passed to the custom function</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-p-7-0">You must return the computed result of the custom relation function.</div>
+                  <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcRelationFunctionListener.AssignValue</span></span> evaluates a custom relation function invoked on the left hand side of a relation. It allows you to initialize properties
+                     to be stored and used by your application. This listener method takes the following input arguments:
+                  </div>
+                  <div class=" x-ul-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0">The owner of the relation being evaluated</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0">The custom function name</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0">A sequence of arguments passed to the custom function</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0">The value obtained by <span class=" x-ph-2-0" id="JRelations_RelationFunctionListeners-B92961A3_PTCCreoPar_23_229"><span xmlns="" profilecode="1">Creo Parametric</span></span> from evaluating the right hand side of the relation</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="JRelations_Example2AddingAndImplementingANewCu-B9295821_23_231">
+               
+               <a name="26"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.21.5.5.1" class="Heading2">Example 2: Adding and Implementing a New Custom Relation Function</div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">The sample code in the file <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcRelationsExamples.vb</span></span> located at <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">&lt;creo_vbapi_loadpoint&gt;/vbapi_examples</span></span> has the function <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">addRelation</span></span> function, which defines the options for a new custom relation function and registers it in the current session. The <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">RelationListener</span></span> class contains the <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">CheckArguments</span></span>, <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">AssignValue</span></span> and <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">EvaluateFunction</span></span> listener methods that are called when the custom relation function is used.
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

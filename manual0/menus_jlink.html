@@ -1,0 +1,1012 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-9">
+      <meta name="ch:resourceid" content="menus_jlink" scheme="atiChunkerMeta">
+      
+      
+      
+      
+      
+      
+      <link href="css/styler.css" rel="stylesheet" type="text/css">
+      <title>Menus, Commands, and Pop-up Menus</title>
+   
+<SCRIPT LANGUAGE="JAVASCRIPT">
+  function findProperNode() { top.frames[0].document.apiwizard.manual("MANMENUS_JLINK0", location.hash); }
+</SCRIPT>
+
+</head>
+   <body onLoad="findProperNode()">
+      
+         
+         <a name="0"> </a><div class=" x-title-65-0 x-title-65-1" combinedFontName="off" id="styler-id1.1.1.10.1" class="ChapterTitle">Menus, Commands, and Pop-up Menus</div>
+         <div class=" x-body-2-0">
+            <div class=" x-p-7-0">This <span class=" x-ph-2-0"><span xmlns="" profilecode="100000000">section</span></span> describes the methods provided by <span class=" x-ph-2-0">the VB API</span> to create and modify menus, buttons, and pop-up menus in the <span class=" x-ph-2-0" id="menus_jlink_MenusCommandsAndPop-upMenus-BA12A49A_PTCCreo_12_12"><span xmlns="" profilecode="1">Creo Parametric</span></span> user interface.
+            </div>
+            <div class=" x-p-7-0">Refer to the <span class=" x-ph-2-0"><span xmlns="" profilecode="100000000">section</span></span> <a href="pfc_ribbon.html" class=" x-xref-4-0 x-xref-4-5 x-xref-4-6 x-xref-4-9">Ribbon Tabs, Groups, and Menu Items</a>  for more information. Also, refer to the <span class=" x-ph-2-0" id="menus_jlink_MenusCommandsAndPop-upMenus-BA12A49A_PTCCreo_12_12"><span xmlns="" profilecode="1">Creo Parametric</span></span> Help for more information on customizing the ribbon user interface.
+            </div>
+         </div>
+         <div class=" x-topic-4-0 x-topic-4-1 x-topic-4-2" combinedFontName="off" id="menus_jlink_Introduction-BCA46C91_12_20">
+            
+            <a name="1"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.10.3.1" class="Heading1">Introduction</div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">The <span class=" x-ph-2-0">VB API</span> classes enable you to supplement the <span class=" x-ph-2-0" id="menus_jlink_Introduction-BCA46C91_PTCCreoParametric-E962_12_25"><span xmlns="" profilecode="1">Creo Parametric</span></span> ribbon user interface.
+               </div>
+               <div class=" x-p-7-0">Once the <span class=" x-ph-2-0">VB API</span> application is loaded, you can add a new group to an existing tab or create a new tab using the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Customize Ribbon</span></span> tab in the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" profilecode="1"><span class="cf-Sanserif-combined-Default">Creo Parametric</span></span></span>  <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Options</span></span> dialog box in <span class=" x-ph-2-0" id="menus_jlink_Introduction-BCA46C91_PTCCreoParametric-E962_12_25"><span xmlns="" profilecode="1">Creo Parametric</span></span>. You will not be able to modify the groups that are defined by <span class=" x-ph-2-0" id="menus_jlink_Introduction-BCA46C91_PTCCreoParametric-E962_12_25"><span xmlns="" profilecode="1">Creo Parametric</span></span>. If the translated messages are available for the newly added tabs or groups, then <span class=" x-ph-2-0" id="menus_jlink_Introduction-BCA46C91_PTCCreoParametric-E962_12_25"><span xmlns="" profilecode="1">Creo Parametric</span></span> will use them by searching for the same string in the list of sting based messages loaded.
+               </div>
+               <div class=" x-p-7-0">You can customize the ribbon user interface only for a particular mode in <span class=" x-ph-2-0" id="menus_jlink_Introduction-BCA46C91_PTCCreoParametric-E962_12_25"><span xmlns="" profilecode="1">Creo Parametric</span></span>. For example, if you customize the ribbon user interface and save it to the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">toolkitribbonui.rbn</span></span> file in the Part mode, then on loading <span class=" x-ph-2-0" id="menus_jlink_Introduction-BCA46C91_PTCCreoParametric-E962_12_25"><span xmlns="" profilecode="1">Creo Parametric</span></span> the customized user interface will be visible only in the Part mode.  To view a particular tab or group in all the modes,
+                  you must customize the ribbon user interface and save the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">toolkitribbonui.rbn</span></span> file in each mode. Refer to the <span class=" x-ph-2-0" id="menus_jlink_Introduction-BCA46C91_PTCCreoParametric-E962_12_25"><span xmlns="" profilecode="1">Creo Parametric</span></span> Fundamentals Help for more information on customizing the ribbon.
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-8-0 x-topic-8-1 x-topic-8-2" id="menus_jlink_MenuBarDefinitions-BCA46A99_12_48">
+            
+            <a name="2"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.10.4.1" class="Heading1">Menu Bar Definitions</div>
+            <div class=" x-body-3-0">
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0">Menu&#8212;A menu, such as the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">File</span></span> menu, or a sub-menu, such as the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Manage File</span></span> menu under the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">File</span></span> menu.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0">Menu button&#8212;A named item in a group or menu that is used to launch a set of instructions.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0">Pop-up menu&#8212;A menu invoked by selection of an item in the <span class=" x-ph-2-0" id="menus_jlink_MenuBarDefinitions-BCA46A99_PTCCreoParametri_12_61"><span xmlns="" profilecode="1">Creo Parametric</span></span> graphics window.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0">Command&#8212;A procedure in <span class=" x-ph-2-0" id="menus_jlink_MenuBarDefinitions-BCA46A99_PTCCreoParametri_12_61"><span xmlns="" profilecode="1">Creo Parametric</span></span> that may be activated from a button.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-8-0 x-topic-8-1 x-topic-8-2" id="menus_jlink_CreatingNewMenusAndButtons-BCA55AE4_12_67">
+            
+            <a name="3"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.10.5.1" class="Heading1">Menus Buttons and Menus</div>
+            <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="4"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="5"></a><span class=" x-indexterm-1-0"></span></div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">The following methods enable you to add new menu buttons in any location on the Ribbon user interface.</div>
+               <div class=" x-p-7-0">Methods Introduced:</div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="6"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcSession.UICreateCommand()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="7"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcSession.UICreateMaxPriorityCommand()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="8"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcUICommandActionListener.OnCommand()</li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcSession.UICreateCommand()</span></span> creates a <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcUICommand</span></span> object that contains a <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcUICommandActionListener</span></span>. You should override the <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcUICommandActionListener.OnCommand()</span></span> method with the code that you want to execute when the user clicks a button.
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcSession.UICreateMaxPriorityCommand()</span></span> creates a <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcUICommand</span></span> object having maximum command priority. The priority of the action refers to the level of precedence the added action takes
+                  over other <span class=" x-ph-2-0" id="menus_jlink_CreatingNewMenusAndButtons-BCA55AE4_PTCCreoP_12_95"><span xmlns="" profilecode="1">Creo Parametric</span></span> actions. Maximum priority actions dismiss all other actions except asynchronous actions.
+               </div>
+               <div class=" x-p-7-0">Maximum command priority should be used only in commands that open and activate a new model in a window. Create all other
+                  commands using the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcSession.UICreateCommand()</span></span>.
+               </div>
+               <div class=" x-p-7-0">The listener method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcUICommandListener.OnCommand()</span></span> is called when the command is activated in <span class=" x-ph-2-0" id="menus_jlink_CreatingNewMenusAndButtons-BCA55AE4_PTCCreoP_12_95"><span xmlns="" profilecode="1">Creo Parametric</span></span> by pressing a button.
+               </div>
+               <div class=" x-p-7-0">Designate the command using the function <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcUICommand.Designate()</span></span> and add a button to the ribbon user interface using the using the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Customize Ribbon</span></span> tab in the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" profilecode="1"><span class="cf-Sanserif-combined-Default">Creo Parametric</span></span></span> <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Options</span></span> dialog box. This operation binds the command to the button.
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="menus_jlink_FindingProENGINEERCommands-BCA55495_12_109">
+               
+               <div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.10.5.4.1" mcad="Heading2">Finding <span class=" x-ph-2-0"><span xmlns="" profilecode="1">Creo Parametric</span></span>  Commands
+               </div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">This method enables you to find existing <span class=" x-ph-2-0" id="menus_jlink_FindingProENGINEERCommands-BCA55495_PTCCreoP_12_115"><span xmlns="" profilecode="1">Creo Parametric</span></span> commands in order to modify their behavior.
+                  </div>
+                  <div class=" x-p-7-0">Method Introduced:</div>
+                  <div class=" x-ul-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="9"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcSession.UIGetCommand()</li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcSession.UIGetCommand()</span></span> returns a <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcUICommand</span></span> object representing an existing <span class=" x-ph-2-0" id="menus_jlink_FindingProENGINEERCommands-BCA55495_PTCCreoP_12_115"><span xmlns="" profilecode="1">Creo Parametric</span></span> command. The method allows you to find the command ID for an existing command so that you can add an access function or bracket
+                     function to the command. You must know the name of the command in order to find its ID. 
+                  </div>
+                  <div class=" x-p-7-0">To find the name of an action command, click the corresponding icon on the ribbon user interface and then check the last entry
+                     in the trail file. For example, for the Save icon, the trail file will have the corresponding entry:
+                  </div><pre class=" x-codeblock-3-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">~ Command `ProCmdModelSave`</span></pre><div class=" x-p-7-0">The action name for the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">Save</span></span> icon is <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">ProCmdModelSave</span></span>. This string can be used as input to <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcSession.UIGetCommand()</span></span> to get the command ID.
+                  </div>
+                  <div class=" x-p-7-0">You can determine a command ID string for an option without an icon by searching through the resource files located in the
+                     <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">&lt;creo_loadpoint&gt;\&lt;version&gt;\Common Files\text\resource</span></span> directory. If you search for the menu button name, the line will contain the corresponding action command for the button.
+                  </div>
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="menus_jlink_AccessListenersForCommands-BCA5EDCE_12_135">
+               
+               <a name="10"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.10.5.5.1" class="Heading2">Access Listeners for Commands</div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">These methods allow you to apply an access listener to a command. The access listener determines whether or not the command
+                     is visible at the current time in the current session.
+                  </div>
+                  <div class=" x-p-7-0">Methods Introduced:</div>
+                  <div class=" x-ul-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="11"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcActionSource.AddActionListener()</li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="12"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcUICommandAccessListener.OnCommandAccess()</li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-p-7-0">Use the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcActionSource.AddActionListener()</span></span> to register a new <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcUICommandAccessListener</span></span> on any command (created either by an application or <span class=" x-ph-2-0" id="menus_jlink_AccessListenersForCommands-BCA5EDCE_PTCCreoP_12_150"><span xmlns="" profilecode="1">Creo Parametric</span></span>). This listener will be called when buttons based on the command might be shown.
+                  </div>
+                  <div class=" x-p-7-0">The listener method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcUICommandAccessListener.OnCommandAccess()</span></span> allows you to impose an access function on a particular command. The method determines if the action or command should be
+                     available, unavailable, or hidden.
+                  </div>
+                  <div class=" x-p-7-0">The potential return values are listed in the enumerated type <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">EpfcCommandAccess</span></span> and are as follows:
+                  </div>
+                  <div class=" x-ul-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">EpfcACCESS_REMOVE</span></span>&#8212;The button is not visible and if all of the menu buttons in the containing menu possess an access function returning <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">EpfcACCESS_REMOVE</span></span>, the containing menu will also be removed from the <span class=" x-ph-2-0" id="menus_jlink_AccessListenersForCommands-BCA5EDCE_PTCCreoP_12_150"><span xmlns="" profilecode="1">Creo Parametric</span></span> user interface..</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">EpfcACCESS_INVISIBLE</span></span>&#8212;The button is not visible.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">EpfcACCESS_UNAVAILABLE</span></span>&#8212;The button is visible, but gray and cannot be selected.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">EpfcACCESS_DISALLOW</span></span>&#8212;The button shows as available, but the command will not be executed when it is chosen.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">EpfcACCESS_AVAILABLE</span></span>&#8212;The button is not gray and can be selected by the user. This is the default value.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+               <div class=" x-topic-11-0 x-topic-11-1" id="menus_jlink_Example2CommandAccessListeners-BCA5EB99_12_175">
+                  
+                  <div class=" x-title-22-0 x-title-22-1" combinedFontName="off" id="styler-id1.1.1.10.5.5.3.1">Example 1: Command Access Listeners</div>
+                  <div class=" x-body-3-0">
+                     <div class=" x-p-7-0">The sample code in the file <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcCommandExamples.vb</span></span><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">&lt;creo_vbapi_loadpoint&gt;/vbapi_examples</span></span> demonstrates the usage of the access listener method for a particular command. The  <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">OnCommandAccess</span></span> function returns <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">EpfcACCESS_UNAVAILABLE</span></span> that disables button associated with the command, if the model is not present or if it is not of type PART. Else, the function
+                        returns <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">EpfcACCESS_AVAILABLE</span></span> that enables button associated with the command.
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="menus_jlink_BracketListenersForCommands-BCADBE00_12_184">
+               
+               <a name="13"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.10.5.6.1" class="Heading2">Bracket Listeners for Commands</div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">These methods allow you to apply a bracket listener to a command. The bracket listener is called before and after the command
+                     runs, which allows your application to provide custom logic to execute whenever the command is selected.
+                  </div>
+                  <div class=" x-p-7-0">Methods Introduced:</div>
+                  <div class=" x-ul-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="14"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcActionSource.AddActionListener()</li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="15"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcUICommandBracketListener.OnBeforeCommand()</li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="16"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcICommandBracketListener.OnAfterCommand()</li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-p-7-0">Use the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcActionSource.AddActionListener()</span></span> to register a new <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcUICommandBracketListener</span></span> on any command (created either by an application or <span class=" x-ph-2-0" id="menus_jlink_BracketListenersForCommands-BCADBE00_PTCCreo_12_202"><span xmlns="" profilecode="1">Creo Parametric</span></span>. This listener will be called when the command is selected by the user.
+                  </div>
+                  <div class=" x-p-7-0">The listener methods <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcICommandBracketListener.OnBeforeCommand()</span></span> and <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcUICommandBracketListener.OnAfterCommand()</span></span> allow the creation of functions that will be called immediately before and after execution of a given command. These methods
+                     are used to add the business logic to the start or end (or both) of an existing <span class=" x-ph-2-0" id="menus_jlink_BracketListenersForCommands-BCADBE00_PTCCreo_12_202"><span xmlns="" profilecode="1">Creo Parametric</span></span> command.
+                  </div>
+                  <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcUICommandBracketListener.OnBeforeCommand()</span></span> could also be used to cancel an upcoming command. To do this, throw a <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcXCancelProEAction</span></span> exception from the body of the listener method using <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">CCpfcXCancelProEAction.Throw()</span></span>.
+                  </div>
+               </div>
+               <div class=" x-topic-11-0 x-topic-11-1" id="menus_jlink_Example3BracketListeners-BCADBB21_12_213">
+                  
+                  <div class=" x-title-22-0 x-title-22-1" combinedFontName="off" id="styler-id1.1.1.10.5.6.3.1">Example 2: Bracket Listeners</div>
+                  <div class=" x-body-3-0">
+                     <div class=" x-p-7-0">The sample code in the file <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcCommandExamples.vb</span></span> located at <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">&lt;creo_vbapi_loadpoint&gt;/vbapi_examples</span></span> demonstrates the usage of the bracket listener methods that are called before and after when the user tries to rename the
+                        model. If the model contains a certain parameter, the rename attempt will be aborted by this listener.
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-8-0 x-topic-8-1 x-topic-8-2" id="menus_jlink_DesignatingCommands-BCAEC8CC_12_219">
+            
+            <a name="17"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.10.6.1" class="Heading1">Designating Commands</div>
+            <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="18"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="19"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="20"></a><span class=" x-indexterm-1-0"></span></div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">Using <span class=" x-ph-2-0">the VB API</span> you can designate <span class=" x-ph-2-0" id="menus_jlink_DesignatingCommands-BCAEC8CC_PTCCreoParametr_12_230"><span xmlns="" profilecode="1">Creo Parametric</span></span> commands. These commands can later appear in the <span class=" x-ph-2-0" id="menus_jlink_DesignatingCommands-BCAEC8CC_PTCCreoParametr_12_230"><span xmlns="" profilecode="1">Creo Parametric</span></span> ribbon user interface. 
+               </div>
+               <div class=" x-p-7-0">To add a command you must:</div>
+               <div class=" x-ol-6-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-11-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0.00em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">1.</td>
+                           <td><span class=" x-p-4-0">Define or add the command to be initiated on clicking the icon in the VB API application.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-15-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0.00em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">2.</td>
+                           <td><span class=" x-p-4-0">Optionally designate an icon button to be used with the command.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-15-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0.00em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">3.</td>
+                           <td><span class=" x-p-4-0">Designate the command to appear in the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Customize Ribbon</span></span> tab in the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" profilecode="1"><span class="cf-Sanserif-combined-Default">Creo Parametric</span></span></span> <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Options</span></span> dialog box.</span><div class=" x-note-2-0 x-note-2-3">
+                                 <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                                 <div class=" x-p-7-0">Refer to the chapter on <a href="pfc_ribbon.html" class=" x-xref-4-0 x-xref-4-5 x-xref-4-6 x-xref-4-9">Ribbon Tabs, Groups, and Menu Items</a> for more information. Also, refer to the <span class=" x-ph-2-0"><span class=" x-ph-2-0" id="menus_jlink_DesignatingCommands-BCAEC8CC_PTCCreoParametr_12_230"><span xmlns="" profilecode="1">Creo Parametric</span></span> Parametic</span> Help for more information on customizing the Ribbon User Interface.
+                                 </div>
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-12-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0.00em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">4.</td>
+                           <td><span class=" x-p-4-0"> Save the configuration in <span class=" x-ph-2-0" id="menus_jlink_DesignatingCommands-BCAEC8CC_PTCCreoParametr_12_230"><span xmlns="" profilecode="1">Creo Parametric</span></span> so that changes to the ribbon user interface appear when a new session of <span class=" x-ph-2-0" id="menus_jlink_DesignatingCommands-BCAEC8CC_PTCCreoParametr_12_230"><span xmlns="" profilecode="1">Creo Parametric</span></span> is started.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="menus_jlink_CommandIcons-BCAE2010_12_258">
+               
+               <a name="21"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.10.6.4.1" class="Heading2">Command Icons</div>
+               <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="22"></a><span class=" x-indexterm-1-0"></span></div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">Method Introduced:</div>
+                  <div class=" x-ul-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="23"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcUICommand.SetIcon()</li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcUICommand.SetIcon()</span></span> allows you to designate an icon to be used with the command you created. The method adds the icon to the <span class=" x-ph-2-0" id="menus_jlink_CommandIcons-BCAE2010_PTCCreoParametric-E962_12_271"><span xmlns="" profilecode="1">Creo Parametric</span></span> command. Specify the name of the icon file, including the extension as the input argument for this method. A valid format
+                     for the icon file is a standard <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">.GIF</span></span>, <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">.JPG</span></span>, or<span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">.PNG</span></span>. PTC recommends using <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">.PNG</span></span> format. All icons in the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" profilecode="1"><span class="cf-Monospace-combined-European_Alphabets">Creo Parametric</span></span></span>  ribbon are either 16x16 (small) or 32x32 (large) size. The naming convention for the icons is as follows:
+                     <div class=" x-ul-1-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0">Small icon&#8212;<span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">&lt;iconname.ext&gt;</span></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0">Large icon&#8212;<span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">&lt;iconname_large.ext&gt;</span></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <div class=" x-note-2-0 x-note-2-3">
+                     <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                     <div class=" x-ul-2-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0">The legacy naming convention for icons <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">&lt;icon_name_icon_size.ext&gt;</span></span> will not be supported in future releases of <span class=" x-ph-2-0" id="menus_jlink_CommandIcons-BCAE2010_PTCCreoParametric-E962_12_271"><span xmlns="" profilecode="1">Creo Parametric</span></span>. The icon size was added as a suffix to the name of the icon. For example, the legacy naming convention for small icons was
+                                       <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">iconname16X16.ext</span></span>. It is recommended to use the standard naming conventions for icons, that is, <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">iconname.ext</span></span> or <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">iconname_large.ext</span></span>.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0">While specifying the name of the icon file, do not specify the full path to the icon names.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <div class=" x-p-7-0">The application searches for the icon files in the following locations:</div>
+                  <div class=" x-ul-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">&lt;creo_loadpoint&gt;\&lt;version&gt;\Common Files\text\resource</span></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">&lt;Application text dir&gt;\resource</span></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">&lt;Application text dir&gt;\&lt;language&gt;\resource</span></span></span><div class=" x-p-5-0">The location of the application text directory is specified in the registry file.</div>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-p-7-0">Commands that do not have an icon assigned to them display the button label.</div>
+                  <div class=" x-p-7-0">You may also use this method to assign a small icon to a button. The icon appears to the left of the button label.</div>
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="menus_jlink_DesignatingTheCommand-BCAEA508_12_312">
+               
+               <a name="24"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.10.6.5.1" class="Heading2">Designating the Command</div>
+               <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="25"></a><span class=" x-indexterm-1-0"></span></div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">Method Introduced:</div>
+                  <div class=" x-ul-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="26"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcUICommand.Designate()</li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-p-7-0">This method allows you designate the command as available in the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Customize Ribbon</span></span> tab in the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" profilecode="1"><span class="cf-Sanserif-combined-Default">Creo Parametric</span></span></span> <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Options</span></span> dialog of <span class=" x-ph-2-0" id="menus_jlink_DesignatingTheCommand-BCAEA508_PTCCreoParame_12_328"><span xmlns="" profilecode="1">Creo Parametric</span></span>. After a VB API application has used the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcUICommand.Designate()</span></span> on a command, can add the button associated with this command into the <span class=" x-ph-2-0" id="menus_jlink_DesignatingTheCommand-BCAEA508_PTCCreoParame_12_328"><span xmlns="" profilecode="1">Creo Parametric</span></span> ribbon user interface.
+                  </div>
+                  <div class=" x-p-7-0">If this method is not called, the button will not be visible in the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Toolkit Commands</span></span> list in the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Customize Ribbon</span></span> tab in the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" profilecode="1"><span class="cf-Sanserif-combined-Default">Creo Parametric</span></span></span>  <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Options</span></span> dialog of <span class=" x-ph-2-0" id="menus_jlink_DesignatingTheCommand-BCAEA508_PTCCreoParame_12_328"><span xmlns="" profilecode="1">Creo Parametric</span></span>.
+                  </div>
+                  <div class=" x-p-7-0">The arguments to this method are:</div>
+                  <div class=" x-ul-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">Label</span>&#8212;The message string that refers to the icon label. This label (stored in the message file) identifies the text seen when the
+                                    button is displayed. If the command is not assigned an icon, the button label string appears on the toolbar button by default.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">Help</span>&#8212;The one-line Help for the icon. This label (stored in the message file) identifies the help line seen when the mouse moves
+                                    over the icon.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">Description</span>&#8212;The message appears in the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Customize Ribbon</span></span> tab in the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" profilecode="1"><span class="cf-Sanserif-combined-Default">Creo Parametric</span></span></span>  <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Options</span></span> dialog box and also when <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Description</span></span> is clicked in <span class=" x-ph-2-0" id="menus_jlink_DesignatingTheCommand-BCAEA508_PTCCreoParame_12_328"><span xmlns="" profilecode="1">Creo Parametric</span></span>.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">MessageFile</span>&#8212;The message file name. All the labels including the one-line Help labels must be present in the message file.</span><div class=" x-note-2-0 x-note-2-3">
+                                    <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                                    <div class=" x-p-7-0">This file must be in the directory <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">&lt;text_path&gt;/text</span></span> or <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">&lt;text_path&gt;/text/&lt;language&gt;</span></span>.
+                                    </div>
+                                 </div>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="menus_jlink_PlacingTheToolbarButton-BCAEB4CC_12_366">
+               
+               <a name="27"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.10.6.6.1" class="Heading2">Placing the Button</div>
+               <div class=" x-abstract-1-0"></div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">Once the button has been created using the methods discussed, place the button on the <span class=" x-ph-2-0" id="menus_jlink_PlacingTheToolbarButton-BCAEB4CC_PTCCreoPara_12_371"><span xmlns="" profilecode="1">Creo Parametric</span></span> ribbon user interface. Refer to the chapter on <a href="pfc_ribbon.html" class=" x-xref-4-0 x-xref-4-5 x-xref-4-6 x-xref-4-9">Ribbon Tabs, Groups, and Menu Items</a> for more information. Also, refer to the <span class=" x-ph-2-0"><span class=" x-ph-2-0" id="menus_jlink_PlacingTheToolbarButton-BCAEB4CC_PTCCreoPara_12_371"><span xmlns="" profilecode="1">Creo Parametric</span></span> </span> Help for more information on customizing the Ribbon User Interface.
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-8-0 x-topic-8-1 x-topic-8-2" id="menus_jlink_Pop-upMenus-BCB24EE9_12_377">
+            
+            <a name="28"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.10.7.1" class="Heading1">Pop-up Menus</div>
+            <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="29"></a><span class=" x-indexterm-1-0"></span></div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0"><span class=" x-ph-2-0" id="menus_jlink_Pop-upMenus-BCB24EE9_PTCCreoParametric-E9626_12_383"><span xmlns="" profilecode="1">Creo Parametric</span></span> provides shortcut menus that contain frequently used commands appropriate to the currently selected items. You can access
+                  a shortcut menu by right-clicking a selected item. Shortcut menus are accessible in:
+               </div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0">Graphics window</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0">Model Tree</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0">Some dialog boxes </span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0">Any area where you can perform an object-action operation by selecting an item and choosing a command to perform on the selected
+                                 item.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-p-7-0">The methods described in this section allow you to add menus to a graphics window pop-up menu.</div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="menus_jlink_AddingAPop-upMenuToTheGraphicsWindo-BCAF02D3_12_395">
+               
+               <a name="30"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.10.7.4.1" class="Heading2">Adding a Pop-up Menu to the Graphics Window</div>
+               <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="31"></a><span class=" x-indexterm-1-0"></span></div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">You can activate different pop-up menus during a given session of <span class=" x-ph-2-0" id="menus_jlink_AddingAPop-upMenuToTheGraphicsWindo-BCAF02D3_12_402"><span xmlns="" profilecode="1">Creo Parametric</span></span>. Every time the <span class=" x-ph-2-0" id="menus_jlink_AddingAPop-upMenuToTheGraphicsWindo-BCAF02D3_12_402"><span xmlns="" profilecode="1">Creo Parametric</span></span> context changes when you open a different model type, enter different tools or special modes such as <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Edit</span></span>, a different pop-up menu is created. When <span class=" x-ph-2-0" id="menus_jlink_AddingAPop-upMenuToTheGraphicsWindo-BCAF02D3_12_402"><span xmlns="" profilecode="1">Creo Parametric</span></span> moves to the next context, the pop-up menu may be destroyed.
+                  </div>
+                  <div class=" x-p-7-0">As a result of this, <span class=" x-ph-2-0">the VB API</span> applications must attach a button to the pop-up menu during initialization of the pop-up menu. The <span class=" x-ph-2-0">VB API</span> application is notified each time a particular pop-up menu is created, which then allows the user to add to the pop-up menu.
+                  </div>
+                  <div class=" x-p-7-0">Use the following procedure to add items to pop-up menus in the graphics window:</div>
+                  <div class=" x-ol-6-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-11-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0.00em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">1.</td>
+                              <td><span class=" x-p-4-0">Obtain the name of the existing pop-up menus to which you want to add a new menu using the trail file.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-15-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0.00em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">2.</td>
+                              <td><span class=" x-p-4-0">Create commands for the new pop-up menu items.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-15-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0.00em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">3.</td>
+                              <td><span class=" x-p-4-0">Implement access listeners to provide visibility information for the items.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-15-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0.00em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">4.</td>
+                              <td><span class=" x-p-4-0">Add an action listener to the session to listen for pop-up menu initialization.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-12-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0.00em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">5.</td>
+                              <td><span class=" x-p-4-0">In the listener method, if the pop-up menu is the correct menu to which you wish to add the button, then add it.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-p-7-0">The following sections describe each of these steps in detail. You can add push buttons and cascade menus to the pop-up menus.
+                     You can add pop-up menu items only in the active window. You cannot use this procedure to remove items from existing menus.
+                  </div>
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="menus_jlink_UsingTheTrailFileToDetermineExistin-BCAF1A10_12_425">
+               
+               <a name="32"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.10.7.5.1" class="Heading2">Using the Trail File to Determine Existing Pop-up Menu Names</div>
+               <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="33"></a><span class=" x-indexterm-1-0"></span></div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">The trail file in <span class=" x-ph-2-0" id="menus_jlink_UsingTheTrailFileToDetermineExistin-BCAF1A10_12_432"><span xmlns="" profilecode="1">Creo Parametric</span></span> contains a comment that identifies the name of the pop-up menu if the configuration option, <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">auxapp_popup_menu_info</span></span> is set to <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">yes</span></span>.
+                  </div>
+                  <div class=" x-p-7-0">For example, the pop-up menu, <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Edit Properties</span></span>, has the following comment in the trail file:
+                  </div><pre class=" x-codeblock-3-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">~ Close `rmb_popup` `PopupMenu`
+~ Activate `rmb_popup` `EditProperties`
+!Command ProCmdEditPropertiesDtm was pushed from the software.
+!Item was selected from popup menu 'popup_mnu_edit'</span></pre></div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="menus_jlink_ListeningForPop-upMenuInitializatio-BCAF2374_12_439">
+               
+               <a name="34"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.10.7.6.1" class="Heading2">Listening for Pop-up Menu Initialization</div>
+               <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="35"></a><span class=" x-indexterm-1-0"></span></div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">Methods Introduced:</div>
+                  <div class=" x-ul-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="36"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcActionSource.AddActionListener()</li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="37"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcActionSource.AddActionListenerWithType()</li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="38"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcPopupmenuListener.OnPopupmenuCreate()</li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-p-7-0">Use the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcActionSource.AddActionListener()</span></span> or <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcActionSource.AddActionListenerWithType()</span></span> to register a new <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcPopupmenuListener</span></span> to the session. This listener will be called when pop-up menus are initialized.
+                  </div>
+                  <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcPopupmenuListener.OnPopupmenuCreate()</span></span> is called after the pop-up menu is created internally in <span class=" x-ph-2-0" id="menus_jlink_ListeningForPop-upMenuInitializatio-BCAF2374_12_462"><span xmlns="" profilecode="1">Creo Parametric</span></span> and may be used to assign application-owned buttons to the pop-up menu.
+                  </div>
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="menus_jlink_AccessingThePop-upMenus-BCAF30EE_12_464">
+               
+               <a name="39"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.10.7.7.1" class="Heading2">Accessing the Pop-up Menus</div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">The property described in this section provides the name of the pop-up menus used to access these menus while using other
+                     methods.
+                  </div>
+                  <div class=" x-p-7-0">Property Introduced:</div>
+                  <div class=" x-ul-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="40"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcPopupmenu.Name</li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-p-7-0">The property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcPopupmenu.Name</span></span> returns the name of the pop-up menu.
+                  </div>
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="menus_jlink_AddingContentToThePop-upMenus-BCB25F53_12_475">
+               
+               <a name="41"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.10.7.8.1" class="Heading2">Adding Content to the Pop-up Menus</div>
+               <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="42"></a><span class=" x-indexterm-1-0"></span></div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">Methods Introduced:</div>
+                  <div class=" x-ul-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="43"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcPopupmenu.AddButton()</li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="44"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">IpfcPopupmenu.AddMenu()</li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-p-7-0">Use the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcPopupmenu.AddButton()</span></span> to add a new item to a pop-up menu. The input arguments are:
+                  </div>
+                  <div class=" x-ul-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">Command</span>&#8212;Specifies the command associated with the pop-up menu.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">Options</span> &#8211; A <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcPopupmenuOptions</span></span> object containing other options for the method. The options that may be included are:</span><div class=" x-ul-2-0">
+                                    <table border="0" cellpadding="0" cellspacing="0" class=" x-li-10-0" style="table-layout: fixed; " width="100%">
+                                       <col style="width: 0em">
+                                       <col style="width: 18pt">
+                                       <col>
+                                       <tbody>
+                                          <tr valign="baseline">
+                                             <td align="right"></td>
+                                             <td align="left" style="word-break: keep-all; "><span style="font-family: 'Arial Unicode MS'; ">&#9675;</span>&nbsp;
+                                             </td>
+                                             <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">PositionIndex</span></span>&#8212;Specifies the position in the pop-up menu at which to add the menu button. Pass null to add the button to the bottom of the
+                                                   menu. Use the property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcPopupmenuOptions.PositionIndex</span></span> to set this option.</span></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    <table border="0" cellpadding="0" cellspacing="0" class=" x-li-10-0" style="table-layout: fixed; " width="100%">
+                                       <col style="width: 0em">
+                                       <col style="width: 18pt">
+                                       <col>
+                                       <tbody>
+                                          <tr valign="baseline">
+                                             <td align="right"></td>
+                                             <td align="left" style="word-break: keep-all; "><span style="font-family: 'Arial Unicode MS'; ">&#9675;</span>&nbsp;
+                                             </td>
+                                             <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">Name</span></span>&#8212;Specifies the name of the added button. The button name is placed in the trail file when the user selects the menu button.
+                                                   Use the property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcPopupmenuOptions.Name</span></span> to set this option.</span></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    <table border="0" cellpadding="0" cellspacing="0" class=" x-li-10-0" style="table-layout: fixed; " width="100%">
+                                       <col style="width: 0em">
+                                       <col style="width: 18pt">
+                                       <col>
+                                       <tbody>
+                                          <tr valign="baseline">
+                                             <td align="right"></td>
+                                             <td align="left" style="word-break: keep-all; "><span style="font-family: 'Arial Unicode MS'; ">&#9675;</span>&nbsp;
+                                             </td>
+                                             <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">SetLabel</span></span>&#8212;Specifies the button label. This label identifies the text displayed when the button is displayed. Use the property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcPopupmenuOptions.Label</span></span> to set this option.</span></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    <table border="0" cellpadding="0" cellspacing="0" class=" x-li-10-0" style="table-layout: fixed; " width="100%">
+                                       <col style="width: 0em">
+                                       <col style="width: 18pt">
+                                       <col>
+                                       <tbody>
+                                          <tr valign="baseline">
+                                             <td align="right"></td>
+                                             <td align="left" style="word-break: keep-all; "><span style="font-family: 'Arial Unicode MS'; ">&#9675;</span>&nbsp;
+                                             </td>
+                                             <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">Helptext</span></span>&#8212;Specifies the help message associated with the button. Use the property <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcPopupmenuOptions.Helptext</span></span> to set this option.</span></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-p-7-0">Use the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcPopupmenu.AddMenu()</span></span> to add a new cascade menu to an existing pop-up menu.
+                  </div>
+                  <div class=" x-p-7-0">The argument for this method is a <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcPopupmenuOptions</span></span> object, whose members have the same purpose as described for newly added buttons. This method returns a new <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">IpfcPopupmenu</span></span> object to which you may add new buttons.
+                  </div>
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="menus_jlink_Example4CreatingAPop-upMenu-BCB24CE4_12_521">
+               
+               <a name="45"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.10.7.9.1" class="Heading2">Example 3: Creating a Pop-up Menu</div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">The sample code in the file <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcPopupMenuExamples.vb</span></span> located at <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">&lt;creo_vbapi_loadpoint&gt;/vbapi_examples</span></span> demonstrates the usage of UI functions to add a new model tree pop-up menu.
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

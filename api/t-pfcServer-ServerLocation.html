@@ -1,0 +1,382 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP Visual Basic.NET documentation for interface "IpfcServerLocation"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      393
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcServer.html">Module</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcServer-ServerLocation.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;IpfcServerLocation</h2>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class describes server location.<br>
+<dl>
+<dt>
+<b>Direct Parent Classes:</b>
+</dt>
+<dd>
+<a class="class" href="t-pfcObject-Child.html">IpfcChild</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><b><a class="enumtype" href="t-pfcServer-NonRegisteredServer.html">IpfcNonRegisteredServer</a></b></tt>, 
+        <tt><b><a class="enumtype" href="t-pfcServer-Server.html">IpfcServer</a></b></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Property Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-signature"><tt><a class="method" href="#Class">Class</a></tt></td><td class="return-type"><tt>as String</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Specifies the class of the server . The values of the server class are "Windchill" and  
+  "ProjectLink." "Windchill" denotes either a Windchill Classic PDM or a Windchill PDMLink server,  
+  while "ProjectLink" denotes Windchill ProjectLink type of servers.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-signature"><tt><a class="method" href="#Location">Location</a></tt></td><td class="return-type"><tt>as String</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Specifies the codebase URL . </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-signature"><tt><a class="method" href="#Version">Version</a></tt></td><td class="return-type"><tt>as String</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Specifies the version of Windchill that is configured on the server, for example, "7.0" or "8.0."  
+  </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-signature"><tt><a class="method" href="#CollectWorkspaces">CollectWorkspaces</a>
+ ()
+ as <a class="type" href="t-pfcServer-WorkspaceDefinitions.html">IpfcWorkspaceDefinitions</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Gets the list of the workspaces .</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#DeleteWorkspace">DeleteWorkspace</a>
+ (WorkspaceName as String)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Deletes a workspace.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-signature"><tt><a class="method" href="#ListContexts">ListContexts</a>
+ ()
+ as <a class="type" href="t-stdcols-stringseq.html">Istringseq</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Gets the list of the contexts</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Property Detail</b>
+<br>
+<hr>
+<br>
+<a name="Class">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-name"><tt>Class</tt></td><td class="return-type"><tt>as String</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Specifies the class of the server . The values of the server class are "Windchill" and  
+  "ProjectLink." "Windchill" denotes either a Windchill Classic PDM or a Windchill PDMLink server,  
+  while "ProjectLink" denotes Windchill ProjectLink type of servers.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotFound.html">IpfcXToolkitNotFound</a></b></tt></b></tt> - The server couldn't be found at the given location. </p>
+</p>
+<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Location">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-name"><tt>Location</tt></td><td class="return-type"><tt>as String</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Specifies the codebase URL . <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+   
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotFound.html">IpfcXToolkitNotFound</a></b></tt></b></tt> - The server was not registered.</p>
+</p>
+<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Version">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-name"><tt>Version</tt></td><td class="return-type"><tt>as String</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Specifies the version of Windchill that is configured on the server, for example, "7.0" or "8.0."  
+  <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+   
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotFound.html">IpfcXToolkitNotFound</a></b></tt></b></tt> - The server couldn't be found at the given location. </p>
+   
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitUnsupported.html">IpfcXToolkitUnsupported</a></b></tt></b></tt> - The server is not a Windchill server </p>
+</p>
+<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<hr>
+<br>
+<a name="CollectWorkspaces">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-name"><tt>CollectWorkspaces</tt></td><td class="func-params"><tt>
+ ()
+ as <a class="type" href="t-pfcServer-WorkspaceDefinitions.html">IpfcWorkspaceDefinitions</a></tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Gets the list of the workspaces .<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotFound.html">IpfcXToolkitNotFound</a></b></tt></b></tt> - This means either: 
+    <ul>
+       
+<li>No context was found (the server was from WC 6.2.6), OR</li> 
+	   
+<li>The server was not registered or couldn't be found at the given location.</li> 
+	
+</ul>   
+   
+</p>    
+   
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitEmpty.html">IpfcXToolkitEmpty</a></b></tt></b></tt> - The server does not have any workspaces</p>
+   
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitCantAccess.html">IpfcXToolkitCantAccess</a></b></tt></b></tt> - Server communication error, or user lacks permission to view workspaces on this server. </p>
+   
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitInvalidType.html">IpfcXToolkitInvalidType</a></b></tt></b></tt> - The server version is not supported</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Sequence of <tt><b><tt><b><a class="enumtype" href="t-pfcServer-WorkspaceDefinitions.html">IpfcWorkspaceDefinitions</a></b></tt></b></tt> objects</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="DeleteWorkspace">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>DeleteWorkspace</tt></td><td class="func-params"><tt>
+ (WorkspaceName as String)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Deletes a workspace.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+   
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotFound.html">IpfcXToolkitNotFound</a></b></tt></b></tt> - The server is not registered.</p>
+   
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitInvalidDir.html">IpfcXToolkitInvalidDir</a></b></tt></b></tt> - The workspace does not exist.</p>
+   
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitCheckoutConflict.html">IpfcXToolkitCheckoutConflict</a></b></tt></b></tt> - The workspace cannot be deleted due to checked out objects in its contents. </p>
+   
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitInUse.html">IpfcXToolkitInUse</a></b></tt></b></tt> - The workspace is active</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitCheckoutConflict.html">IpfcXToolkitCheckoutConflict</a></b></tt></b></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>WorkspaceName</b></tt>
+</dt>
+<dd>The workspace name.</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ListContexts">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-name"><tt>ListContexts</tt></td><td class="func-params"><tt>
+ ()
+ as <a class="type" href="t-stdcols-stringseq.html">Istringseq</a></tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Gets the list of the contexts<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+   
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitNotFound.html">IpfcXToolkitNotFound</a></b></tt></b></tt> - The server was not registered or couldn't be found at the given location. </p>
+   
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitEmpty.html">IpfcXToolkitEmpty</a></b></tt></b></tt> - The server does not have any contexts.</p>
+   
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitCantAccess.html">IpfcXToolkitCantAccess</a></b></tt></b></tt> - Server communication error, or user lacks permission to view workspaces on this server. </p>
+   
+<p>
+<tt><b><tt><b><a class="enumtype" href="t-pfcExceptions-XToolkitInvalidType.html">IpfcXToolkitInvalidType</a></b></tt></b></tt> - The server version is not supported</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Sequence of context strings</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP Visual Basic.NET documentation for interface "IpfcFileSaveRegisterListener"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      211
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcUI.html">Module</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcUI-FileSaveRegisterListener.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;IpfcFileSaveRegisterListener</h2>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Listener providing implementation for external functions registered by
+  the application and capable of being used for Save operation.<br>
+<dl>
+<dt>
+<b>Direct Parent Classes:</b>
+</dt>
+<dd>
+<a class="class" href="t-pfcBase-ActionListener.html">IpfcActionListener</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-signature"><tt><a class="method" href="#FileSaveAccess">FileSaveAccess</a>
+ (FileType as String, Model as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a>)
+ as Boolean</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The callback function to decide if the file type should be 
+  selectable in File 'Save a Copy' dialog or not.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnFileSaveRegister">OnFileSaveRegister</a>
+ (FileType as String, Model as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a>, FilePath as String)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">This callback function is called upon pressing OK button on
+  the File 'Save a Copy' dialog for the new registered type.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<hr>
+<br>
+<a name="FileSaveAccess">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-name"><tt>FileSaveAccess</tt></td><td class="func-params"><tt>
+ (FileType as String, Model as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a>)
+ as Boolean</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The callback function to decide if the file type should be 
+  selectable in File 'Save a Copy' dialog or not.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileType</b></tt>
+</dt>
+<dd>The file type.</dd>
+<dt>
+<tt><b>Model</b></tt>
+</dt>
+<dd>The current model.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Boolean indicating whether the file type is selectable.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnFileSaveRegister">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnFileSaveRegister</tt></td><td class="func-params"><tt>
+ (FileType as String, Model as <a class="type" href="t-pfcModel-Model.html">IpfcModel</a>, FilePath as String)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>This callback function is called upon pressing OK button on
+  the File 'Save a Copy' dialog for the new registered type.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileType</b></tt>
+</dt>
+<dd>The file type.</dd>
+<dt>
+<tt><b>Model</b></tt>
+</dt>
+<dd>The current model.</dd>
+<dt>
+<tt><b>FilePath</b></tt>
+</dt>
+<dd>The absolute path of file save location.</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

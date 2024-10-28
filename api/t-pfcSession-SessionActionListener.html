@@ -1,0 +1,475 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP Visual Basic.NET documentation for interface "IpfcSessionActionListener"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      396
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcSession.html">Module</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcSession-SessionActionListener.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;IpfcSessionActionListener</h2>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class specifies an action listener to notify you of session
+operations.
+<br>
+<dl>
+<dt>
+<b>Direct Parent Classes:</b>
+</dt>
+<dd>
+<a class="class" href="t-pfcBase-ActionListener.html">IpfcActionListener</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnAfterDirectoryChange">OnAfterDirectoryChange</a>
+ (Path as String)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Provides a notification function called after the current directory has been changed.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnAfterModelDisplay">OnAfterModelDisplay</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Provides a notification function called after displaying a model.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnAfterModelPurge">OnAfterModelPurge</a>
+ (Desrc as <a class="type" href="t-pfcModel-ModelDescriptor.html">IpfcModelDescriptor</a>)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">This is the listener method called after purging a model.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnAfterWindowChange">OnAfterWindowChange</a>
+ (NewWindow as <a class="type" href="t-pfcWindow-Window.html">IpfcWindow</a> [optional])
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Provides a listener method called after changing a window in Creo Parametric.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnBeforeModelCopy">OnBeforeModelCopy</a>
+ (Container as <a class="type" href="t-pfcSession-DescriptorContainer2.html">IpfcDescriptorContainer2</a>)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">This is the listener method called before copying a model.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnBeforeModelDelete">OnBeforeModelDelete</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">This is the listener method  called before deleting a model.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnBeforeModelErase">OnBeforeModelErase</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">This is the  stener method called before erasing a model.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnBeforeModelPurge">OnBeforeModelPurge</a>
+ (Container as <a class="type" href="t-pfcSession-DescriptorContainer.html">IpfcDescriptorContainer</a>)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">This is the listener method  called before
+purging a model.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnBeforeModelRename">OnBeforeModelRename</a>
+ (Container as <a class="type" href="t-pfcSession-DescriptorContainer2.html">IpfcDescriptorContainer2</a>)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">This is the listener method called before renaming a model.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnBeforeModelSave">OnBeforeModelSave</a>
+ (Container as <a class="type" href="t-pfcSession-DescriptorContainer.html">IpfcDescriptorContainer</a>)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">This is the listener method called before saving a model.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<hr>
+<br>
+<a name="OnAfterDirectoryChange">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnAfterDirectoryChange</tt></td><td class="func-params"><tt>
+ (Path as String)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Provides a notification function called after the current directory has been changed.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Path</b></tt>
+</dt>
+<dd>The new path to the directory that was changed  </dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnAfterModelDisplay">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnAfterModelDisplay</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Provides a notification function called after displaying a model.
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnAfterModelPurge">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnAfterModelPurge</tt></td><td class="func-params"><tt>
+ (Desrc as <a class="type" href="t-pfcModel-ModelDescriptor.html">IpfcModelDescriptor</a>)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>This is the listener method called after purging a model.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Desrc</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnAfterWindowChange">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnAfterWindowChange</tt></td><td class="func-params"><tt>
+ (NewWindow as <a class="type" href="t-pfcWindow-Window.html">IpfcWindow</a> [optional])
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Provides a listener method called after changing a window in Creo Parametric.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>NewWindow</b></tt>
+</dt>
+<dd>The new window object.</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnBeforeModelCopy">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnBeforeModelCopy</tt></td><td class="func-params"><tt>
+ (Container as <a class="type" href="t-pfcSession-DescriptorContainer2.html">IpfcDescriptorContainer2</a>)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>This is the listener method called before copying a model.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Container</b></tt>
+</dt>
+<dd>Two model descriptors; your listener method may fill in the descriptors. This will force the Creo Parametric UI to use yournaming rules for new models.</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnBeforeModelDelete">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnBeforeModelDelete</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>This is the listener method  called before deleting a model.
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnBeforeModelErase">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnBeforeModelErase</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>This is the  stener method called before erasing a model.
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnBeforeModelPurge">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnBeforeModelPurge</tt></td><td class="func-params"><tt>
+ (Container as <a class="type" href="t-pfcSession-DescriptorContainer.html">IpfcDescriptorContainer</a>)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>This is the listener method  called before
+purging a model.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Container</b></tt>
+</dt>
+<dd>A model descriptor.</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnBeforeModelRename">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnBeforeModelRename</tt></td><td class="func-params"><tt>
+ (Container as <a class="type" href="t-pfcSession-DescriptorContainer2.html">IpfcDescriptorContainer2</a>)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>This is the listener method called before renaming a model.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Container</b></tt>
+</dt>
+<dd>Two model descriptors. Your application can fill in the descriptors, forcing the Creo Parametric interface to follow your naming conventions.</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnBeforeModelSave">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnBeforeModelSave</tt></td><td class="func-params"><tt>
+ (Container as <a class="type" href="t-pfcSession-DescriptorContainer.html">IpfcDescriptorContainer</a>)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>This is the listener method called before saving a model.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Container</b></tt>
+</dt>
+<dd>User should initialize this object with the model name to be saved in callback. If it is not initialized, the system prompts for the model name interactively.</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

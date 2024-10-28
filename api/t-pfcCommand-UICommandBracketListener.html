@@ -1,0 +1,129 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP Visual Basic.NET documentation for interface "IpfcUICommandBracketListener"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      492
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcCommand.html">Module</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcCommand-UICommandBracketListener.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;IpfcUICommandBracketListener</h2>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Class that responds before and after when the specified action or option is executed.
+<br>
+<dl>
+<dt>
+<b>Direct Parent Classes:</b>
+</dt>
+<dd>
+<a class="class" href="t-pfcBase-ActionListener.html">IpfcActionListener</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnAfterCommand">OnAfterCommand</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">This is the callback method that is invoked after the action is executed.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-signature"><tt><a class="method" href="#OnBeforeCommand">OnBeforeCommand</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">This is the callback method that is invoked before the action is executed.
+<note> In case the user cancel's the command, <i>pfcExceptions::XCancelProEAction</i> is caught and an error is returned.</note>
+
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<hr>
+<br>
+<a name="OnAfterCommand">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnAfterCommand</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>This is the callback method that is invoked after the action is executed.
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnBeforeCommand">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Sub</tt></td><td class="func-name"><tt>OnBeforeCommand</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>This is the callback method that is invoked before the action is executed.
+<note> In case the user cancel's the command, <i>pfcExceptions::XCancelProEAction</i> is caught and an error is returned.</note>
+
+<br>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

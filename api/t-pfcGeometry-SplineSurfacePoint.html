@@ -1,0 +1,271 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP Visual Basic.NET documentation for interface "IpfcSplineSurfacePoint"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      442
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcGeometry.html">Module</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcGeometry-SplineSurfacePoint.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;IpfcSplineSurfacePoint</h2>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Represents a single point on a spline surface
+<br>
+<br>
+<hr>
+<br>
+<b>Property Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-signature"><tt><a class="method" href="#Parameter">Parameter</a></tt></td><td class="return-type"><tt>as <a class="type" href="t-pfcBase-UVParams.html">IpfcUVParams</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The UV parameters of the point on the surface.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-signature"><tt><a class="method" href="#Point">Point</a></tt></td><td class="return-type"><tt>as <a class="type" href="t-pfcBase-Point3D.html">IpfcPoint3D</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The XYZ point</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-signature"><tt><a class="method" href="#UTangent">UTangent</a></tt></td><td class="return-type"><tt>as <a class="type" href="t-pfcBase-Vector3D.html">IpfcVector3D</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The tangent vector in the U direction at the point</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-signature"><tt><a class="method" href="#UVDerivative">UVDerivative</a></tt></td><td class="return-type"><tt>as <a class="type" href="t-pfcBase-Vector3D.html">IpfcVector3D</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The mixed derivative at the point</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-signature"><tt><a class="method" href="#VTangent">VTangent</a></tt></td><td class="return-type"><tt>as <a class="type" href="t-pfcBase-Vector3D.html">IpfcVector3D</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The tangent vector in the V direction at the point</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-signature"><tt><a class="method" href="#Create">CCpfcSplineSurfacePoint.Create</a>
+ (Parameter as <a class="type" href="t-pfcBase-UVParams.html">IpfcUVParams</a>, Point as <a class="type" href="t-pfcBase-Point3D.html">IpfcPoint3D</a>, UTangent as <a class="type" href="t-pfcBase-Vector3D.html">IpfcVector3D</a>, VTangent as <a class="type" href="t-pfcBase-Vector3D.html">IpfcVector3D</a>, UVDerivative as <a class="type" href="t-pfcBase-Vector3D.html">IpfcVector3D</a>)
+ as <a class="type" href="t-pfcGeometry-SplineSurfacePoint.html">IpfcSplineSurfacePoint</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">This method creates a new SplineSurfacePoint object.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Property Detail</b>
+<br>
+<hr>
+<br>
+<a name="Parameter">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-name"><tt>Parameter</tt></td><td class="return-type"><tt>as <a class="type" href="t-pfcBase-UVParams.html">IpfcUVParams</a></tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The UV parameters of the point on the surface.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Point">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-name"><tt>Point</tt></td><td class="return-type"><tt>as <a class="type" href="t-pfcBase-Point3D.html">IpfcPoint3D</a></tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The XYZ point<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="UTangent">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-name"><tt>UTangent</tt></td><td class="return-type"><tt>as <a class="type" href="t-pfcBase-Vector3D.html">IpfcVector3D</a></tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The tangent vector in the U direction at the point<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="UVDerivative">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-name"><tt>UVDerivative</tt></td><td class="return-type"><tt>as <a class="type" href="t-pfcBase-Vector3D.html">IpfcVector3D</a></tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The mixed derivative at the point<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="VTangent">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Property</tt></td><td class="func-name"><tt>VTangent</tt></td><td class="return-type"><tt>as <a class="type" href="t-pfcBase-Vector3D.html">IpfcVector3D</a></tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The tangent vector in the V direction at the point<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<hr>
+<br>
+<a name="Create">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-name"><tt>CCpfcSplineSurfacePoint.Create</tt></td><td class="func-params"><tt>
+ (Parameter as <a class="type" href="t-pfcBase-UVParams.html">IpfcUVParams</a>, Point as <a class="type" href="t-pfcBase-Point3D.html">IpfcPoint3D</a>, UTangent as <a class="type" href="t-pfcBase-Vector3D.html">IpfcVector3D</a>, VTangent as <a class="type" href="t-pfcBase-Vector3D.html">IpfcVector3D</a>, UVDerivative as <a class="type" href="t-pfcBase-Vector3D.html">IpfcVector3D</a>)
+ as <a class="type" href="t-pfcGeometry-SplineSurfacePoint.html">IpfcSplineSurfacePoint</a></tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>This method creates a new SplineSurfacePoint object.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Parameter</b></tt>
+</dt>
+<dd>The UV parameters of the point on the surface.</dd>
+<dt>
+<tt><b>Point</b></tt>
+</dt>
+<dd>The XYZ point</dd>
+<dt>
+<tt><b>UTangent</b></tt>
+</dt>
+<dd>The tangent vector in the U direction at the point</dd>
+<dt>
+<tt><b>VTangent</b></tt>
+</dt>
+<dd>The tangent vector in the V direction at the point</dd>
+<dt>
+<tt><b>UVDerivative</b></tt>
+</dt>
+<dd>The mixed derivative at the point</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new SplineSurfacePoint object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

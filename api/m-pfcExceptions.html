@@ -1,0 +1,1005 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+	 CIP Visual Basic.NET documentation for module "pfcExceptions"
+	</title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      1,
+      17
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;Module
+     </td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="m-pfcExceptions.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Module "pfcExceptions"</h2>
+<b>Description</b>
+<br>
+<br>Contains Creo Parametric-related exceptions.
+<br>
+<hr>
+<table border="0" class="entities">
+<tr>
+<th colspan="2" class="entities">Enumerated Types</th>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-pfcExceptions-DrawingCreateErrorType.html">EpfcDrawingCreateErrorType</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This enumerated type contains the type of drawing creation errors.
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<table border="0" class="entities">
+<tr>
+<th colspan="2" class="entities">Classes</th>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-DrawingCreateError.html">IpfcDrawingCreateError</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This interface contains an error encountered when creating a drawing from a template.
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<table border="0" class="entities">
+<tr>
+<th colspan="2" class="entities">Collections</th>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-DrawingCreateErrors.html">CMpfcDrawingCreateErrors</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This interface contains a sequence of drawing creation errors.
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<table border="0" class="entities">
+<tr>
+<th colspan="2" class="entities">Exceptions</th>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XBadArgument.html">IpfcXBadArgument</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This is a base class for an exception thrown when you specify 
+an invalid argument. 
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XBadExternalData.html">IpfcXBadExternalData</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Can not access the external data because the access to this object was terminated.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XBadGetArgValue.html">IpfcXBadGetArgValue</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception signals that you attempted to access the wrong type of value from a <tt><b><tt><b><a class="enumtype" href="t-pfcArgument-ArgValue.html">IpfcArgValue</a></b></tt></b></tt> object.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XBadGetExternalData.html">IpfcXBadGetExternalData</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">You attempted to access the wrong type of data from a <tt><b><tt><b><a class="enumtype" href="t-pfcExternal-ExternalData.html">IpfcExternalData</a></b></tt></b></tt> object.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XBadGetParamValue.html">IpfcXBadGetParamValue</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when you specify an invalid parameter type. 
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XBadOutlineExcludeType.html">IpfcXBadOutlineExcludeType</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when you specify an invalid outline exclusion type. 
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XCancelProEAction.html">IpfcXCancelProEAction</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception should be thrown by the application during a <tt><b><tt><b><a class="enumtype" href="t-pfcBase-ActionListener.html">IpfcActionListener</a></b></tt></b></tt> method in order to cancel a Creo Parametric event.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XCannotAccess.html">IpfcXCannotAccess</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Exception thrown when some variable value cannot be accessed in the current situation.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XCompatibilityNotSet.html">IpfcXCompatibilityNotSet</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XEmptyString.html">IpfcXEmptyString</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when an empty string is passed to a method that does not accept an empty string . 
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XExternalDataBadDataArgs.html">IpfcXExternalDataBadDataArgs</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">The argument r_slot_ids is invalid.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XExternalDataBadKeyByFlag.html">IpfcXExternalDataBadKeyByFlag</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">The specified key_by_flag is invalid.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XExternalDataClassOrSlotExists.html">IpfcXExternalDataClassOrSlotExists</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">The specified class name already exists.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XExternalDataEmptySlot.html">IpfcXExternalDataEmptySlot</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">No data exists in the slot.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XExternalDataError.html">IpfcXExternalDataError</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">The function failed.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XExternalDataInvalidObject.html">IpfcXExternalDataInvalidObject</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">The specified model or class name is invalid.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XExternalDataInvalidObjType.html">IpfcXExternalDataInvalidObjType</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">The specified model or class name is invalid.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XExternalDataInvalidSlotName.html">IpfcXExternalDataInvalidSlotName</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">An invalid slot name when accessing external data.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XExternalDataNamesTooLong.html">IpfcXExternalDataNamesTooLong</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">The specified class name exceeds the length PRO_NAME_SIZE.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XExternalDataSlotNotFound.html">IpfcXExternalDataSlotNotFound</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">The specified slot was not found.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XExternalDataStreamTooLarge.html">IpfcXExternalDataStreamTooLarge</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Not applicable. PFC does not provide stream support.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XExternalDataTKError.html">IpfcXExternalDataTKError</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">General error while accessing external data.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XInAMethod.html">IpfcXInAMethod</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This is a base class for any exception that occurs in a PFC method.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XInvalidEnumValue.html">IpfcXInvalidEnumValue</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when an integer used as enumerated value can not be
+mapped to the enumerated type.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XInvalidFileName.html">IpfcXInvalidFileName</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception signals that the file name string passed to the method is incorrectly structured.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XInvalidFileType.html">IpfcXInvalidFileType</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception signals that the model descriptor contains a file type that cannot be used for an operation.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XInvalidModelItem.html">IpfcXInvalidModelItem</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when a modelitem object is no longer valid.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XInvalidSelection.html">IpfcXInvalidSelection</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when the selection (its path, params, type etc.) is invalid.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XJLinkApplicationException.html">IpfcXJLinkApplicationException</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This type of exception is thrown from an invoked J-Link application.</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XJLinkApplicationInactive.html">IpfcXJLinkApplicationInactive</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when an invoked J-Link application is not currently running.</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XJLinkTaskExists.html">IpfcXJLinkTaskExists</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when a <tt><b><tt><b><a class="enumtype" href="t-pfcJLink-JLinkTaskListener.html">IpfcJLinkTaskListener</a></b></tt></b></tt> already exists with a given name.</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XJLinkTaskNotFound.html">IpfcXJLinkTaskNotFound</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when a <tt><b><tt><b><a class="enumtype" href="t-pfcJLink-JLinkTaskListener.html">IpfcJLinkTaskListener</a></b></tt></b></tt> could not be found to be invoked by an external application.</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XMethodForbidden.html">IpfcXMethodForbidden</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XMethodNotLicensed.html">IpfcXMethodNotLicensed</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XModelNotInSession.html">IpfcXModelNotInSession</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when attempting operations on a model which has been erased or deleted.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XNegativeNumber.html">IpfcXNegativeNumber</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown a negative value (integer or real) is passed to a method that requires a nonnegative argument.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XNumberTooLarge.html">IpfcXNumberTooLarge</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when a number passed to a method is too large.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XPFC.html">IpfcXPFC</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This is a base class for any PFC exception.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XProdevError.html">IpfcXProdevError</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error in a Pro/DEVELOP function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XSequenceTooLong.html">IpfcXSequenceTooLong</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when the sequence length exceeds the  
+maximum allowable size.  
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XStringTooLong.html">IpfcXStringTooLong</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when the specified string exceeds the 
+maximum allowable length. 
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitAbort.html">IpfcXToolkitAbort</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_ABORT in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitAmbiguous.html">IpfcXToolkitAmbiguous</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_E_AMBIGUOUS in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitAppBadDataPath.html">IpfcXToolkitAppBadDataPath</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      This exception signals that the application has a bad data path.
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitAppBadEncoding.html">IpfcXToolkitAppBadEncoding</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      This exception signals that the application is not correctly encoded.
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitAppCommunicationFailure.html">IpfcXToolkitAppCommunicationFailure</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception signals that a Creo Parametric TOOLKIT application that you tried to load failed due to a communication failure.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitAppCreoBarred.html">IpfcXToolkitAppCreoBarred</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      This exception signals that the TOOLKIT application is not supported on the Creo app. you are using.
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitAppExcessCallbacks.html">IpfcXToolkitAppExcessCallbacks</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception signals that a Creo Parametric TOOLKIT application that you tried to load sets too many callbacks.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitAppInitializationFailed.html">IpfcXToolkitAppInitializationFailed</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception signals that a Creo Parametric TOOLKIT application that you tried to load cannot be initialized.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitAppNewVersion.html">IpfcXToolkitAppNewVersion</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception signals that a Creo Parametric TOOLKIT application that you tried to load is of a newer version than Creo Parametric.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitAppNoLicense.html">IpfcXToolkitAppNoLicense</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception signals that a Creo Parametric TOOLKIT application that you tried to load needs a development license.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitAppStartupFailed.html">IpfcXToolkitAppStartupFailed</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception signals that a Creo Parametric TOOLKIT application that you tried to load cannot be started.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitAppTooOld.html">IpfcXToolkitAppTooOld</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      This exception signals that the application is too old.
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitAppVersionMismatch.html">IpfcXToolkitAppVersionMismatch</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception signals that a Creo Parametric TOOLKIT application that you tried to load cannot be loaded due to an invalid version.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitAuthenticationFailure.html">IpfcXToolkitAuthenticationFailure</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitBadContext.html">IpfcXToolkitBadContext</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_BAD_CONTEXT in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitBadDimAttach.html">IpfcXToolkitBadDimAttach</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_BAD_DIM_ATTACH in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitBadInputs.html">IpfcXToolkitBadInputs</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitBadSrfCrv.html">IpfcXToolkitBadSrfCrv</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_BAD_SRF_CRV in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitBsplMultiInnerKnots.html">IpfcXToolkitBsplMultiInnerKnots</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_BSPL_MULTI_INNER_KNOTS in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitBsplNonStdEndKnots.html">IpfcXToolkitBsplNonStdEndKnots</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_BSPL_NON_STD_END_KNOTS in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitBsplUnsuitableDegree.html">IpfcXToolkitBsplUnsuitableDegree</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_BSPL_UNSUITABLE_DEGREE in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitBusy.html">IpfcXToolkitBusy</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_E_BUSY in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitCantAccess.html">IpfcXToolkitCantAccess</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_CANT_ACCESS in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitCantModify.html">IpfcXToolkitCantModify</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">The model is locked and cannot be modified.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitCantOpen.html">IpfcXToolkitCantOpen</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_CANT_OPEN in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitCantWrite.html">IpfcXToolkitCantWrite</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_CANT_WRITE in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitCheckLastError.html">IpfcXToolkitCheckLastError</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      An unrecognized error was passed from Creo Parametric TOOLKIT.
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitCheckOmitted.html">IpfcXToolkitCheckOmitted</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      This exception signals that some validity checks are not performed.
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitCheckoutConflict.html">IpfcXToolkitCheckoutConflict</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Conflicts occured.  Check conflict description.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitCommError.html">IpfcXToolkitCommError</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_COMM_ERROR in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitContinue.html">IpfcXToolkitContinue</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_CONTINUE in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitCreateViewBadExplode.html">IpfcXToolkitCreateViewBadExplode</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Bad name of exploded state when creating drawing view.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitCreateViewBadModel.html">IpfcXToolkitCreateViewBadModel</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Bad model argument when creating drawing view.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitCreateViewBadParent.html">IpfcXToolkitCreateViewBadParent</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Bad parent argument when creating drawing view.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitCreateViewBadSheet.html">IpfcXToolkitCreateViewBadSheet</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Bad sheet argument when creating drawing view.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitCreateViewBadType.html">IpfcXToolkitCreateViewBadType</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Bad type argument when creating drawing view.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitDeadLock.html">IpfcXToolkitDeadLock</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_E_DEADLOCK  in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitDllInactive.html">IpfcXToolkitDllInactive</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exceptions signals that you attempted to perform on operation using a <tt><b><tt><b><a class="enumtype" href="t-pfcProToolkit-Dll.html">IpfcDll</a></b></tt></b></tt> handle that has already been unloaded.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitDllInitializeFailed.html">IpfcXToolkitDllInitializeFailed</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception signals that initialization of a Creo Parametric TOOLKIT DLL failed.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitDrawingCreateErrors.html">IpfcXToolkitDrawingCreateErrors</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_DWGCREATE_ERRORS in a Creo Parametric TOOLKIT function.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitEmpty.html">IpfcXToolkitEmpty</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_EMPTY in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitError.html">IpfcXToolkitError</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Base class to all the XToolkitErrors classes that correspond to enum ProErrors (ProToolkitErrors.h).
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitFound.html">IpfcXToolkitFound</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_E_FOUND in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitGeneralError.html">IpfcXToolkitGeneralError</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_GENERAL_ERROR in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitIncomplete.html">IpfcXToolkitIncomplete</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      An exception occured and the functionality was not completely implemented.
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitIncompleteTessellation.html">IpfcXToolkitIncompleteTessellation</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      The tessellation is incomplete.
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitInUse.html">IpfcXToolkitInUse</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_E_IN_USE in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitInvalidDir.html">IpfcXToolkitInvalidDir</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_INVALID_DIR in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitInvalidFile.html">IpfcXToolkitInvalidFile</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_INVALID_FILE in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitInvalidItem.html">IpfcXToolkitInvalidItem</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_INVALID_ITEM in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitInvalidMatrix.html">IpfcXToolkitInvalidMatrix</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_INVALID_MATRIX in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitInvalidName.html">IpfcXToolkitInvalidName</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_INVALID_NAME in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitInvalidPtr.html">IpfcXToolkitInvalidPtr</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_INVALID_PTR in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitInvalidReference.html">IpfcXToolkitInvalidReference</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when you try to assign an assembly reference to an assembly component, and the selection does not contain an assembly component path.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitInvalidType.html">IpfcXToolkitInvalidType</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_INVALID_TYPE in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitLineTooLong.html">IpfcXToolkitLineTooLong</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_LINE_TOO_LONG in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitMaxLimitReached.html">IpfcXToolkitMaxLimitReached</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      An unrecognized error was passed from Creo Parametric TOOLKIT.
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitMsgFmtError.html">IpfcXToolkitMsgFmtError</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_MSG_FMT_ERROR in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitMsgNotFound.html">IpfcXToolkitMsgNotFound</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_MSG_NOT_FOUND in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitMsgNoTrans.html">IpfcXToolkitMsgNoTrans</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_MSG_NO_TRANS in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitMsgTooLong.html">IpfcXToolkitMsgTooLong</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_MSG_TOO_LONG in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitMsgUserQuit.html">IpfcXToolkitMsgUserQuit</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_MSG_USER_QUIT in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitMultibodyUnsupported.html">IpfcXToolkitMultibodyUnsupported</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitNeedsUnlock.html">IpfcXToolkitNeedsUnlock</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception signals that a Creo Parametric TOOLKIT application that you tried to load is not unlocked.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitNoChange.html">IpfcXToolkitNoChange</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_NO_CHANGE in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitNoCoordSystem.html">IpfcXToolkitNoCoordSystem</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_NO_COORD_SYSTEM in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitNoLicense.html">IpfcXToolkitNoLicense</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_NO_LICENSE in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitNoPermission.html">IpfcXToolkitNoPermission</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitNotDisplayed.html">IpfcXToolkitNotDisplayed</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_NOT_DISPLAYED in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitNotExist.html">IpfcXToolkitNotExist</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_NOT_EXIST in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">IpfcXToolkitNotFound</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_E_NOT_FOUND in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitNotImplemented.html">IpfcXToolkitNotImplemented</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_NOT_IMPLEMENTED in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitNotValid.html">IpfcXToolkitNotValid</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_NOT_VALID in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitObsoleteFunc.html">IpfcXToolkitObsoleteFunc</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_OBSOLETE_FUNC in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitOutdated.html">IpfcXToolkitOutdated</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      An outdated parameter or feature is used.
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitOutOfMemory.html">IpfcXToolkitOutOfMemory</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_OUT_OF_MEMORY in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitOutOfRange.html">IpfcXToolkitOutOfRange</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      This exception signals that some values are out of range.
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitPickAbove.html">IpfcXToolkitPickAbove</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_PICK_ABOVE in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitRegenerateAgain.html">IpfcXToolkitRegenerateAgain</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Regeneration succeeded, but relations require regeneration again.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitSuppressedParents.html">IpfcXToolkitSuppressedParents</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_SUPP_PARENTS in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitUnattachedFeats.html">IpfcXToolkitUnattachedFeats</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Regeneration succeeded, but the solid has unattached features.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitUnavailableSection.html">IpfcXToolkitUnavailableSection</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_UNAV_SEC in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitUnrecognizedErrorCode.html">IpfcXToolkitUnrecognizedErrorCode</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">An unrecognized error was passed from Creo Parametric TOOLKIT.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitUnsupported.html">IpfcXToolkitUnsupported</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception signals an attempt to execute an unsupported operation.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XToolkitUserAbort.html">IpfcXToolkitUserAbort</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is an error of type PRO_TK_USER_ABORT in a Creo Parametric TOOLKIT function called by PFC.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XUnimplemented.html">IpfcXUnimplemented</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when there is a call to a function that is 
+unimplemented.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XUnknownModelExtension.html">IpfcXUnknownModelExtension</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception is thrown when you specify an invalid model extension.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExceptions-XUnusedValue.html">IpfcXUnusedValue</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This exception signals that you tried to access a value that is not used by the object.
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

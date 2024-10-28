@@ -1,0 +1,154 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP Visual Basic.NET documentation for module-level class "CMpfcInterference"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      1,
+      24
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;Module
+     </td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcInterference-CMpfcInterference.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;CMpfcInterference</h2>
+<hr>
+<br>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Function</tt></td><td width="1%" class="func-name"><tt><a class="func" href="#CreateSelectionEvaluator">CreateSelectionEvaluator</a></tt></td><td class="func-params"><tt>
+ (Selections as <a class="type" href="t-pfcSelect-SelectionPair.html">IpfcSelectionPair</a>)
+ as <a class="type" href="t-pfcInterference-SelectionEvaluator.html">IpfcSelectionEvaluator</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Used to create a <tt><b><tt><b><a class="enumtype" href="t-pfcInterference-SelectionEvaluator.html">IpfcSelectionEvaluator</a></b></tt></b></tt> object, that represents the data necessary to call several methods related to the interface and clearance between the two selections.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>Function</tt></td><td width="1%" class="func-name"><tt><a class="func" href="#CreateGlobalEvaluator">CreateGlobalEvaluator</a></tt></td><td class="func-params"><tt>
+ (Assem as <a class="type" href="t-pfcAssembly-Assembly.html">IpfcAssembly</a>)
+ as <a class="type" href="t-pfcInterference-GlobalEvaluator.html">IpfcGlobalEvaluator</a></tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Used to create a <tt><b><tt><b><a class="enumtype" href="t-pfcInterference-GlobalEvaluator.html">IpfcGlobalEvaluator</a></b></tt></b></tt> object, that 
+enables users to compute all of the interferences within the assembly.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<hr>
+<br>
+<a name="CreateSelectionEvaluator">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-name"><tt>CreateSelectionEvaluator</tt></td><td class="func-params"><tt>
+ (Selections as <a class="type" href="t-pfcSelect-SelectionPair.html">IpfcSelectionPair</a>)
+ as <a class="type" href="t-pfcInterference-SelectionEvaluator.html">IpfcSelectionEvaluator</a></tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Used to create a <tt><b><tt><b><a class="enumtype" href="t-pfcInterference-SelectionEvaluator.html">IpfcSelectionEvaluator</a></b></tt></b></tt> object, that represents the data necessary to call several methods related to the interface and clearance between the two selections.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Selections</b></tt>
+</dt>
+<dd>The <tt><b><tt><b><a class="enumtype" href="t-pfcSelect-SelectionPair.html">IpfcSelectionPair</a></b></tt></b></tt> the pair of selected objects.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The <tt><b><tt><b><a class="enumtype" href="t-pfcInterference-SelectionEvaluator.html">IpfcSelectionEvaluator</a></b></tt></b></tt> object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="CreateGlobalEvaluator">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>Function</tt></td><td class="func-name"><tt>CreateGlobalEvaluator</tt></td><td class="func-params"><tt>
+ (Assem as <a class="type" href="t-pfcAssembly-Assembly.html">IpfcAssembly</a>)
+ as <a class="type" href="t-pfcInterference-GlobalEvaluator.html">IpfcGlobalEvaluator</a></tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Used to create a <tt><b><tt><b><a class="enumtype" href="t-pfcInterference-GlobalEvaluator.html">IpfcGlobalEvaluator</a></b></tt></b></tt> object, that 
+enables users to compute all of the interferences within the assembly.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Assem</b></tt>
+</dt>
+<dd>The top-level assembly to be checked for interference.  </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The <tt><b><tt><b><a class="enumtype" href="t-pfcInterference-GlobalEvaluator.html">IpfcGlobalEvaluator</a></b></tt></b></tt> object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>
